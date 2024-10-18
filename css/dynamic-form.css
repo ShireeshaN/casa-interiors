@@ -1,1 +1,602 @@
-.rightSideImg{background-color:#f7e9ce}.slide-container .slide h4{margin-bottom:25px;text-align:left;font-size:1.3rem;font-weight:500}.slide-container .slide input[type="text"],.slide-container .slide input[type="number"]{border:0;border-bottom-color:currentcolor;border-bottom-style:none;border-bottom-width:0;border-bottom:.0625rem solid #231f20;width:100%;background:#f7e9ce;border-radius:0}.slide-container .slide select.form-select{border:0;border-bottom-color:currentcolor;border-bottom-style:none;border-bottom-width:0;border-bottom:.0625rem solid #231f20;width:100%;background:#f7e9ce}.form-container{background:#fff0;width:100%;padding:0 100px;border-radius:3px}.form-container .buttons-container{margin-top:0;text-align:right;display:flex;justify-content:end;position:relative}.form-container button{-webkit-appearance:none;text-align:center}.form-container button.cust-Btn.btn-previous{background:#fff0;border:0;text-decoration:underline;padding-bottom:0;position:absolute;right:15%;bottom:0;font-size:16px}.form-container button.cust-Btn.btn-previous:hover{background:#fff0;border:0;text-decoration:underline}.form-container button.cust-Btn .hvr-sweep-to-right.cust-Btn.btn-previous:before{background:#fff0}.form-container button.cust-Btn.btn-previoust:before{content:"";position:absolute}.form-container button.btn-white{background:#fff}.form-container button.btn-submit{z-index:9999999;position:relative}.form-container .float-right{float:right}.form-container .radio-container{display:inline-block}.form-container input[type=radio]{opacity:0;height:0;width:0}.form-container input[type=radio]~label{opacity:1;border:1px solid #1f64a1;padding:10px 20px;background:#fff;color:#1f64a1;border-radius:10px 0 10px 0}.form-container input[type=radio]:active+label{opacity:1;border:1px solid grey;background:#000;color:#fff}.form-container input[type=radio]:checked+label{opacity:1;border:1px solid grey;background:#1f64a1;color:#fff}.form-container .error-message{color:red;margin-top:0;display:none;font-size:14px}.form-container input[type=text],.form-container input[type=email]{border:0;padding:10px;width:100%;border-radius:10px 0 10px 0;border-bottom:.0625rem solid #231f20;width:100%;background:#f7e9ce;border-radius:0}.form-container .btn-submit:disabled{background:#333;color:#777}.form-container .slide-container{transition:ease-in 0.3s all;position:relative;top:0}.form-container form#questionnaire-form{height:280px;width:100%;overflow:hidden}.g-recaptcha{margin-top:8px;transform:scale(1);float:right}.form-container .slide{height:280px;width:100%}.form-container .slide h2{margin-top:0}.form-container button,.form-container label{cursor:pointer}#questionnaire-form .form-select{background-image:url(../images/down-arrow.png);background-repeat:no-repeat;background-position:right;background-size:25px}.custom-select-wrapper{position:relative;display:inline-block;user-select:none;cursor:pointer}.custom-select-wrapper select{display:none}.custom-select{position:relative;display:inline-block;font:13px/1.5 "Roboto",sans-serif}.custom-select-trigger{position:relative;display:block;min-width:130px;padding:0 104px 0 25px;font-weight:100;color:#6e7c83;line-height:50px;background-color:#fff;border-radius:3px;cursor:pointer;transition:all 0.2s ease-in-out}.custom-select-trigger:hover{-webkit-box-shadow:0 10px 50px 0 rgb(43 111 246 / .1);box-shadow:0 10px 50px 0 rgb(43 111 246 / .1)}.custom-select-trigger:before{position:absolute;display:block;content:"";width:1px;height:50px;top:3px;right:50px;margin-top:-3px;border-right:1px solid #c7d1d6;transition:all 0.35s ease-out;transform-origin:50% 0}.custom-select-trigger:after{position:absolute;display:block;content:"";width:10px;height:10px;top:50%;right:20px;margin-top:-3px;border-bottom:1px solid #c7d1d6;border-right:1px solid #c7d1d6;transform:rotate(45deg) translateY(-50%);transition:all 0.35s ease-out;transform-origin:50% 0}.custom-select.opened .custom-select-trigger:after{margin-top:3px;transform:rotate(-135deg) translateY(-50%)}.custom-options{position:absolute;display:block;top:100%;left:0%;right:0;width:100%;margin:10px 0;border-radius:5px;box-sizing:border-box;background:#fff;transition:all 0.2s ease-in-out;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-15px);border:0}.custom-select.opened .custom-options{opacity:1;visibility:visible;pointer-events:all;transform:translateY(-8px);-webkit-box-shadow:0 10px 50px 0 rgb(43 111 246 / .1);box-shadow:0 10px 50px 0 rgb(43 111 246 / .1)}.option-hover:before{background:#f9f9f9}.custom-option{position:relative;display:block;padding:0 22px;font:13px/1.5 "Roboto",sans-serif;font-weight:600;color:#b5b5b5;line-height:47px;cursor:pointer;transition:all 0.05s ease-in-out}.custom-option:first-of-type{border-radius:4px 4px 0 0;border-top-right-radius:5px;border-top-left-radius:5px}.custom-option:last-of-type{border-bottom:0;border-radius:0 0 4px 4px;border-bottom-right-radius:5px;border-bottom-left-radius:5px}.custom-option:hover,.custom-option.selection{color:#fff;background-color:#49e2bb}.select_time_wrapper label{width:auto;margin-right:7px;color:#000;padding:0}.select_time_wrapper label span{font-size:14px;font-weight:600;padding:0 20px;transition:transform .2s ease-in-out}.select_time_wrapper label input{position:absolute;top:-20px}.select_time_wrapper input:checked+span{background-color:#000;color:#F7F7F7;font-size:15px;padding:5px 20px;transform:scale(1.1)}.label_p{font-weight:400}.custom-control-label::after{border-radius:50%!important;width:24px;height:24px;top:0;color:#fff0}.form_bot_wrapper .custom-control-label::before{background-color:#ebebeb;height:24px;width:24px;border-radius:50%;top:0}.custom-checkbox .custom-control-input:checked~.custom-control-label::before{background-color:#ebebeb}.select{cursor:pointer;display:inline-block;position:relative;font-size:16px;color:#fff;width:220px;height:40px}.select-styled{position:absolute;top:0;right:0;bottom:0;left:0;background-color:#c0392b;padding:8px 15px;transition:all 0.2s ease-in}.select-styled:after{content:"";width:0;height:0;border:7px solid #fff0;border-color:#fff #fff0 #fff0 #fff0;position:absolute;top:16px;right:10px}.select-styled:hover{background-color:#b83729}.select-styled:active,.select-styled.active{background-color:#ab3326}.select-styled:active:after,.select-styled.active:after{top:9px;border-color:#fff0 #fff0 #fff #fff0}.select-options{display:none;position:absolute;top:100%;right:0;left:0;z-index:999;margin:0;padding:0;list-style:none;background-color:#ab3326}.select-options li{margin:0;padding:12px 0;text-indent:15px;border-top:1px solid #962d22;transition:all 0.2s ease-in}.select-options li:hover,.select-options li.is-selected{color:#c0392b;background:#fff}.select-options li[rel=hide]{display:none}.estimater-form{margin-top:100px}.select_time_wrapper label{width:auto;margin-right:7px;color:#000;padding:0;margin-left:0;margin-right:10px!important}.popUpMultiStep button{opacity:1}@media (min-width:1410px) and (max-width:1500px){.form-container button.cust-Btn.btn-previous{right:30%}.popupMainMage .popUpMultiStep{border:0}.select_time_wrapper label{margin-bottom:10px}.form-container form#questionnaire-form{height:275px;width:100%;overflow:hidden}}@media (min-width:1300px) and (max-width:1400px){.form-container form#questionnaire-form{height:275px;width:100%;overflow:hidden}.select_time_wrapper label{margin-bottom:10px}.form-container button.cust-Btn.btn-previous{right:30%}}@media (min-width:768px) and (max-width:991px){.form-container{width:100%;padding:0 0}.form-container button.cust-Btn.btn-previous{right:20%}.popupMainMage{background:#f7e9ce;height:100vh}.popupMainMage .popUpMultiStep{border:0}.select_time_wrapper label{margin-bottom:10px}.form-container form#questionnaire-form{height:275px;width:100%;overflow:hidden}}@media only screen and (max-width:767px){.form-container{padding:0;border-radius:3px}.slide-container .slide h4{margin-bottom:20px;text-align:left;font-size:1rem;font-weight:400}.popupMainMage{background:#f7e9ce;height:100vh}.slide-container .slide input[type="text"],.slide-container .slide input[type="email"],.slide-container .slide input[type="number"]{font-size:.9rem}.select_time_wrapper label span{font-size:10px}.select_time_wrapper label{margin-right:5px!important}.estimater-form{margin-top:70px!important}.select_time_wrapper label span{padding:0 15px}.form-container button.cust-Btn.btn-previous{background:#fff0;border:0;text-decoration:underline;padding-bottom:0;position:absolute;top:20px;right:38%;bottom:150px;float:left;width:100%}.popUpMultiStep .rightSideImg{padding:2.125rem 0}.form-container button.btn-submit{z-index:9999999;position:absolute;right:0;bottom:auto}.popUpMultiStep .rightSideImg{padding:0}}
+.rightSideImg {
+    background-color: #f7e9ce
+}
+
+.slide-container .slide h4 {
+    margin-bottom: 25px;
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 500
+}
+
+.slide-container .slide input[type="text"],
+.slide-container .slide input[type="number"] {
+    border: 0;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: 0;
+    border-bottom: .0625rem solid #231f20;
+    width: 100%;
+    background: #f7e9ce;
+    border-radius: 0
+}
+
+.slide-container .slide select.form-select {
+    border: 0;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: 0;
+    border-bottom: .0625rem solid #231f20;
+    width: 100%;
+    background: #f7e9ce
+}
+
+.form-container {
+    background: #fff0;
+    width: 100%;
+    padding: 0 100px;
+    border-radius: 3px
+}
+
+.form-container .buttons-container {
+    margin-top: 0;
+    text-align: right;
+    display: flex;
+    justify-content: end;
+    position: relative
+}
+
+.form-container button {
+    -webkit-appearance: none;
+    text-align: center
+}
+
+.form-container button.cust-Btn.btn-previous {
+    background: #fff0;
+    border: 0;
+    text-decoration: underline;
+    padding-bottom: 0;
+    position: absolute;
+    right: 15%;
+    bottom: 0;
+    font-size: 16px
+}
+
+.form-container button.cust-Btn.btn-previous:hover {
+    background: #fff0;
+    border: 0;
+    text-decoration: underline
+}
+
+.form-container button.cust-Btn .hvr-sweep-to-right.cust-Btn.btn-previous:before {
+    background: #fff0
+}
+
+.form-container button.cust-Btn.btn-previoust:before {
+    content: "";
+    position: absolute
+}
+
+.form-container button.btn-white {
+    background: #fff
+}
+
+.form-container button.btn-submit {
+    z-index: 9999999;
+    position: relative
+}
+
+.form-container .float-right {
+    float: right
+}
+
+.form-container .radio-container {
+    display: inline-block
+}
+
+.form-container input[type=radio] {
+    opacity: 0;
+    height: 0;
+    width: 0
+}
+
+.form-container input[type=radio]~label {
+    opacity: 1;
+    border: 1px solid #1f64a1;
+    padding: 10px 20px;
+    background: #fff;
+    color: #1f64a1;
+    border-radius: 10px 0 10px 0
+}
+
+.form-container input[type=radio]:active+label {
+    opacity: 1;
+    border: 1px solid grey;
+    background: #000;
+    color: #fff
+}
+
+.form-container input[type=radio]:checked+label {
+    opacity: 1;
+    border: 1px solid grey;
+    background: #1f64a1;
+    color: #fff
+}
+
+.form-container .error-message {
+    color: red;
+    margin-top: 0;
+    display: none;
+    font-size: 14px
+}
+
+.form-container input[type=text],
+.form-container input[type=email] {
+    border: 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px 0 10px 0;
+    border-bottom: .0625rem solid #231f20;
+    width: 100%;
+    background: #f7e9ce;
+    border-radius: 0
+}
+
+.form-container .btn-submit:disabled {
+    background: #333;
+    color: #777
+}
+
+.form-container .slide-container {
+    transition: ease-in 0.3s all;
+    position: relative;
+    top: 0
+}
+
+.form-container form#questionnaire-form {
+    height: 280px;
+    width: 100%;
+    overflow: hidden
+}
+
+.g-recaptcha {
+    margin-top: 8px;
+    transform: scale(1);
+    float: right
+}
+
+.form-container .slide {
+    height: 280px;
+    width: 100%
+}
+
+.form-container .slide h2 {
+    margin-top: 0
+}
+
+.form-container button,
+.form-container label {
+    cursor: pointer
+}
+
+#questionnaire-form .form-select {
+    background-image: url(../images/down-arrow.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 25px
+}
+
+.custom-select-wrapper {
+    position: relative;
+    display: inline-block;
+    user-select: none;
+    cursor: pointer
+}
+
+.custom-select-wrapper select {
+    display: none
+}
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+    font: 13px/1.5 "Roboto", sans-serif
+}
+
+.custom-select-trigger {
+    position: relative;
+    display: block;
+    min-width: 130px;
+    padding: 0 104px 0 25px;
+    font-weight: 100;
+    color: #6e7c83;
+    line-height: 50px;
+    background-color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out
+}
+
+.custom-select-trigger:hover {
+    -webkit-box-shadow: 0 10px 50px 0 rgb(43 111 246 / .1);
+    box-shadow: 0 10px 50px 0 rgb(43 111 246 / .1)
+}
+
+.custom-select-trigger:before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 1px;
+    height: 50px;
+    top: 3px;
+    right: 50px;
+    margin-top: -3px;
+    border-right: 1px solid #c7d1d6;
+    transition: all 0.35s ease-out;
+    transform-origin: 50% 0
+}
+
+.custom-select-trigger:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    right: 20px;
+    margin-top: -3px;
+    border-bottom: 1px solid #c7d1d6;
+    border-right: 1px solid #c7d1d6;
+    transform: rotate(45deg) translateY(-50%);
+    transition: all 0.35s ease-out;
+    transform-origin: 50% 0
+}
+
+.custom-select.opened .custom-select-trigger:after {
+    margin-top: 3px;
+    transform: rotate(-135deg) translateY(-50%)
+}
+
+.custom-options {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0%;
+    right: 0;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: #fff;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-15px);
+    border: 0
+}
+
+.custom-select.opened .custom-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transform: translateY(-8px);
+    -webkit-box-shadow: 0 10px 50px 0 rgb(43 111 246 / .1);
+    box-shadow: 0 10px 50px 0 rgb(43 111 246 / .1)
+}
+
+.option-hover:before {
+    background: #f9f9f9
+}
+
+.custom-option {
+    position: relative;
+    display: block;
+    padding: 0 22px;
+    font: 13px/1.5 "Roboto", sans-serif;
+    font-weight: 600;
+    color: #b5b5b5;
+    line-height: 47px;
+    cursor: pointer;
+    transition: all 0.05s ease-in-out
+}
+
+.custom-option:first-of-type {
+    border-radius: 4px 4px 0 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px
+}
+
+.custom-option:last-of-type {
+    border-bottom: 0;
+    border-radius: 0 0 4px 4px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px
+}
+
+.custom-option:hover,
+.custom-option.selection {
+    color: #fff;
+    background-color: #49e2bb
+}
+
+.select_time_wrapper label {
+    width: auto;
+    margin-right: 7px;
+    color: #000;
+    padding: 0
+}
+
+.select_time_wrapper label span {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 20px;
+    transition: transform .2s ease-in-out
+}
+
+.select_time_wrapper label input {
+    position: absolute;
+    top: -20px
+}
+
+.select_time_wrapper input:checked+span {
+    background-color: #000;
+    color: #F7F7F7;
+    font-size: 15px;
+    padding: 5px 20px;
+    transform: scale(1.1)
+}
+
+.label_p {
+    font-weight: 400
+}
+
+.custom-control-label::after {
+    border-radius: 50% !important;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    color: #fff0
+}
+
+.form_bot_wrapper .custom-control-label::before {
+    background-color: #ebebeb;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    top: 0
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #ebebeb
+}
+
+.select {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+    width: 220px;
+    height: 40px
+}
+
+.select-styled {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #c0392b;
+    padding: 8px 15px;
+    transition: all 0.2s ease-in
+}
+
+.select-styled:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 7px solid #fff0;
+    border-color: #fff #fff0 #fff0 #fff0;
+    position: absolute;
+    top: 16px;
+    right: 10px
+}
+
+.select-styled:hover {
+    background-color: #b83729
+}
+
+.select-styled:active,
+.select-styled.active {
+    background-color: #ab3326
+}
+
+.select-styled:active:after,
+.select-styled.active:after {
+    top: 9px;
+    border-color: #fff0 #fff0 #fff #fff0
+}
+
+.select-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #ab3326
+}
+
+.select-options li {
+    margin: 0;
+    padding: 12px 0;
+    text-indent: 15px;
+    border-top: 1px solid #962d22;
+    transition: all 0.2s ease-in
+}
+
+.select-options li:hover,
+.select-options li.is-selected {
+    color: #c0392b;
+    background: #fff
+}
+
+.select-options li[rel=hide] {
+    display: none
+}
+
+.estimater-form {
+    margin-top: 100px
+}
+
+.select_time_wrapper label {
+    width: auto;
+    margin-right: 7px;
+    color: #000;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 10px !important
+}
+
+.popUpMultiStep button {
+    opacity: 1
+}
+
+@media (min-width:1410px) and (max-width:1500px) {
+    .form-container button.cust-Btn.btn-previous {
+        right: 30%
+    }
+
+    .popupMainMage .popUpMultiStep {
+        border: 0
+    }
+
+    .select_time_wrapper label {
+        margin-bottom: 10px
+    }
+
+    .form-container form#questionnaire-form {
+        height: 275px;
+        width: 100%;
+        overflow: hidden
+    }
+}
+
+@media (min-width:1300px) and (max-width:1400px) {
+    .form-container form#questionnaire-form {
+        height: 275px;
+        width: 100%;
+        overflow: hidden
+    }
+
+    .select_time_wrapper label {
+        margin-bottom: 10px
+    }
+
+    .form-container button.cust-Btn.btn-previous {
+        right: 30%
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .form-container {
+        width: 100%;
+        padding: 0 0
+    }
+
+    .form-container button.cust-Btn.btn-previous {
+        right: 20%
+    }
+
+    .popupMainMage {
+        background: #f7e9ce;
+        height: 100vh
+    }
+
+    .popupMainMage .popUpMultiStep {
+        border: 0
+    }
+
+    .select_time_wrapper label {
+        margin-bottom: 10px
+    }
+
+    .form-container form#questionnaire-form {
+        height: 275px;
+        width: 100%;
+        overflow: hidden
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .form-container {
+        padding: 0;
+        border-radius: 3px
+    }
+
+    .slide-container .slide h4 {
+        margin-bottom: 20px;
+        text-align: left;
+        font-size: 1rem;
+        font-weight: 400
+    }
+
+    .popupMainMage {
+        background: #f7e9ce;
+        height: 100vh
+    }
+
+    .slide-container .slide input[type="text"],
+    .slide-container .slide input[type="email"],
+    .slide-container .slide input[type="number"] {
+        font-size: .9rem
+    }
+
+    .select_time_wrapper label span {
+        font-size: 10px
+    }
+
+    .select_time_wrapper label {
+        margin-right: 5px !important
+    }
+
+    .estimater-form {
+        margin-top: 70px !important
+    }
+
+    .select_time_wrapper label span {
+        padding: 0 15px
+    }
+
+    .form-container button.cust-Btn.btn-previous {
+        background: #fff0;
+        border: 0;
+        text-decoration: underline;
+        padding-bottom: 0;
+        position: absolute;
+        top: 20px;
+        right: 38%;
+        bottom: 150px;
+        float: left;
+        width: 100%
+    }
+
+    .popUpMultiStep .rightSideImg {
+        padding: 2.125rem 0
+    }
+
+    .form-container button.btn-submit {
+        z-index: 9999999;
+        position: absolute;
+        right: 0;
+        bottom: auto
+    }
+
+    .popUpMultiStep .rightSideImg {
+        padding: 0
+    }
+}
