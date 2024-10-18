@@ -492,17 +492,17 @@ header.site-header {
 }
 
 .topNaviGationUpper ul li:nth-of-type(4) a {
-    background-color: var(--themeColor);
+    /* background-color: var(--themeColor); */
     color: #000;
     padding: .5375rem .625rem;
     margin-top: -.625rem;
-    border-left: .5rem solid #000;
+    /* border-left: .5rem solid #000; */
     font-weight: 600
 }
 
 .topNaviGationUpper ul li:nth-of-type(4) a:hover {
-    background: #000;
-    color: #fff
+    /* background: #000; */
+    color: #FEC748
 }
 
 .topNaviGationUpper ul li a {
@@ -2104,9 +2104,9 @@ footer {
     margin-top: -2.5rem
 }
 
-.logobox a img {
+/* .logobox a img {
     width: 11.875rem
-}
+} */
 
 .Innerbanner {
     height: 20rem;
