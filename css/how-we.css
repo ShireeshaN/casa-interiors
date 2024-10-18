@@ -1,0 +1,219 @@
+.flowbg {
+    background: url(../images/flowbg.png);
+    background-repeat: repeat;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.stepimg img {
+    width: 100%;
+}
+.step-content {
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+.step-content span {
+    font-family: "Libre Franklin";
+    font-size: 120px;
+    float: left;
+    color: #afd91a;
+    margin-right: 25px;
+}
+.step-content span {
+    font-family: "Libre Franklin";
+    font-size: 80px;
+    float: left;
+    color: #000;
+    margin-right: 25px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+}
+.step-content span:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 5.625rem;
+    height: 5.25rem;
+    background-color: #e6bc6b;
+    border-radius: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+.newSec {
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+.step-content h2 {
+    font-family: "Libre Franklin";
+    margin-top: -10px;
+    float: left;
+    color: #000;
+    font-size: 1.5625rem;
+}
+.step-content.left-content h2 {
+    font-family: "Libre Franklin";
+    margin-top: -36px;
+    float: left;
+    color: #000;
+    font-size: 1.5625rem;
+}
+.step-content h2 span {
+    font-size: 65px;
+    text-transform: uppercase;
+    font-family: "Libre Franklin";
+    margin-top: 15px;
+    color: #248b32;
+}
+.step-content p {
+    float: left;
+    padding: 0.9375rem 0.3125rem;
+    color: #333;
+}
+.heading h3 {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    color: #000;
+}
+.flexirow {
+    display: flex;
+    align-items: center;
+}
+.ft-rg {
+    width: 70%;
+}
+@media (max-width: 1080px) {
+    .navbarMain.onlyDesktop ul li a {
+        font-weight: 700;
+        font-size: 0.825rem;
+        -webkit-transition: ease-in-out 0.3s;
+        -o-transition: ease-in-out 0.3s;
+        transition: ease-in-out 0.3s;
+    }
+}
+@media (max-width: 1024px) {
+    .step-content span {
+        font-family: "Libre Franklin";
+        font-size: 50px;
+        float: left;
+        color: #000;
+        margin-right: 25px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        position: relative;
+    }
+    .step-content span:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        width: 4.625rem;
+        height: 4.25rem;
+        background-color: #e6bc6b;
+        border-radius: 50%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+    }
+    .step-content h2 {
+        font-size: 36px;
+    }
+}
+@media (max-width: 991px) {
+    .ft-rg {
+        width: 100%;
+    }
+    .fl-lf {
+        width: 100%;
+        margin: auto;
+    }
+    .ft-rg {
+        margin: auto;
+        width: 100%;
+    }
+    .step-content h2 {
+        font-family: "Libre Franklin";
+        margin-top: 10px;
+        float: left;
+        color: #000;
+        font-size: 40px;
+    }
+    .step-content.left-content h2 {
+        font-family: "Libre Franklin";
+        margin-top: 10px;
+        float: left;
+        color: #000;
+        font-size: 40px;
+    }
+    .step-content {
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+    }
+}
+@media (max-width: 767px) {
+    .step-content {
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+    }
+    .ft-rg {
+        width: 100%;
+    }
+    .fl-lf {
+        width: 100%;
+        margin: auto;
+    }
+    .newSec {
+        padding-left: 1rem;
+        padding-top: 2rem;
+    }
+    .step-content span {
+        font-family: "Libre Franklin";
+        font-size: 50px;
+        float: left;
+        color: #000;
+        margin-right: 5px;
+        width: 50px;
+        height: 39px;
+        border-radius: 50%;
+        position: relative;
+    }
+    .step-content span:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 90%;
+        width: 3.625rem;
+        height: 3.25rem;
+        background-color: #e6bc6b;
+        border-radius: 50%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+    }
+    .step-content h2 {
+        font-family: "Libre Franklin";
+        margin-top: 15px;
+        float: left;
+        color: #000;
+        font-size: 25px;
+        margin-bottom: 35px;
+    }
+    .step-content.left-content h2 {
+        font-family: "Libre Franklin";
+        margin-top: 16px;
+        float: left;
+        color: #000;
+        font-size: 30px;
+    }
+    .newSec p {
+        font-size: 1rem;
+    }
+    .pd-bt {
+        padding-bottom: 20px;
+    }
+}
