@@ -611,14 +611,16 @@ header.site-header {
 }
 
 .bannerBtn ul li a {
-    color: #000;
+    color: #FEC748;
     font-size: 1rem;
-    background-color: var(--themeColor);
-    width: 14.125rem;
-    padding: .625rem;
+    background-color: black;
+    width: 10.125rem;
+    padding: .525rem;
     position: relative;
     transition: .3s ease-in-out;
-    border-left: .3125rem solid #000
+    border-left: .3125rem solid #FEC748;
+    border-radius: 10px;
+    
 }
 
 .bannerBtn ul li a:hover {
@@ -5310,7 +5312,7 @@ aside.otherBloglist {
     }
 
     header.site-header {
-        padding: 1.5rem 0;
+        /* padding: 1.5rem 0; */
        
     }
 
