@@ -18,7 +18,10 @@ ul {
 .icnBx,
 .ourBlogs .headingBxx,
 .popUpMultiStep h1 {
-    text-align: center
+    text-align: center;
+    color:black;
+    font-size: 30px;
+    
 }
 
 .moble-con,
@@ -36,7 +39,8 @@ img {
     src: url("../fonts/LibreFranklin-Medium.woff2") format("woff2"), url("../fonts/LibreFranklin-Medium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
-    font-display: swap
+    font-display: swap;
+
 }
 
 @font-face {
@@ -382,7 +386,8 @@ header.site-header {
     position: absolute;
     width: 100%;
     z-index: 2;
-    padding: 1.5rem 0;
+    /* padding: 1.5rem 0; */
+    padding: 10px;
     transition: .3s ease-in-out;
     background: white
 }
@@ -659,7 +664,7 @@ header.site-header {
 }
 
 .iconGridBox {
-    background-color: #231f20;
+    background-color: #FEC748;
     padding: 1.25rem 0
 }
 
@@ -2599,7 +2604,8 @@ select#bhk {
     top: 0;
     width: 100%;
     z-index: 100;
-    transition: .3s
+    transition: .3s;
+
 }
 
 #myHeader.hide {
@@ -5304,7 +5310,8 @@ aside.otherBloglist {
     }
 
     header.site-header {
-        padding: 1.5rem 0
+        padding: 1.5rem 0;
+       
     }
 
     .blogDetails-cont .blogDate {
