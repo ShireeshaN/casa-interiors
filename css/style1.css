@@ -1462,22 +1462,9 @@ button#v-pills-settingss-tab {
     bottom: 2.5rem
 }
 
-.commercialsSlidersWrap:before {
-    content: url('../images/shape-2.png');
-    position: absolute;
-    left: 5.625rem;
-    top: -6.875rem;
-    width: 100%;
-    height: 128%;
-}
 
-.blogDate h5::before,
-.howWork::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    height: 100%
-}
+
+
 
 .commercialProject .swiper-pagination {
     bottom: 3.125rem
@@ -6451,3 +6438,19 @@ aside.otherBloglist {
     }
 }
 
+.texts{
+    font-size: 14px !important;
+    font-family: "Open Sans",Arial, Helvetica, sans-serif !important;
+    text-align: center;
+}
+.texts1{
+    font-size: 14px !important;
+    font-family: "Open Sans",Arial, Helvetica, sans-serif !important;
+    text-align: center;
+    color: rgb(135, 135, 130);
+}
+
+
+.heads{
+    color: #0b0b0a;
+}
