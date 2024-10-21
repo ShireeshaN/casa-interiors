@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
  
    <link rel="preconnect" href="" crossorigin="">
+   <!-- Lightbox2 CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
    
     
     
@@ -292,135 +294,189 @@
           </div>
 
 
-          <div class="about-container">
-            <!-- Image Section -->
-            <div class="about-image">
-                <img src="images/01b3b7aa999345255712b44ef18c42ac.jpg" alt="About Us Image">
+
+          <div class="service-container">
+            <h1 class="service-title">Living Room Interiors</h1>
+            <p class="service-description">
+                Discover our stunning living room designs that blend style and comfort. Each interior is tailored to reflect your unique personality and lifestyle.
+            </p>
+    
+            <div class="gallery">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item">
+                    <a href="images/62e700cc70b1538e6be0a36f79e44c9b.jpg" data-lightbox="living-room-gallery" data-title="Living Room 1">
+                    <img src="images/62e700cc70b1538e6be0a36f79e44c9b.jpg" alt="Living Room Design 1">
+                    <div class="overlay">
+                        <div class="text">Living Room</div>
+                    </div></a>
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item">
+                    <a href="images/62e700cc70b1538e6be0a36f79e44c9b.jpg" data-lightbox="living-room-gallery" data-title="Living Room 1">
+                    <img src="images/62e700cc70b1538e6be0a36f79e44c9b.jpg" alt="Living Room Design 2">
+                    <div class="overlay">
+                        <div class="text">Living Room</div>
+                    </div></a>
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item">
+                    <a href="images/62e700cc70b1538e6be0a36f79e44c9b.jpg" data-lightbox="living-room-gallery" data-title="Living Room 1">
+                    <img src="images/62e700cc70b1538e6be0a36f79e44c9b.jpg" alt="Living Room Design 3">
+                    <div class="overlay">
+                        <div class="text">Living Room</div>
+                    </div></a>
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item">
+                    <a href="images/62e700cc70b1538e6be0a36f79e44c9b.jpg" data-lightbox="living-room-gallery" data-title="Living Room 1">
+                    <img src="images/62e700cc70b1538e6be0a36f79e44c9b.jpg" alt="Living Room Design 4">
+                    <div class="overlay">
+                        <div class="text">Living Room</div>
+                    </div></a>
+                </div>
+
+                  <!-- Gallery Item 3 -->
+                  <div class="gallery-item">
+                    <a href="images/62e700cc70b1538e6be0a36f79e44c9b.jpg" data-lightbox="living-room-gallery" data-title="Living Room 1">
+                    <img src="images/62e700cc70b1538e6be0a36f79e44c9b.jpg" alt="Living Room Design 3">
+                    <div class="overlay">
+                        <div class="text">Living Room</div>
+                    </div></a>
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item">
+                    <a href="images/62e700cc70b1538e6be0a36f79e44c9b.jpg" data-lightbox="living-room-gallery" data-title="Living Room 1">
+                    <img src="images/62e700cc70b1538e6be0a36f79e44c9b.jpg" alt="Living Room Design 4">
+                    <div class="overlay">
+                        <div class="text">Living Room</div>
+                    </div></a>
+                </div>
+                <!-- Add more images as needed -->
             </div>
     
-            <!-- Content Section -->
-            <div class="about-content">
-                <h1>About Us</h1>
-                <p>Casa Interiors is where functionality meets elegance. We specialize in crafting bespoke interior designs that transform spaces into timeless havens. Whether it's your living room, kitchen, or office, our designs are tailored to reflect your personality and enhance everyday living. With a blend of modern aesthetics and classic touches, Casa Interiors brings your vision to life with unparalleled attention to detail and craftsmanship</p>
-                <p>At Casa Interiors, we believe that your space is a reflection of your unique style and personality.</p>
-                <!-- <button class="about-button">Learn More</button> -->
-            </div>
+            <!-- <button class="service-button">Get Started</button> -->
         </div>
-        
-        
+    
         <style>
             /* General Styles */
-            
+   
     
-            .about-container {
-                display: flex;
-                flex-wrap: wrap;
-                max-width: 1200px;
-                margin: 0 auto;
-                padding: 20px;
-                align-items: center;
-            }
+    /* Service Container */
+    .service-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 50px 20px;
+        text-align: center;
+    }
     
-            .about-image {
-                flex: 1;
-                min-width: 300px;
-                overflow: hidden;
-                border-radius: 15px;
-                margin: 20px;
-            }
+    /* Title and Description */
+    .service-title {
+        font-size: 3rem;
+        color: #333;
+        margin-bottom: 20px;
+    }
     
-            .about-image img {
-                width: 100%;
-                height: auto;
-                border-radius: 15px;
-                transition: transform 0.5s ease;
-            }
+    .service-description {
+        font-size: 1.5rem;
+        color: #666;
+        margin-bottom: 40px;
+    }
     
-            .about-image:hover img {
-                transform: scale(1.05);
-            }
+    /* Gallery Layout */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
     
-            .about-content {
-                flex: 1;
-                padding: 20px;
-                animation: fadeInUp 1s ease-out;
-            }
+    /* Gallery Item Styling */
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
     
-            .about-content h1 {
-                font-size: 3rem;
-                margin-bottom: 20px;
-                color: #ff6347;
-            }
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+        transition: transform 0.5s ease;
+    }
     
-            .about-content p {
-                font-size: 1.2rem;
-                line-height: 1.6;
-                margin-bottom: 20px;
-            }
+    .gallery-item:hover img {
+        transform: scale(1.1);
+    }
     
-            .about-button {
-                background-color: #ff6347;
-                color: white;
-                border: none;
-                padding: 10px 20px;
-                cursor: pointer;
-                font-size: 1.2rem;
-                border-radius: 5px;
-                transition: background-color 0.3s ease;
-            }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
     
-            .about-button:hover {
-                background-color: #ff4500;
-            }
+    .gallery-item:hover .overlay {
+        opacity: 1;
+    }
     
-            /* Animation for content */
-            @keyframes fadeInUp {
-                0% {
-                    opacity: 0;
-                    transform: translateY(30px);
-                }
-                100% {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
+    .text {
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+    }
     
-            /* Responsive Styles */
-            @media (max-width: 768px) {
-                .about-container {
-                    flex-direction: column;
-                }
+    /* Button */
+    .service-button {
+        background-color: #ff6347;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        margin-top: 30px;
+    }
     
-                .about-content h1 {
-                    font-size: 2.5rem;
-                    text-align: center;
-                }
+    .service-button:hover {
+        background-color: #ff4500;
+        transform: scale(1.05);
+    }
     
-                .about-content p {
-                    font-size: 1.1rem;
-                    text-align: center;
-                }
+    /* Mobile View */
+    @media (max-width: 768px) {
+        .service-title {
+            font-size: 2.5rem;
+        }
     
-                .about-button {
-                    display: block;
-                    margin: 0 auto;
-                }
-            }
+        .service-description {
+            font-size: 1.2rem;
+        }
     
-            @media (max-width: 480px) {
-                .about-content h1 {
-                    font-size: 2rem;
-                }
+        .service-button {
+            font-size: 1rem;
+        }
+    }
     
-                .about-content p {
-                    font-size: 1rem;
-                }
-    
-                .about-image {
-                    margin: 0 0 20px;
-                }
-            }
         </style>
+    
+        <script>
+            document.querySelector('.service-button').addEventListener('click', function() {
+        alert('Let’s create your dream living room!');
+    });
+    
+        </script>
+
+
+         
           
           
  
@@ -795,6 +851,8 @@
     <script src="js/custom.js" async="" defer=""></script>
     <script src="js/backup-dynamic-form.js" async="" defer=""></script>
     <script src="js/api.js" async="" defer=""></script>
+    <!-- Lightbox2 JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
     
     
   

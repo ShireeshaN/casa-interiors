@@ -3,156 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery with Text and Button</title>
+    <title>Living Room Interiors</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="service-container">
+        <h1 class="service-title">Living Room Interiors</h1>
+        <p class="service-description">
+            Discover our stunning living room designs that blend style and comfort. Each interior is tailored to reflect your unique personality and lifestyle.
+        </p>
 
-    <!-- Center Heading -->
-    <h1 class="gallery-heading">Image Gallery</h1>
-
-    <!-- Image Gallery -->
-    <div class="gallery">
-        <!-- Gallery Item 1 -->
-        <div class="gallery-item">
-            <img src="images/2e303daa854cd5125c51bd73f04836d0.jpg" alt="Image 1">
-            <div class="overlay">
-                <div class="text">Image Description 1</div>
-                <button class="animated-button">View More</button>
+        <div class="gallery">
+            <!-- Gallery Item 1 -->
+            <div class="gallery-item">
+                <img src="images/62e700cc70b1538e6be0a36f79e44c9b.jpg" alt="Living Room Design 1">
+                <div class="overlay">
+                    <div class="text">Elegant Minimalism</div>
+                </div>
             </div>
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item">
+                <img src="images/62e700cc70b1538e6be0a36f79e44c9b.jpg" alt="Living Room Design 2">
+                <div class="overlay">
+                    <div class="text">Cozy Rustic Charm</div>
+                </div>
+            </div>
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item">
+                <img src="images/62e700cc70b1538e6be0a36f79e44c9b.jpg" alt="Living Room Design 3">
+                <div class="overlay">
+                    <div class="text">Modern Urban Style</div>
+                </div>
+            </div>
+            <!-- Gallery Item 4 -->
+            <div class="gallery-item">
+                <img src="images/62e700cc70b1538e6be0a36f79e44c9b.jpg" alt="Living Room Design 4">
+                <div class="overlay">
+                    <div class="text">Bright Scandinavian Design</div>
+                </div>
+            </div>
+            <!-- Add more images as needed -->
         </div>
 
-        <!-- Gallery Item 2 -->
-        <div class="gallery-item">
-            <img src="images/2e303daa854cd5125c51bd73f04836d0.jpg" alt="Image 2">
-            <div class="overlay">
-                <div class="text">Image Description 2</div>
-                <button class="animated-button">View More</button>
-            </div>
-        </div>
-
-        <!-- Gallery Item 3 -->
-        <div class="gallery-item">
-            <img src="images/2e303daa854cd5125c51bd73f04836d0.jpg" alt="Image 3">
-            <div class="overlay">
-                <div class="text">Image Description 3</div>
-                <button class="animated-button">View More</button>
-            </div>
-        </div>
-
-
-        <!-- Gallery Item 1 -->
-        <div class="gallery-item">
-            <img src="images/2e303daa854cd5125c51bd73f04836d0.jpg" alt="Image 1">
-            <div class="overlay">
-                <div class="text">Image Description 1</div>
-                <button class="animated-button">View More</button>
-            </div>
-        </div>
-
-        <!-- Gallery Item 2 -->
-        <div class="gallery-item">
-            <img src="images/2e303daa854cd5125c51bd73f04836d0.jpg" alt="Image 2">
-            <div class="overlay">
-                <div class="text">Image Description 2</div>
-                <button class="animated-button">View More</button>
-            </div>
-        </div>
-
-        <!-- Gallery Item 3 -->
-        <div class="gallery-item">
-            <img src="images/2e303daa854cd5125c51bd73f04836d0.jpg" alt="Image 3">
-            <div class="overlay">
-                <div class="text">Image Description 3</div>
-                <button class="animated-button">View More</button>
-            </div>
-        </div>
-
-
-        <!-- Add more images as needed -->
+        <button class="service-button">Get Started</button>
     </div>
 
     <style>
-        /* General styles */
-
-/* Center heading style */
-.gallery-heading {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 36px;
-    color: #333;
+        /* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
 }
 
-/* Gallery layout with 3 images per row */
+/* Service Container */
+.service-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Title and Description */
+.service-title {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.service-description {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Gallery Layout */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    padding: 20px;
 }
 
-/* Gallery item styling */
+/* Gallery Item Styling */
 .gallery-item {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
 .gallery-item img {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.3s ease;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
 }
 
 .gallery-item:hover img {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
-/* Overlay styling */
 .overlay {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 10px;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    color: white;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .gallery-item:hover .overlay {
-    transform: translateY(0);
+    opacity: 1;
 }
 
-/* Text styling */
 .text {
-    font-size: 18px;
-    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
-/* Animated button styling */
-.animated-button {
+/* Button */
+.service-button {
     background-color: #ff6347;
     color: white;
+    padding: 15px 30px;
     border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
     border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 30px;
 }
 
-.animated-button:hover {
+.service-button:hover {
     background-color: #ff4500;
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .service-title {
+        font-size: 2.5rem;
+    }
+
+    .service-description {
+        font-size: 1.2rem;
+    }
+
+    .service-button {
+        font-size: 1rem;
+    }
 }
 
     </style>
 
+    <script>
+        document.querySelector('.service-button').addEventListener('click', function() {
+    alert('Let’s create your dream living room!');
+});
+
+    </script>
+
+    <script src="script.js"></script>
 </body>
 </html>
