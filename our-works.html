@@ -296,12 +296,12 @@
     <h1 class="gallery-heading">Image Gallery</h1>
 
     <!-- Image Gallery -->
-    <div class="gallery  container-flui">
+    <div class="gallery  gallery-container">
         <!-- Gallery Item 1 -->
         <div class="gallery-item">
             <img src="images/3c608ed0cbe4feac29168afe454e6e47.jpg" alt="Image 1">
             <div class="overlay">
-                <div class="text">Image Description</div>
+                <div class="text">Hyderabad</div>
                 <button class="animated-button">View More</button>
             </div>
         </div>
@@ -320,7 +320,7 @@
          <div class="gallery-item">
             <img src="images/3c608ed0cbe4feac29168afe454e6e47.jpg" alt="Image 1">
             <div class="overlay">
-                <div class="text">Image Description</div>
+                <div class="text">Hyderabad</div>
                 <button class="animated-button">View More</button>
             </div>
         </div>
@@ -329,7 +329,7 @@
         <div class="gallery-item">
             <img src="images/3c608ed0cbe4feac29168afe454e6e47.jpg" alt="Image 2">
             <div class="overlay">
-                <div class="text">Image Description</div>
+                <div class="text">Hyderabad</div>
                 <button class="animated-button">View More</button>
             </div>
         </div>
@@ -339,7 +339,7 @@
          <div class="gallery-item">
             <img src="images/3c608ed0cbe4feac29168afe454e6e47.jpg" alt="Image 1">
             <div class="overlay">
-                <div class="text">Image Description</div>
+                <div class="text">Hyderabad</div>
                 <button class="animated-button">View More</button>
             </div>
         </div>
@@ -348,7 +348,7 @@
         <div class="gallery-item">
             <img src="images/3c608ed0cbe4feac29168afe454e6e47.jpg" alt="Image 2">
             <div class="overlay">
-                <div class="text">Image Description</div>
+                <div class="text">Hyderabad</div>
                 <button class="animated-button">View More</button>
             </div>
         </div>
@@ -357,7 +357,7 @@
          <div class="gallery-item">
             <img src="images/3c608ed0cbe4feac29168afe454e6e47.jpg" alt="Image 1">
             <div class="overlay">
-                <div class="text">Image Description</div>
+                <div class="text">Hyderabad</div>
                 <button class="animated-button">View More</button>
             </div>
         </div>
@@ -366,7 +366,16 @@
         <div class="gallery-item">
             <img src="images/3c608ed0cbe4feac29168afe454e6e47.jpg" alt="Image 2">
             <div class="overlay">
-                <div class="text">Image Description</div>
+                <div class="text">Hyderabad</div>
+                <button class="animated-button">View More</button>
+            </div>
+        </div>
+
+         <!-- Gallery Item 2 -->
+         <div class="gallery-item">
+            <img src="images/3c608ed0cbe4feac29168afe454e6e47.jpg" alt="Image 2">
+            <div class="overlay">
+                <div class="text">Hyderabad</div>
                 <button class="animated-button">View More</button>
             </div>
         </div>
@@ -378,6 +387,13 @@
                     
     <style>
         /* General styles */
+        .gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;  /* Center the container */
+    padding: 0 20px;  /* Add some padding on the sides */
+}
+
+
 
 
 /* Center heading style */
@@ -404,7 +420,7 @@
 }
 
 .gallery-item img {
-    width: 100%;
+    width: auto;
     height: auto;
     display: block;
     transition: transform 0.3s ease;
@@ -455,6 +471,33 @@
 .animated-button:hover {
     background-color: #ff4500;
     transform: scale(1.1);
+}
+
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+    /* Adjust grid layout to two columns for tablets and small screens */
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust grid layout to one column for mobile phones */
+    .gallery {
+        grid-template-columns: 1fr; /* One column */
+    }
+
+    /* Reduce heading size on mobile */
+    .gallery-heading {
+        font-size: 28px;
+    }
+
+    /* Adjust the button size and padding for mobile */
+    .animated-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
 
     </style>       
