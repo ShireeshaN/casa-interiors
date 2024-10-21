@@ -1462,22 +1462,9 @@ button#v-pills-settingss-tab {
     bottom: 2.5rem
 }
 
-.commercialsSlidersWrap:before {
-    content: url('../images/shape-2.png');
-    position: absolute;
-    left: 5.625rem;
-    top: -6.875rem;
-    width: 100%;
-    height: 128%;
-}
 
-.blogDate h5::before,
-.howWork::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    height: 100%
-}
+
+
 
 .commercialProject .swiper-pagination {
     bottom: 3.125rem
@@ -6451,3 +6438,141 @@ aside.otherBloglist {
     }
 }
 
+.texts{
+    font-size: 14px !important;
+    font-family: "Open Sans",Arial, Helvetica, sans-serif !important;
+    text-align: center;
+}
+.texts1{
+    font-size: 14px !important;
+    font-family: "Open Sans",Arial, Helvetica, sans-serif !important;
+    text-align: center;
+    color: rgb(135, 135, 130);
+}
+
+
+.heads{
+    color: #0b0b0a;
+}
+
+
+
+
+
+                  
+
+/* General styles */
+.gallery-container {
+max-width: 1200px;
+margin: 0 auto;  /* Center the container */
+padding: 0 20px;  /* Add some padding on the sides */
+}
+
+
+
+
+/* Center heading style */
+.gallery-heading {
+text-align: center;
+margin: 20px 0;
+font-size: 36px;
+color: #333;
+}
+
+/* Gallery layout */
+.gallery {
+display: grid;
+grid-template-columns: repeat(3, minmax(300px, 1fr));
+gap: 20px;
+padding: 20px;
+}
+
+/* Gallery item styling */
+.gallery-item {
+position: relative;
+overflow: hidden;
+border-radius: 10px;
+}
+
+.gallery-item img {
+width: auto;
+height: auto;
+display: block;
+transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+transform: scale(1.05);
+}
+
+/* Overlay styling */
+.overlay {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgba(0, 0, 0, 0.6);
+padding: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: white;
+transform: translateY(100%);
+transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+transform: translateY(0);
+}
+
+/* Text styling */
+.text {
+font-size: 18px;
+font-weight: bold;
+}
+
+/* Animated button styling */
+.animated-button {
+background-color: #ff6347;
+color: white;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+font-size: 16px;
+border-radius: 5px;
+transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.animated-button:hover {
+background-color: #ff4500;
+transform: scale(1.1);
+}
+
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+/* Adjust grid layout to two columns for tablets and small screens */
+.gallery {
+grid-template-columns: repeat(2, 1fr); /* Two columns */
+}
+}
+
+@media (max-width: 480px) {
+/* Adjust grid layout to one column for mobile phones */
+.gallery {
+grid-template-columns: 1fr; /* One column */
+}
+
+/* Reduce heading size on mobile */
+.gallery-heading {
+font-size: 28px;
+}
+
+/* Adjust the button size and padding for mobile */
+.animated-button {
+font-size: 14px;
+padding: 8px 16px;
+}
+}
+
+/*projects*/
