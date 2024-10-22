@@ -1406,8 +1406,8 @@ span.plusSign {
     font-size: 1.25rem;
     font-weight: 400;
     text-align: center;
-    color: #fff;
-    background: #111
+    color: #fff !important;
+    background: #070707
 }
 
 button#v-pills-settingss-tab {
@@ -2666,7 +2666,8 @@ select#bhk {
 }
 
 .hvr-sweep-to-right.active {
-    background-color: #fad48b
+    background-color: #94918c;
+    color:white;
 }
 
 .rightSideImg .form-check {
