@@ -6577,3 +6577,13 @@ padding: 8px 16px;
 }
 
 /*projects*/
+
+
+.about-test .test-abtBxx {
+    text-align: left;
+    padding: 0;
+    background-color: #eff4f2;
+    position: relative;
+    height: 550px;
+    border-radius: 10px;
+}
