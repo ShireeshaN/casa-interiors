@@ -23,9 +23,7 @@
  
  </head>
  <body>
-     <!-- Google Tag Manager (noscript) -->
- <noscript><iframe src=""
- height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
  <!-- End Google Tag Manager (noscript) -->   <div class="wrapper">
         <header class="site-header" id="myHeader">
           <div class="container">
@@ -98,50 +96,94 @@
              </style>
  
  
-             <div class="navigationWrap desktopver">
-                <div class="menuWrap">
-                   <div class="logobox">
-                      <a href="index.html">
-                         <img class="whiteLogo" width="166" height="172" loading="lazy" src="images/logotransp.png" alt="#">
-                      </a>
-                   </div>
-                   <div class="navbarMain onlyDesktop">
-                      <ul>
-                         <li><a href="index.html">HOME</a></li>
-                         <li><a href="whychoose.html">WHY WE CHOOSE US</a></li>
-                         <li><a href="our-works.html">OUR WORKS</a></li>
-                         <li><a href="blogs,html">BLOGS</a></li>
-                         <li><a href="contact.html">CONTACT US</a></li>
-                      </ul>
-                   </div>
-                </div>
-             </div>
-             
- <style>
+ <div class="navigationWrap desktopver">
+    <div class="menuWrap">
+       <div class="logobox">
+          <a href="index.html">
+             <img class="whiteLogo" width="166" height="172" loading="lazy" src="images/logotransp.png" alt="#">
+          </a>
+       </div>
+       <div class="navbarMain onlyDesktop">
+          <ul>
+             <li><a href="index.html">HOME</a></li>
+             <li><a href="whychoose.html">WHY CHOOSE US</a></li>
+             <li><a href="our-works.html">OUR WORKS</a></li>
+             <li><a href="blogs.html">BLOGS</a></li>
+             <li><a href="contact.html">CONTACT US</a></li>
+             <li class="drop-down2">
+                <a href="#">SERVICES</a>
+                <ul class="drop-down-menu2">
+                   <li><a href="service1.html">Service 1</a></li>
+                   <li><a href="service2.html">Service 2</a></li>
+                   <li><a href="service3.html">Service 3</a></li>
+                </ul>
+             </li>
+          </ul>
+       </div>
+    </div>
+</div>
+ 
+<style>
+    /* Ensure basic styles for the navigation */
+    .navigationWrap {
+        background-color: #fff;
+    }
+    
     .navbarMain ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
- }
- 
- .navbarMain ul li {
-    position: relative;
-    padding-right: 20px; /* Space between items */
- }
- 
- .navbarMain ul li:not(:last-child)::after {
-    content: "\2022"; /* Unicode for dot */
-    font-size: 30px;
-    color: gold;
-    position: absolute;
-    right: -10px;
-    top: 50%;
-    transform: translateY(-50%);
- }
- 
- </style>
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    
+    .navbarMain ul li {
+        position: relative;
+        padding: 10px;
+    }
+    
+    .navbarMain ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    /* Hide dropdown by default */
+    .drop-down-menu2 {
+        display: none;
+        position: absolute;
+        top: 100%; /* Ensure it appears right below the "SERVICES" link */
+        left: 0;
+        background-color: #DAA520;
+        z-index: 999;
+        flex-direction: column;
+        list-style: none;
+        padding: 10px;
+    }
+    
+    .drop-down-menu2 li {
+        padding: 8px 10px;
+    }
+    
+    /* Show the dropdown on hover */
+    .drop-down2:hover .drop-down-menu2 {
+        display: block;
+    }
+    
+    .drop-down-menu2 li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    /* Ensure proper layout */
+    .menuWrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .onlyDesktop {
+        display: flex;
+    }
+    </style>
  
  
              <div class="onlyMobile">
@@ -198,7 +240,7 @@
        </header>      
        
        <main class="main-content">
-          <div class="bannerPage position-relative">
+          <!-- <div class="bannerPage position-relative">
              <div class="swiper mySwiper bannerSliderWraping">
                 <div class="swiper-wrapper">
                                               <div class="swiper-slide">
@@ -234,7 +276,7 @@
                 </div>
              </div>
              <div class="swiper-pagination"></div>
-          </div>
+          </div> -->
  
           <div class="iconGridBox">
              <div class="container">
