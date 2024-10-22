@@ -666,7 +666,7 @@ header.site-header {
 }
 
 .iconGridBox {
-    background-color: #FEC748;
+    background-color: white;
     padding: 1.25rem 0
 }
 
@@ -1646,7 +1646,7 @@ ul.socialMediaicon li a {
 .howWork::before {
     left: 0;
     width: 100%;
-    background: url(../images/shape-3.png) no-repeat
+   
 }
 
 .ourBlogs::after,
@@ -1661,13 +1661,13 @@ ul.socialMediaicon li a {
 .ourBlogs::before {
     left: 3.125rem;
     top: 13.75rem;
-    background: url(../images/blog-element_1.png) no-repeat
+  
 }
 
 .ourBlogs::after {
     right: 3.125rem;
     bottom: 9rem;
-    background: url(../images/blog-element_2.png) no-repeat
+    
 }
 
 .popUpMultiStep #prevBtn,
@@ -6577,3 +6577,13 @@ padding: 8px 16px;
 }
 
 /*projects*/
+
+
+.about-test .test-abtBxx {
+    text-align: left;
+    padding: 0;
+    background-color: #eff4f2;
+    position: relative;
+    height: 550px;
+    border-radius: 10px;
+}

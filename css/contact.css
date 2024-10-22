@@ -411,7 +411,8 @@ p.sit-amet {
     text-align: left;
     padding: 0;
     background-color: #f7e9ce;
-    position: relative
+    position: relative;
+    height: 550px;
 }
 
 img.player-icon {
@@ -453,7 +454,8 @@ img.player-icon {
 }
 
 .testi-info p {
-    height: 190px
+    height: 100%;
+    font-size: 0.7rem;
 }
 
 .test-abtBxx h4 {
