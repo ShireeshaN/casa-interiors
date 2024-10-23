@@ -6618,9 +6618,10 @@ padding: 8px 16px;
     
     /* Gallery Layout */
     .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 20px;
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping to next line */
+            justify-content: center; /* Center items */
+            gap: 15px;
     }
     
     /* Gallery Item Styling */
@@ -6629,14 +6630,16 @@ padding: 8px 16px;
         overflow: hidden;
         border-radius: 10px;
         transition: transform 0.3s ease;
+        object-fit: cover;
+        
     }
     
     .gallery-item img {
-        width: 100%;
-        height: auto;
-        display: block;
-        border-radius: 10px;
-        transition: transform 0.5s ease;
+        width: 300px; /* Fixed width */
+            height: 300px; /* Fixed height */
+            object-fit: cover; /* Ensures the image covers the area without stretching */
+            border-radius: 10px; /* Rounded corners for a stylish look */
+            transition: transform 0.3s ease;
     }
     
     .gallery-item:hover img {
