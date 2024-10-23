@@ -489,6 +489,7 @@
                         <div class="rightSideImg ">
                            <div class="signUpForm">
                               <div class="row">
+
                                  <div class="col-lg-12">
                                     <div style="margin-left: 46px;color: red;" id="err-name"></div>
                                     <div class="form-group">
@@ -509,21 +510,6 @@
                                           onkeyup="telephoneCheck(this.value)" autocomplete="off"
                                           onblur="otpSend(this.value)">
                                        <input type="hidden" name="phoOri" id="phoOri">
-                                    </div>
-                                 </div>
-                                 <div class="col-lg-1">
-                                    <span id="edit-icon" style="display:none" onclick="phoneEdit()"><img
-                                          src="images/final-pen.png" loading="lazy" width="30" height="30"
-                                          alt="Enquiry Form Icon"></span>
-                                 </div>
-                                 <div class="col-lg-12" id="otpBox">
-                                    <div style="margin-left: 46px;color: red;" id="err-otp"></div>
-                                    <div class="form-group">
-                                       <span><img src="images/password.png" loading="lazy" width="30" height="30"
-                                             alt="Enquiry Form Icon"></span>
-                                       <input type="text" name="OTP" id="OTP" placeholder="OTP" class="form-control"
-                                          autocomplete="off" onblur="otpVerify(this.value)">
-                                       <input type="hidden" name="verify" id="verify" value="1">
                                     </div>
                                  </div>
                                  <div class="col-lg-12">
@@ -553,37 +539,9 @@
                                        </select>
                                     </div>
                                  </div>
-                                 <div class="col-lg-12">
-                                    <div style="margin-left: 46px;color: red;" id="err-pBudget"></div>
-                                    <div class="form-group subjuctName nw-clor">
-                                       <span><img src="images/calculator%20%282%29.png" loading="lazy" width="30"
-                                             height="30" alt="Enquiry Form Icon"></span>
-                                       <select class="form-select form-control" aria-label="Default select example"
-                                          name="PropertyBudget" id="PropertyBudget">
-                                          <option value="0">Choose Budget</option>
-                                          <option value="8 - 12 Lac">8 - 12 Lac</option>
-                                          <option value="12 - 18 Lac"> 12 - 18 Lac</option>
-                                          <option value="18 - 22 Lac">18 - 22 Lac</option>
-                                          <option value="22  Lac and Above">22 Lac and Above</option>
-                                       </select>
-                                    </div>
-                                 </div>
-                                 <input type="hidden" name="PageType" id="PageType" value="1">
-                                 <div class="col-lg-12">
-                                    <div class="form-group">
-                                       <span><img src="images/bk-2.png" loading="lazy" width="30" height="30"
-                                             alt="Enquiry Form Icon"></span>
-                                       <textarea placeholder="Property Name (If any)" name="PropertyName"
-                                          id="PropertyName"></textarea>
-                                    </div>
-                                 </div>
-                                 <div class="col-lg-12">
-                                    <div class="inputbox">
-                                       <div class="g-recaptcha" data-sitekey="6LeoV3QnAAAAAPUcugSEF6tnoIasuZJkHuyyvioE"
-                                          data-callback="verifyCaptcha"></div>
-                                       <div id="gRecaptchaError" style="color:red;display: none;"></div>
-                                    </div>
-                                 </div>
+
+                                
+
                                  <div class="col-lg-12">
                                     <div class="knwMre submi-t custBtn text-right">
 
