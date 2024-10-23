@@ -4584,7 +4584,7 @@ aside.otherBloglist {
         height: 100%;
         width: 0;
         position: fixed;
-        z-index: 1;
+        z-index: 999;
         top: 0;
         right: 0;
         background: #000;
@@ -4635,7 +4635,7 @@ aside.otherBloglist {
     .sideNaviMob {
         position: absolute;
         right: 4.375rem;
-        top: 50%
+        top: 10%;
     }
 
     .hamburgers {
@@ -5210,7 +5210,7 @@ aside.otherBloglist {
     }
 
     .sideNaviMob {
-        top: 40%
+        top: 10%
     }
 
     .ourBlogs .knwMre {
@@ -5922,7 +5922,7 @@ aside.otherBloglist {
 
     .sideNaviMob {
         right: .875rem;
-        top: 50%;
+        top: 10%;
         margin-top: -1.25rem
     }
 
@@ -6305,7 +6305,7 @@ aside.otherBloglist {
 
     .sideNaviMob {
         right: 2.875rem;
-        top: 50%;
+        top: 10%;
         margin-top: -1.525rem
     }
 
@@ -6409,7 +6409,7 @@ aside.otherBloglist {
 
     .sideNaviMob {
         right: 2.875rem;
-        top: 60%;
+        top: 10%;
         margin-top: -1.525rem
     }
 
@@ -6586,4 +6586,34 @@ padding: 8px 16px;
     position: relative;
     height: 550px;
     border-radius: 10px;
+}
+
+.imgss{
+    border-radius: 10px;
+    width:80%;
+    height:600px;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .imgss{
+        border-radius: 10px;
+        width:100%;
+        height:300px;
+        text-align: center;
+    }
+    
+}
+
+.headingBxx{
+    text-align: center;
+    color:black;
+    font-size: 25px !important;
+}
+
+.blog-text{
+    text-align: justify;
+    color:#636362 ;
+    font-size: 14px;
+    font-weight: lighter;
+  
 }
