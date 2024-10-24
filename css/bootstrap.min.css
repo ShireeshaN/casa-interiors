@@ -8209,7 +8209,7 @@ fieldset:disabled .btn {
 }
 
 .text-white {
-    color: var(--bs-yellow) !important
+    color: white !important
 }
 
 .text-body {
