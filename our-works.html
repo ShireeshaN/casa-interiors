@@ -233,266 +233,201 @@
           <div class="swiper-pagination"></div>
       </div>
  
-          <div class="iconGridBox">
-             <div class="container">
-                <div class="row">
-                   <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                      <div class="iconInnerWrap">
-                         <div class="icnBx">
-                            <span class="icon-Icon_Mordern-interior-design"></span>
-                            <h3>Modern <br> Interior Design</h3>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                      <div class="iconInnerWrap">
-                         <div class="icnBx">
-                            <span class="icon-Icon_Customisez-to-your-test"></span>
-                            <h3>Customised <br> To Your Taste</h3>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                      <div class="iconInnerWrap">
-                         <div class="icnBx">
-                            <span class="icon-Icon_Free-Consultation"></span>
-                            <h3>Free Consultation <br>&amp; Budgeting</h3>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                      <div class="iconInnerWrap">
-                         <div class="icnBx">
-                            <span class="icon-Icon_Affordable-meterial-pricing"></span>
-                            <h3>Transparent  <br>Material Pricing</h3>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                      <div class="iconInnerWrap">
-                         <div class="icnBx">
-                            <span class="icon-Icon_Professional-led-execution"></span>
-                            <h3>Professionally-led <br> Execution</h3>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                      <div class="iconInnerWrap">
-                         <div class="icnBx">
-                            <span class="icon-Icon_Time-bond-delivery"></span>
-                            <h3>On-time <br> Delivery</h3>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-
-          <style>
-             
-    /* Service Container */
-    .service-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 50px 20px;
-        text-align: center;
-        
-    }
+      <style>
+        /* Service Container */
+        .service-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
     
-    /* Title and Description */
-    .service-title {
-        font-size: 3rem;
-        color: #333;
-        margin-bottom: 20px;
-    }
-    
-    .service-description {
-        font-size: 1.5rem;
-        color: #666;
-        margin-bottom: 40px;
-    }
-    
-    /* Gallery Layout */
-    .gallery {
-        display: flex;
-        flex-wrap: wrap; /* Allow wrapping to next line */
-            justify-content: end; /* Center items */
-            gap: 15px;
-    }
-    
-    /* Gallery Item Styling */
-    .gallery-item {
-        position: relative;
-        overflow: hidden;
-        border-radius: 10px;
-        transition: transform 0.3s ease;
-        object-fit: cover;
-        
-    }
-    
-    .gallery-item img {
-        width: 300px; /* Fixed width */
-            height: 300px; /* Fixed height */
-            object-fit: cover; /* Ensures the image covers the area without stretching */
-            border-radius: 10px; /* Rounded corners for a stylish look */
-            transition: transform 0.3s ease;
-    }
-    
-    .gallery-item:hover img {
-        transform: scale(1.1);
-    }
-    
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.7);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
-    
-    .gallery-item:hover .overlay {
-        opacity: 1;
-    }
-    
-    .text {
-        color: white;
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    
-    /* Button */
-    .service-button {
-        background-color: #ff6347;
-        color: white;
-        padding: 15px 30px;
-        border: none;
-        border-radius: 5px;
-        font-size: 1.2rem;
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-        margin-top: 30px;
-    }
-    
-    .service-button:hover {
-        background-color: #ff4500;
-        transform: scale(1.05);
-    }
-    
-    /* Mobile View */
-    @media (max-width: 768px) {
+        /* Title and Description */
         .service-title {
-            font-size: 2.5rem;
+            font-size: 3rem;
+            color: #333;
+            margin-bottom: 20px;
         }
     
         .service-description {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 40px;
         }
     
-        .service-button {
-            font-size: 1rem;
+        /* Gallery Layout */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap; /* Allows wrapping of items to the next line */
+            justify-content: space-between; /* Space between items */
+            gap: 20px; /* Space between images */
         }
-    }
+    
+        /* Gallery Item Styling */
+        .gallery-item {
+            position: relative;
+            width: calc(33.33% - 20px); /* Each image takes 1/3 of the row with space between */
+            height: 400px; /* Increased height for larger images */
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+    
+        .gallery-item img {
+            width: 100%; /* Full width of the container */
+            height: 100%; /* Full height of the container */
+            object-fit: cover; /* Ensures the image covers the area without stretching */
+            border-radius: 10px; /* Rounded corners */
+            transition: transform 0.3s ease;
+        }
+    
+        .gallery-item:hover img {
+            transform: scale(1.1); /* Zoom effect on hover */
+        }
+    
+        /* Overlay for text and button */
+        .overlay {
+    position: absolute;
+    bottom: 0; /* Positioned at the very bottom */
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    padding: 10px; /* Spacing around the content */
+    display: flex;
+    flex-direction: row; /* Keep the items in a row */
+    justify-content: space-between; /* Add space between text and button */
+    align-items: end; /* Align items in the center vertically */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
 
-          </style>
+.text {
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 10px; /* Optional: Add more space between text and button */
+}
 
+.animated-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
-           <!-- Center Heading -->
+.animated-button:hover {
+    background-color: #ff4500;
+    transform: scale(1.05);
+}
+        /* Mobile View Adjustments */
+        @media (max-width: 768px) {
+            .gallery {
+                flex-direction: column;
+                gap: 10px;
+            }
+    
+            .gallery-item {
+                width: 100%; /* Make images take full width in mobile view */
+                height: auto; /* Adjust height based on image aspect ratio */
+            }
+    
+            .overlay .text {
+                font-size: 1rem;
+            }
+    
+            .animated-button {
+                font-size: 0.9rem;
+            }
+        }
+    
+    </style>
+    
+    <!-- Center Heading -->
     <h1 class="gallery-heading">Our Works</h1>
-
+    
     <!-- Image Gallery -->
-    <div class="gallery  gallery-container">
+    <div class="gallery gallery-container">
         <!-- Gallery Item 1 -->
         <div class="gallery-item">
-            <img src="images/3c608ed0cbe4feac29168afe454e6e47.jpg" alt="Image 1">
+            <img src="images/allbanners/6.png" alt="Image 1">
             <div class="overlay">
                 <div class="text">Aslam - 3bhk</div>
                 <button class="animated-button">View More</button>
             </div>
         </div>
-
+    
         <!-- Gallery Item 2 -->
         <div class="gallery-item">
-            <img src="images/3c608ed0cbe4feac29168afe454e6e47.jpg" alt="Image 2">
+            <img src="images/allbanners/6.png" alt="Image 2">
             <div class="overlay">
                 <div class="text">Image Description</div>
                 <button class="animated-button">View More</button>
             </div>
         </div>
-
-
-         <!-- Gallery Item 1 -->
-         <div class="gallery-item">
-            <img src="images/3c608ed0cbe4feac29168afe454e6e47.jpg" alt="Image 1">
-            <div class="overlay">
-                <div class="text">Hyderabad</div>
-                <button class="animated-button">View More</button>
-            </div>
-        </div>
-
-        <!-- Gallery Item 2 -->
+    
+        <!-- Gallery Item 3 -->
         <div class="gallery-item">
-            <img src="images/3c608ed0cbe4feac29168afe454e6e47.jpg" alt="Image 2">
+            <img src="images/allbanners/6.png" alt="Image 3">
             <div class="overlay">
                 <div class="text">Hyderabad</div>
                 <button class="animated-button">View More</button>
             </div>
         </div>
-
-
-         <!-- Gallery Item 1 -->
+         <!-- Gallery Item 3 -->
          <div class="gallery-item">
-            <img src="images/3c608ed0cbe4feac29168afe454e6e47.jpg" alt="Image 1">
+            <img src="images/allbanners/6.png" alt="Image 3">
             <div class="overlay">
                 <div class="text">Hyderabad</div>
                 <button class="animated-button">View More</button>
             </div>
         </div>
-
-        <!-- Gallery Item 2 -->
-        <div class="gallery-item">
-            <img src="images/3c608ed0cbe4feac29168afe454e6e47.jpg" alt="Image 2">
-            <div class="overlay">
-                <div class="text">Hyderabad</div>
-                <button class="animated-button">View More</button>
-            </div>
-        </div>
-
-         <!-- Gallery Item 1 -->
+         <!-- Gallery Item 3 -->
          <div class="gallery-item">
-            <img src="images/3c608ed0cbe4feac29168afe454e6e47.jpg" alt="Image 1">
+            <img src="images/allbanners/6.png" alt="Image 3">
             <div class="overlay">
                 <div class="text">Hyderabad</div>
                 <button class="animated-button">View More</button>
             </div>
         </div>
-
-        <!-- Gallery Item 2 -->
-        <div class="gallery-item">
-            <img src="images/3c608ed0cbe4feac29168afe454e6e47.jpg" alt="Image 2">
-            <div class="overlay">
-                <div class="text">Hyderabad</div>
-                <button class="animated-button">View More</button>
-            </div>
-        </div>
-
-         <!-- Gallery Item 2 -->
+         <!-- Gallery Item 3 -->
          <div class="gallery-item">
-            <img src="images/3c608ed0cbe4feac29168afe454e6e47.jpg" alt="Image 2">
+            <img src="images/allbanners/6.png" alt="Image 3">
             <div class="overlay">
                 <div class="text">Hyderabad</div>
                 <button class="animated-button">View More</button>
             </div>
         </div>
-
-        <!-- Add more images as needed -->
+         <!-- Gallery Item 3 -->
+         <div class="gallery-item">
+            <img src="images/allbanners/6.png" alt="Image 3">
+            <div class="overlay">
+                <div class="text">Hyderabad</div>
+                <button class="animated-button">View More</button>
+            </div>
+        </div>
+         <!-- Gallery Item 3 -->
+         <div class="gallery-item">
+            <img src="images/allbanners/6.png" alt="Image 3">
+            <div class="overlay">
+                <div class="text">Hyderabad</div>
+                <button class="animated-button">View More</button>
+            </div>
+        </div>
+         <!-- Gallery Item 3 -->
+         <div class="gallery-item">
+            <img src="images/allbanners/6.png" alt="Image 3">
+            <div class="overlay">
+                <div class="text">Hyderabad</div>
+                <button class="animated-button">View More</button>
+            </div>
+        </div>
+    
+        <!-- Add more gallery items as needed -->
     </div>
-          
+    
  
        
           
