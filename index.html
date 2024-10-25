@@ -39,13 +39,13 @@
 <body>
 
 
-   <div class="top-bar">
+   <div class="top-bar container">
       <div class="contact-info">
         <a href="mailto:yourmail@example.com">
-          <i class="fas fa-envelope text-dark"></i> sr@interiors.com
+          <i class="fas fa-envelope text-dark"></i> casa@interiors.com
         </a> |
         <a href="tel:+9963043888">
-          <i class="fas fa-phone text-dark"></i> +91 9963043888
+          <i class="fas fa-phone text-dark"></i>+91-85999 47444
         </a>
       </div>
       <div class="social-icons">
@@ -63,7 +63,7 @@
       justify-content: space-between;
       align-items: center;
       background-color: #f8f8f8;
-      padding: 10px 20px;
+      padding: 10px 0;
       font-family: Arial, sans-serif;
       font-size: 14px;
     }
@@ -121,7 +121,7 @@
         </a>
     
         <!-- Hamburger Menu Button -->
-        <button
+        <!-- <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -134,7 +134,15 @@
             <span class="bar-mid"></span>
             <span class="bar-bot"></span>
           </div>
-        </button>
+        </button> -->
+        <div class="navbar-toggler"  type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#leadUIMainNav"
+        aria-controls="leadUIMainNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+         <span class="hamburgers" style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+      </div>
     
         <!-- Navbar Links -->
         <div class="collapse navbar-collapse justify-content-end" id="leadUIMainNav">
@@ -158,9 +166,9 @@
                 Services
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="residential-services.html">Residential</a>
-                <a class="dropdown-item" href="commercial-services.html">Commercial</a>
-                <a class="dropdown-item" href="renovation-services.html">Renovation</a>
+                <a class="dropdown-item" href="residential-services.html">Services1</a>
+                <a class="dropdown-item" href="commercial-services.html">Services2</a>
+                <a class="dropdown-item" href="renovation-services.html">Services3</a>
               </div>
             </li>
     
@@ -169,7 +177,7 @@
               <a class="nav-link" href="project.html">BLOGS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-0 m-0" href="packages.html">CONTACT US</a>
+              <a class="nav-link contact-btn" href="packages.html">CONTACT US</a>
             </li>
     
             <!-- Contact Link -->
@@ -190,7 +198,7 @@
       }
 
       .navbar-nav li a::after{
-         content: "\2022" !important;
+         content: "\2022";
     font-size: 30px;
     color: rgba(231, 199, 14, 0.893);
     position: absolute;
@@ -198,6 +206,16 @@
     top: 50%;
     transform: translateY(-50%);
       }
+      .navbar-nav .dropdown .dropdown-menu  a::after{
+   content: none !important;
+}
+.navbar-nav .dropdown-toggle::after{
+   content: "";
+}
+.navbar-nav .contact-btn{
+   padding: 0 !important;
+   margin: 0 !important;
+}
       .navbar-brand img{
          width: 80px;
       }
@@ -205,6 +223,19 @@
         .navbar-toggler{
         background-color: #D19A23;
       }
+      .navbar-nav .contact-btn{
+         padding: 0 20px 0 0 !important;
+         margin-right: 2.25rem !important;
+}
+.navbar-nav .dropdown-menu{
+   position: unset;
+}
+.navbar-nav .dropdown:hover .dropdown-menu{
+   display: none;
+}
+.navbar-nav .dropdown.active .dropdown-menu{
+   display: block;
+}
       }
      
       .cta-button {
@@ -3321,6 +3352,23 @@
       }
    </script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+<script>
+    
+  $(document).ready(function () {
+    // Select the dropdown menu
+    const $dropdown = $(".dropdown");
+
+    // Add click event listener to the dropdown
+    $dropdown.on("click", function (e) {
+        // Toggle the 'active' class on click
+        $(this).toggleClass("active");
+
+        // Prevent default behavior to avoid page scrolling or any default actions
+        e.preventDefault();
+    });
+});
+</script>
 
 </body>
 
