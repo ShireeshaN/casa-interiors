@@ -60,9 +60,7 @@
 
 
 
-                 <!-- <li>
-                    <a href="#consulation-form" class="get-quote">GET QUOTE</a>
-                 </li> -->
+               
               </ul>
            </div>
 
@@ -110,96 +108,36 @@
            </style>
 
 
-<div class="navigationWrap desktopver">
-    <div class="menuWrap">
-       <div class="logobox">
-          <a href="index.html">
-             <img class="whiteLogo" width="120" height="100" loading="lazy" src="images/logotransp.png" alt="#">
-          </a>
-       </div>
-       <div class="navbarMain onlyDesktop">
-          <ul>
-             <li><a href="index.html">HOME</a></li>
-             <li><a href="why-choose.html">WHY WE CHOOSE US</a></li>
-             <li><a href="our-works.html">OUR WORKS</a></li>
-             <li class="dropdown">
-                <a href="#">SERVICES</a>
-                <ul class="dropdown-menu">
-                   <li><a href="#">Living Room Interiors</a></li>
-                   <li><a href="#">Kitchen Interiors</a></li>
-                   <li><a href="#">Bedroom Interiors</a></li>
-                </ul>
-             </li>
-             <li><a href="blog.html">BLOGS</a></li>
-             <li><a href="contact.html">CONTACT US</a></li>
-          </ul>
-       </div>
-    </div>
- </div>
- 
- 
- 
+           <div class="navigationWrap desktopver">
+              <div class="menuWrap">
+                 <div class="logobox">
+                    <a href="index.html">
+                       <img class="whiteLogo" width="120" height="100" loading="lazy" src="images/logotransp.png"
+                          alt="#">
+                    </a>
+                 </div>
+                 <div class="navbarMain onlyDesktop">
+                    <ul>
+                       <li><a href="index.html">HOME</a></li>
+                       <li><a href="why-choose.html">WHY WE CHOOSE US</a></li>
+                       <li><a href="our-works.html">OUR WORKS</a></li>
+                       <li class="drop-down"><a href="#">SERVICES</a>
+                     <ul class="drop-down-items">
+                       <li> <a href="puja-room.html">Puja Unit</a> </li>
+                           <li> <a href="kitchen-room.html">Kitchens</a> </li>
+                           <li> <a href="living-room.html">Livingroom</a> </li>
+                           <li> <a href="bed-room.html">Bedroom</a> </li>
+                     </ul>
 
-          <style>
-            .navbarMain ul {
-   list-style: none;
-   padding: 0;
-   margin: 0;
-   display: flex;
-   align-items: center;
-}
+                        </li>
+                       <li><a href="blog.html">BLOGS</a></li>
+                       <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                 </div>
+              </div>
+           </div>
 
-.navbarMain ul li {
-   position: relative;
-   padding-right: 20px;
-}
-
-/* Dot separator */
-.navbarMain ul li:not(:last-child)::after {
-   content: "\2022";
-   font-size: 30px;
-   color: rgba(231, 199, 14, 0.893);
-   position: absolute;
-   right: -10px;
-   top: 50%;
-   transform: translateY(-50%);
-}
-
-/* Dropdown menu */
-.navbarMain ul li .dropdown-menu {
-   display: none;
-   position: absolute;
-   background-color: white;
-   min-width: 200px;
-   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-   z-index: 1;
-   top: 100%;  /* Position below the parent */
-   left: 0;
-}
-
-.navbarMain ul li .dropdown-menu li {
-   padding: 10px 20px;
-}
-
-.navbarMain ul li .dropdown-menu li a {
-   color: black;
-   text-decoration: none;
-   display: block;
-}
-
-/* Show the dropdown on hover */
-.navbarMain ul li.dropdown:hover .dropdown-menu {
-   display: block;
-}
-
-/* Style the links inside the dropdown */
-.navbarMain ul li .dropdown-menu li a:hover {
-   background-color: rgba(231, 199, 14, 0.1);
-   color: #e7c70e;
-}
-
-          </style>
-
+          
 
            <div class="onlyMobile">
               <div id="Sidenav" class="sidenav">
@@ -219,11 +157,19 @@
                        <a href="why-choose.html">WHY WE CHOOSE US </a>
 
                        <a href="our-works.html">OUR WORKS</a>
-                       <a href="">SERVICES</a>
-                       <!-- <a href="javascript:void(0)">Cost Estimator </a> -->
+                       <li class="drop-down"><a href="#">SERVICES</a>
+                        <ul class="drop-down-items">
+                           <li> <a href="puja-room.html">Puja Unit</a> </li>
+                           <li> <a href="kitchen-room.html">Kitchens</a> </li>
+                           <li> <a href="living-room.html">Livingroom</a> </li>
+                           <li> <a href="bed-room.html">Bedroom</a> </li>
+                        </ul>
+   
+                           </li>
+                     
                        <a href="blog.html">BLOGS</a>
                       
-                       <!-- <a href="javascript:void(0)">News</a> -->
+                    
                       
                        <a href="blog.html">Blog</a>
                        <a href="contact.html">Contact Us</a>
@@ -233,7 +179,7 @@
                        </div>
 
                        <div class="socialBoxIng">
-                          <ul>
+                          <ul> 
                              <li><a href="" target="_blank"><span class="icon-facebook"></span></a></li>
                              <li><a href="" target="_blank"><span class="icon-youtube"></span></a></li>
                              <li><a href="" target="_blank"><span class="icon-linkedin"></span></a></li>
@@ -252,7 +198,74 @@
 
 
         </div>
-     </header>     
+     </header>   
+     
+     <style>
+        .drop-down{
+            position: relative !important;
+        }
+        .drop-down  ul li:not(:last-child)::after{
+content: none !important;
+        }
+        .drop-down .drop-down-items{
+            position: fixed !important;
+            top: 14%;
+            background-color: #DAA520;
+            padding: 0;
+            z-index: 999;
+            padding: 2rem;
+            flex-direction: column;
+            display: none;
+
+        }
+        .drop-down:hover .drop-down-items{
+            display: block;
+        }
+          .navbarMain ul {
+             list-style: none;
+             padding: 0;
+             margin: 0;
+             display: flex;
+             align-items: center;
+          }
+
+          .navbarMain ul li {
+             position: relative;
+             padding-right: 20px;
+             /* Space between items */
+          }
+
+          .navbarMain ul li:not(:last-child)::after {
+             content: "\2022";
+             /* Unicode for dot */
+             font-size: 30px;
+             color: rgba(231, 199, 14, 0.893);
+             position: absolute;
+             right: -10px;
+             top: 50%;
+             transform: translateY(-50%);
+          }
+          @media(max-width:992px){
+            .drop-down{
+            position: relative !important;
+        }
+        .drop-down  ul li:not(:last-child)::after{
+
+        }
+        .drop-down .drop-down-items{
+            position: unset !important;
+        
+            display: none;
+
+        }
+        .drop-down:hover .drop-down-items{
+            display: none;
+        }
+        .drop-down.active .drop-down-items{
+            display: block;
+        }
+          }
+       </style>     
        
        <main class="main-content">
         <div class="position-relative">
