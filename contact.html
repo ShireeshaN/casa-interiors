@@ -1,108 +1,895 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="contact-container">
-        <div class="info-column">
-            <h3>Contact Information</h3>
-            <p><strong>Address:</strong> 1234 Street Name, City, State</p>
-            <p><strong>Phone:</strong> +123 456 7890</p>
-            <p><strong>Email:</strong> info@example.com</p>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" sizes="16x16" crossorigin="">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" crossorigin="">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" type="text/css" crossorigin="">
+       <link rel="stylesheet" href="css/fancybox.css" crossorigin="">
+    <link rel="stylesheet" href="css/font-awesome.min.css" crossorigin="">
+    <link rel="stylesheet" href="css/timeline.css" type="text/css" crossorigin="">
+    <link rel="stylesheet" href="css/contact.css" type="text/css" crossorigin="">
+    <link rel="stylesheet" href="css/how-we.css" type="text/css" crossorigin="">
+    <link rel="stylesheet" href="css/dynamic-form.css" type="text/css" crossorigin="">
+    <link rel="stylesheet" href="css/style1.css" type="text/css" crossorigin="">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/universe.css" type="text/css" crossorigin="">
+   <link rel="preconnect" href="" crossorigin="">
+   <!-- Lightbox2 CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+   
+    
+    
+    
+   
+ 
+ </head>
+ <body>
+     <!-- Google Tag Manager (noscript) -->
+ <noscript><iframe src=""
+ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+ <!-- End Google Tag Manager (noscript) -->   <div class="wrapper">
+    <header class="site-header" id="myHeader">
+        <div class="container">
+           <div class="topNaviGationUpper">
+              <ul>
+                 <li>
+                    <a class="" href=""></a>
+                 </li>
+                 <li>
+                    <!-- <a href="javascript:void(0)">News</a> -->
+                 </li>
+                 <li>
+                    <a class="" href=""></a>
+                 </li>
+                 <li class="social-icons">
+                    <!-- Social Media Icons (Font Awesome example) -->
+                    <a href="#" target="_blank">
+                       <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" target="_blank">
+                       <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank">
+                       <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank">
+                       <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" target="_blank">
+                       <i class="fab fa-youtube"></i>
+                    </a>
+                 </li>
+
+
+
+               
+              </ul>
+           </div>
+
+           <style>
+              .topNaviGationUpper ul {
+                 list-style: none;
+                 padding: 0;
+                 margin: 0;
+                 display: flex;
+                 align-items: center;
+              }
+
+              .topNaviGationUpper ul li {
+                 margin-right: 20px;
+                 /* Adjust the space between items */
+              }
+
+              .social-icons a {
+                 margin-right: 10px;
+                 /* Space between social media icons */
+                 text-decoration: none;
+                 font-size: 18px;
+                 color: #000;
+                 /* Change color as needed */
+              }
+
+              .social-icons a:hover {
+                 color: #FFD700;
+                 /* Gold color on hover */
+              }
+
+              .get-quote {
+                 font-weight: bold;
+                 padding: 8px 15px;
+                 background-color: #FFD700;
+                 color: #fff;
+                 text-decoration: none;
+                 border-radius: 5px;
+              }
+
+              .get-quote:hover {
+                 background-color: #DAA520;
+                 /* Darker gold on hover */
+              }
+           </style>
+
+
+           <div class="navigationWrap desktopver">
+              <div class="menuWrap">
+                 <div class="logobox">
+                    <a href="index.html">
+                       <img class="whiteLogo" width="120" height="100" loading="lazy" src="images/logotransp.png"
+                          alt="#">
+                    </a>
+                 </div>
+                 <div class="navbarMain onlyDesktop">
+                    <ul>
+                       <li><a href="index.html">HOME</a></li>
+                       <li><a href="why-choose.html">WHY WE CHOOSE US</a></li>
+                       <li><a href="our-works.html">OUR WORKS</a></li>
+                       <li class="drop-down"><a href="#">SERVICES</a>
+                     <ul class="drop-down-items">
+                       <li> <a href="puja-room.html">Puja Unit</a> </li>
+                           <li> <a href="kitchen-room.html">Kitchens</a> </li>
+                           <li> <a href="living-room.html">Livingroom</a> </li>
+                           <li> <a href="bed-room.html">Bedroom</a> </li>
+                     </ul>
+
+                        </li>
+                       <li><a href="blog.html">BLOGS</a></li>
+                       <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                 </div>
+              </div>
+           </div>
+
+          
+
+           <div class="onlyMobile">
+              <div id="Sidenav" class="sidenav">
+                 <div class="mobileBoxLogo InsideSideBar">
+                    <a href="">
+                       <img width="118" height="29" alt="" loading="lazy" src="images/logotransp.png">
+                    </a>
+                    <a href="javascript:void(0)" class="closebtn" style="font-size: 45px;" onclick="closeNav()">×</a>
+                    <!-- <h2>In 8 years, Oscar FX has worked on some of the finest Hollywood projects, movies and episodes, for some of the leading VFX Studios in the world. Explore our work portfolio here.</h2> -->
+                    <div class="menuUlisting">
+
+                       <!-- <button class="dropdown-btn">Our Work <span class="icon-sort-desc"></span>
+                    </button> -->
+
+                    <div class="dropdown-container">
+                       <a href="index.html">Home</a>
+                       <a href="why-choose.html">WHY WE CHOOSE US </a>
+
+                       <a href="our-works.html">OUR WORKS</a>
+                       <li class="drop-down"><a href="#">SERVICES</a>
+                        <ul class="drop-down-items">
+                           <li> <a href="puja-room.html">Puja Unit</a> </li>
+                           <li> <a href="kitchen-room.html">Kitchens</a> </li>
+                           <li> <a href="living-room.html">Livingroom</a> </li>
+                           <li> <a href="bed-room.html">Bedroom</a> </li>
+                        </ul>
+   
+                           </li>
+                     
+                       <a href="blog.html">BLOGS</a>
+                      
+                    
+                      
+                       <a href="blog.html">Blog</a>
+                       <a href="contact.html">Contact Us</a>
+                    </div>
+                       <div class="bookAppointmentBttn">
+                          <a href="#consulation-form">GET QUOTE</a>
+                       </div>
+
+                       <div class="socialBoxIng">
+                          <ul> 
+                             <li><a href="" target="_blank"><span class="icon-facebook"></span></a></li>
+                             <li><a href="" target="_blank"><span class="icon-youtube"></span></a></li>
+                             <li><a href="" target="_blank"><span class="icon-linkedin"></span></a></li>
+                             <li><a href="" target="_blank"><span class="icon-instagram"></span></a></li>
+                          </ul>
+                       </div>
+
+
+                    </div>
+                 </div>
+              </div>
+              <div class="sideNaviMob">
+                 <span class="hamburgers" style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+              </div>
+           </div>
+
+
         </div>
-        <div class="form-column">
-            <h3>Get in Touch</h3>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <button type="submit">Send</button>
-            </form>
+     </header>   
+     
+     <style>
+        .drop-down{
+            position: relative !important;
+        }
+        .drop-down  ul li:not(:last-child)::after{
+content: none !important;
+        }
+        .drop-down .drop-down-items{
+            position: fixed !important;
+            top: 14%;
+            background-color: #DAA520;
+            padding: 0;
+            z-index: 999;
+            padding: 2rem;
+            flex-direction: column;
+            display: none;
+
+        }
+        .drop-down:hover .drop-down-items{
+            display: block;
+        }
+          .navbarMain ul {
+             list-style: none;
+             padding: 0;
+             margin: 0;
+             display: flex;
+             align-items: center;
+          }
+
+          .navbarMain ul li {
+             position: relative;
+             padding-right: 20px;
+             /* Space between items */
+          }
+
+          .navbarMain ul li:not(:last-child)::after {
+             content: "\2022";
+             /* Unicode for dot */
+             font-size: 30px;
+             color: rgba(231, 199, 14, 0.893);
+             position: absolute;
+             right: -10px;
+             top: 50%;
+             transform: translateY(-50%);
+          }
+          @media(max-width:992px){
+            .drop-down{
+            position: relative !important;
+        }
+        .drop-down  ul li:not(:last-child)::after{
+
+        }
+        .drop-down .drop-down-items{
+            position: unset !important;
+        
+            display: none;
+
+        }
+        .drop-down:hover .drop-down-items{
+            display: none;
+        }
+        .drop-down.active .drop-down-items{
+            display: block;
+        }
+          }
+       </style>   
+       
+       <main class="main-content">
+        <div class="position-relative">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="bannerSlides slideOne">
+                            <img class="desktopBanner" loading="lazy" src="images/allbanners/10.png" alt="">
+                            <img class="mobileBanner" loading="lazy" src="images/our-works/IMG_2993.jpg" alt="">
+                            <div class="bannerContent">
+                                <h1 class="pb-5">Contact Us</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+           
+            <div class="swiper-pagination"></div>
         </div>
-    </div>
-    <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95592831531585!3d-37.81720997975198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f4bdbbdb%3A0xc5b7c9e21f8b69d!2sMelbourne%20Central!5e0!3m2!1sen!2sau!4v1612345678901!5m2!1sen!2sau" 
-            width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-        </iframe>
-    </div>
+ 
+         
+        <div class="cont">
+            <div class="main-container">
+                <h1 class="text-center mb-3">Contact Us</h1>
+                <div class="contact-container">
+                    <!-- Left Column: Contact Information -->
+                    <div class="info-column">
+                        <div class="contact-item">
+                            <i class="icon fas fa-map-marker-alt"></i>
+                            <div class="text-content">
+                                <h4>Address</h4>
+                                <p> Hyderabad, Telangana </p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="icon fas fa-phone-alt"></i>
+                            <div class="text-content">
+                                <h4>Phone</h4>
+                                <p>+85999 46444</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="icon fas fa-envelope"></i>
+                            <div class="text-content">
+                                <h4>Email</h4>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Right Column: Contact Form -->
+                    <div class="form-column">
+                        <h3>Get in Touch</h3>
+                        <form id="contactForm">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Only letters are allowed">
+        
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+        
+                            <label for="phone">Mobile Number:</label>
+                            <input type="tel" id="phone" name="phone" required pattern="\d{10}" title="Enter a valid 10-digit phone number">
+        
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+        
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+        
+                <!-- Map Section -->
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15221.732189503524!2d78.3816301!3d17.4868296!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93989287b9d1%3A0x85c413391c41231a!2sCASA%20INTERIORS%20AND%20DECOR!5e0!3m2!1sen!2sin!4v1729860288413!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <style>
+        /* Container Styling */
+        .cont {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f3f3f3;
+        }
+        
+        .main-container {
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+            background-color: #fff;
+        }
+        
+        /* Contact Container */
+        .contact-container {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        /* Info Column Styling */
+        .info-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            height: auto;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            width: 100%;
+            max-width: 280px;
+            text-align: center;
+            border-radius: 8px;
+            background: #f3f8ff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .icon {
+            font-size: 36px;
+            color: #e6bc6b;
+            transition: color 0.3s ease;
+        }
+        
+        .text-content h4 {
+            font-size: 20px;
+            color: #333;
+            margin: 0;
+        }
+        
+        .text-content p {
+            font-size: 16px;
+            color: #555;
+            margin: 0;
+        }
+        
+        /* Form Column Styling */
+        .form-column {
+            flex: 1;
+            padding: 20px;
+            border-radius: 8px;
+            background: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-column h3 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .form-column form label {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        
+        .form-column form input,
+        .form-column form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            transition: box-shadow 0.3s ease;
+        }
+        
+        .form-column form input:focus,
+        .form-column form textarea:focus {
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+            outline: none;
+        }
+        
+        .form-column form button {
+            padding: 10px 40px;
+            background-color: #e6bc6b;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        
+        /* Map Container */
+        .map-container {
+            margin-top: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 250px;
+            border: 0;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .info-column, .form-column {
+                width: 100%;
+            }
+        }
+        </style>
+        
+        <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            const phone = document.getElementById("phone").value;
+            const phonePattern = /^\d{10}$/;
+            if (!phonePattern.test(phone)) {
+                alert("Please enter a valid 10-digit phone number.");
+                event.preventDefault();
+            }
+        });
+        </script>
+        
+          
 
-    <style>
-        * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
 
-.contact-container {
-    display: flex;
-    padding: 20px;
-    gap: 20px;
-}
 
-.info-column, .form-column {
-    flex: 1;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-}
 
-.info-column h3, .form-column h3 {
-    margin-bottom: 15px;
-}
-
-.info-column p {
-    margin-bottom: 10px;
-}
-
-.form-column form label {
-    display: block;
-    margin-top: 10px;
-}
-
-.form-column form input, .form-column form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.form-column form button {
-    padding: 10px 15px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.form-column form button:hover {
-    background-color: #45a049;
-}
-
-.map-container {
-    margin-top: 20px;
-}
-
-.map-container iframe {
-    width: 100%;
-    height: 300px;
-    border: 0;
-    border-radius: 8px;
-}
-
-    </style>
-</body>
-</html>
+         
+          
+          
+ 
+          
+                   
+             
+       
+       
+      
+ 
+ 
+ <a href="#consulation-form">
+         <div class="bar-en pointer" style="">
+             <div class="moble-con moble-con-f d-block d-sm-none">
+                 Get In  Touch
+             </div>
+         </div>
+     </a>
+       <footer>
+      <div class="copyRight d-none d-md-block">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-12 col-md-12 col-sm-12">
+                   <ul class="quickLinks">
+                         <li>
+                           <div class="yutb-box">
+                              <a href="" target="_blank">
+                                  <div class="ft-youtube">
+                                       <div class="ft-youtubeimg">
+                                           <img src="images/ft-youtube.png" loading="lazy" width="104" height="104" alt="Youtube Icon">
+                                       </div>
+                                                                           <div class="ytb-info">
+                                          <h5>Hyderabad’s NO.1 <br>Interior Designer</h5>
+                                          <label><span>40,000+ Subscribers</span> <span>4 Million+ Views</span></label>
+                                      </div>
+                                  </div>
+                              </a>
+                           </div>
+                         </li>
+                         <li>
+                             <a href=""><img class="whiteLogo" width="166" height="172" loading="lazy" src="images/nifty-Logo.svg" alt="Nifty Interio Logo"></a>
+                             <p class="call-us-ft">
+                                 <a href="tel:+919553278124">Call us: +91-95532 78124</a>
+                             </p>
+                         </li>
+                         <li>
+                             <div class="followus-sec">
+                                 <h3>Follow Us</h3>
+                                 <ul class="socialMediaicon">
+                                    <li><a target="_blank" href=""><span class="icon-facebook"></span></a></li>
+                                    <li><a target="_blank" href=""><span class="icon-youtube"></span></a></li>
+                                    <li><a target="_blank" href=""><span class="icon-linkedin"></span></a></li>
+                                    <li><a target="_blank" href=""><span class="icon-instagram"></span></a></li>
+                                 </ul>
+                             </div>
+                             
+                         </li>
+                   </ul>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      
+      <div class="copyRight d-block d-md-none">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-12 col-md-12 col-sm-12">
+                   <ul class="quickLinks">
+                         
+                         <li>
+                             <a href="
+                             "><img class="whiteLogo" width="166" height="172" loading="lazy" src="images/nifty-Logo.svg" alt="Nifty Interio Logo"></a>
+                         </li>
+                         <li>
+                             <div class="yutb-box">
+                              <a href="
+                              " target="_blank">
+                                  <div class="ft-youtube">
+                                       <div class="ft-youtubeimg">
+                                           <img src="images/ft-youtube.png" loading="lazy" width="104" height="104" alt="Youtube Icon">
+                                       </div>
+                                                                           <div class="ytb-info">
+                                          <!-- <h5>Hyderabad’s NO.1 <br/>Interior Designer</h5>
+                                          <label><span>40,000+ Subscribers</span> <span>4 Million+ Views</span></label> -->
+                                          <h5>Hyderabad’s NO.1 <br>Interior Designer</h5>
+                                          <label><span>40,000+ Subscribers</span> <span>4 Million+ Views</span></label>
+                                          <!-- <label><span>4000+ Subscribers</span> <span>22 Million+ Views</span></label> -->
+                                      </div>
+                                  </div>
+                              </a>
+                           </div>
+                         </li>
+                         <li>
+                             <p class="call-us-ft">
+                                 <a href="tel:+919553278124">Call us: +91-95532 78124</a>
+                             </p>
+                         </li>
+                         <li>
+                             <div class="followus-sec">
+                                 <ul class="socialMediaicon">
+                                    <li><a target="_blank" href=""><span class="icon-facebook"></span></a></li>
+                                    <li><a target="_blank" href=""><span class="icon-youtube"></span></a></li>
+                                    <li><a target="_blank" href=""><span class="icon-linkedin"></span></a></li>
+                                    <li><a target="_blank" href=""><span class="icon-instagram"></span></a></li>
+                                 </ul>
+                             </div>
+                             
+                         </li>
+                   </ul>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      
+      <div class="copyInner d-none d-sm-block">
+         <p>© 2024 casa Interiors | All Rights Reserved |  
+            <a href="">
+               Privacy Policy </a> | Design by <a href="https://thepatternscompany.com/" target="_blank">
+               The Patterns Company </a></p>
+      </div>
+      <div class="copyInner d-block d-sm-none">
+         <p>© 2024 casa Interiors | All Rights Reserved |  <a href="">
+               Privacy Policy </a> <br> Design by <a href="https://thepatternscompany.com/" target="_blank">
+                The Patterns Company </a></p>
+      </div>
+ 
+      <div class="whatsapp-web">
+         <a href="tel:+8599946444" target="_blank"><img src="images/whatsapp.png" loading="lazy" width="50" height="50" alt="Whatsapp - casa"></a>
+     </div>
+ 
+ 
+   </footer>
+   
+   
+  
+ 
+ 
+     
+     
+     
+       
+  <div class="modal fade multiSlide popGetEstimate" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+             <div class="modal-content">
+                <div class="modal-header">
+                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body popUpOpenSec">
+                     <div class="popupMainMage costEsti">
+                       <div class="popUpMultiStep" action="/action_page.php" style="width: 100% !important;">
+                             <div class="insideTabsWrap">
+                                <div class="leftSideImg">
+                                   <img width="" height="" loading="lazy" src="images/ce-1.png" alt="Enquiry Form Icon">
+                                </div>
+                                <div class="rightSideImg">
+                                   <!-- ********************* -->
+                                    <div class="form-container cf-form estimater-form" style="margin-top: 100px;">
+                                     <form id="questionnaire-form" style="color:white" method="POST">
+                                         <div>
+                                         <input type="hidden" name="custttt-name" id="custttt-name" value="">
+                                         <input type="hidden" name="OnlyNameCust" id="OnlyNameCust" value="">
+                                       <div class="slide-container">
+                                         <div class="slide" id="slideStart"><!-- 0 -->
+                                             <h4>Welcome to Nifty Interio! Please share your name?</h4>
+                                             <p></p>
+                                             <input type="text" name="FulName" placeholder="Type your answer here..." id="FulName">
+                                             <div class="error-message"> Please fill in your name </div>
+                                         </div>
+                                         <div class="slide" id="slideA"><!-- 1 -->
+                                             <h4>Select Your Property Type</h4>
+                                             <p></p>
+                                             
+                                              <div class="select_time_wrapper" aria-label="Default select example" name="PropertyType" id="PropertyType">
+                                                <label class="rounded-0">
+                                                     <input type="radio" name="projectType" value="2 BHK" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">2 BHK</span>
+                                                 </label>
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="projectType" value="2.5 BHK" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">2.5 BHK</span>
+                                                 </label>
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="projectType" value="3 BHK" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">3 BHK</span>
+                                                 </label>
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="projectType" value="3.5 BHK" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">3.5 BHK</span>
+                                                 </label>
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="projectType" value="4 BHK and Above" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">4 BHK and Above</span>
+                                                 </label>
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="projectType" value="Villas" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">Villas</span>
+                                                 </label>
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="projectType" value="Others" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">Other</span>
+                                                 </label>
+                                             </div> 
+                                             <div class="error-message"> Please Choose a Property type </div>
+                                         </div>
+                                         <div class="slide" id="slideB"><!-- 2 -->
+                                             <h4>What is the total Square Feet Area ?</h4>
+                                             <p></p>
+                                               <input type="number" name="totalArea" placeholder="Type your answer here..." id="totalArea" style="display:none">
+                                             <div class="error-message"> Please fill your total square feet </div>
+                                         </div>
+                                         <div class="slide" id="slideC"><!-- 3 -->
+                                             <h4>How many Kitchen units do you have ?</h4>
+                                             <p></p>
+                                             
+                                             <div class="select_time_wrapper" aria-label="Default select example" name="PropertyType" id="PropertyType">
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="kitchenNo" value="1" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">1</span>
+                                                 </label>
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="kitchenNo" value="2" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">2</span>
+                                                 </label>
+                                             </div>
+                                             <div class="error-message"> Please choose your kitchen units </div>
+                                         </div>
+                                         <div class="slide" id="slideD"><!-- 4 -->
+                                             <h4>How many Wardrobe units do you need ?</h4>
+                                             <p></p>
+                                             
+                                             <div class="select_time_wrapper" aria-label="Default select example" name="PropertyType" id="PropertyType">
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="wardrobeUnit" value="1" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">1 </span>
+                                                 </label>
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="wardrobeUnit" value="2" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">2 </span>
+                                                 </label>
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="wardrobeUnit" value="3" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">3 </span>
+                                                 </label>
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="wardrobeUnit" value="4" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">4 </span>
+                                                 </label>
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="wardrobeUnit" value="5" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">5 </span>
+                                                 </label>
+                                             </div>
+                                             <div class="error-message"> Please choose your wardrobe units </div>
+                                         </div>
+                                         <div class="slide" id="slideE"><!-- 5 -->
+                                             <h4>How many TV / Entertainment units do you need ?</h4>
+                                             <p></p>
+                                             
+                                             <div class="select_time_wrapper" aria-label="Default select example" name="PropertyType" id="PropertyType">
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="TvUnit" value="1" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">1 </span>
+                                                 </label>
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="TvUnit" value="2" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">2 </span>
+                                                 </label>
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="TvUnit" value="3" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">3 </span>
+                                                 </label>
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="TvUnit" value="4" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">4 </span>
+                                                 </label>
+                                             </div>
+                                             <div class="error-message"> Please choose your TV / Entertainment units </div>
+                                         </div>
+                                         <div class="slide" id="slideF"><!-- 6 -->
+                                             <h4>How many Study units do you need ?</h4>
+                                             <p></p>
+                                             
+                                             <div class="select_time_wrapper" aria-label="Default select example" name="PropertyType" id="PropertyType">
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="StydyUnit" value="1" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">1 </span>
+                                                 </label>
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="StydyUnit" value="2" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">2 </span>
+                                                 </label>
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="StydyUnit" value="3" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">3 </span>
+                                                 </label>
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="StydyUnit" value="4" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">4 </span>
+                                                 </label>
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="StydyUnit" value="5" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">5 </span>
+                                                 </label>
+                                                 
+                                             </div>
+                                             <div class="error-message"> Please choose study units </div>
+                                         </div>
+                                         <div class="slide" id="slideG"><!-- 7 -->
+                                             <h4>Do you need False Ceilings ? </h4>
+                                             <p></p>
+                                             
+                                             <div class="select_time_wrapper" aria-label="Default select example" name="PropertyType" id="PropertyType">
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="ceilingUnit" value="Yes" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">Yes</span>
+                                                 </label>
+                                                 <label class="rounded-0">
+                                                     <input type="radio" name="ceilingUnit" value="No" class="d-none" onclick="nxtBtn()">
+                                                     <span class="text-center d-block">No </span>
+                                                 </label>
+                                             </div>
+                                             <div class="error-message"> Please Choose false ceilings units </div>
+                                         </div>
+                                         <div class="slide" id="slideH"><!-- 8 -->
+                                             <h4> Mention your Location or Area in Hyderabad ?</h4>
+                                             <p></p>
+                                               <input type="text" name="location" placeholder="Type your answer here..." id="location" style="display:none">
+                                             <div class="error-message"> Please fill your location / area </div>
+                                         </div>
+                                        
+                                         <div class="slide" id="slideI"><!-- 9 -->
+                                             <h4>Hi, <span id="finalNameDiv"></span>. Please share your email id? </h4>
+                                             <p></p>
+                                             <input type="email" name="EmailId" placeholder="Type your answer here..." id="EmailId" style="display:none">
+                                             <div class="error-message"> Please fill in your email id </div>
+                                         </div>
+                                         <div class="slide" id="slideJ"><!-- 10 -->
+                                             <h4>Can we know your Phone number please, in case we need to reach you ?</h4>
+                                             <p></p>
+                                             <input type="number" name="PhoneNumber" placeholder="Type your answer here..." id="PhoneNumber" style="display:none">
+                                             <div class="error-message"> Please fill in your phone number </div>
+                                         </div>
+                                       </div>
+                                       <button type="submit" id="ctnBtn" style="display:none"></button>
+                                   </div>
+                                     </form>
+                 
+                                     <div class="buttons-container">
+                                         <button class="cust-Btn btn-white btn-previous theme-btn two" style="display: none;"><i class="fa fa-arrow-left" aria-hidden="true"></i> Previous</button>
+                                       <button class="cust-Btn hvr-sweep-to-right btn-white btn-next theme-btn two">Next</button>
+                                       <button onclick="formSubmit()" class="cust-Btn hvr-sweep-to-right btn-white theme-btn two float-right  btn-submit" style="display: none;">Submit</button>
+                                     </div>
+                                 </div>
+                                   <!-- ********************* -->
+                                </div>
+                             </div>   
+                       </div>
+                     </div>
+                </div>
+             </div>
+          </div>
+       </div>   </div>
+        <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.bundle.min.js" async="" defer=""></script>
+     <script src="js/swiper-bundle.min.js"></script> 
+     <script src="js/fancybox.umd.js"></script>
+     
+    <script src="js/custom.js" async="" defer=""></script>
+    <script src="js/backup-dynamic-form.js" async="" defer=""></script>
+    <script src="js/api.js" async="" defer=""></script>
+    <!-- Lightbox2 JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+    
+    
+  
+ 
+ </body></html>
