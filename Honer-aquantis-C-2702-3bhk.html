@@ -63,9 +63,7 @@
 
 
 
-                 <!-- <li>
-                    <a href="#consulation-form" class="get-quote">GET QUOTE</a>
-                 </li> -->
+               
               </ul>
            </div>
 
@@ -126,7 +124,15 @@
                        <li><a href="index.html">HOME</a></li>
                        <li><a href="why-choose.html">WHY WE CHOOSE US</a></li>
                        <li><a href="our-works.html">OUR WORKS</a></li>
-                       <li><a href="#">SERVICES</a></li>
+                       <li class="drop-down"><a href="#">SERVICES</a>
+                     <ul class="drop-down-items">
+                       <li> <a href="puja-room.html">Puja Unit</a> </li>
+                           <li> <a href="kitchen-room.html">Kitchens</a> </li>
+                           <li> <a href="living-room.html">Livingroom</a> </li>
+                           <li> <a href="bed-room.html">Bedroom</a> </li>
+                     </ul>
+
+                        </li>
                        <li><a href="blog.html">BLOGS</a></li>
                        <li><a href="contact.html">CONTACT US</a></li>
                     </ul>
@@ -134,33 +140,7 @@
               </div>
            </div>
 
-           <style>
-              .navbarMain ul {
-                 list-style: none;
-                 padding: 0;
-                 margin: 0;
-                 display: flex;
-                 align-items: center;
-              }
-
-              .navbarMain ul li {
-                 position: relative;
-                 padding-right: 20px;
-                 /* Space between items */
-              }
-
-              .navbarMain ul li:not(:last-child)::after {
-                 content: "\2022";
-                 /* Unicode for dot */
-                 font-size: 30px;
-                 color: rgba(231, 199, 14, 0.893);
-                 position: absolute;
-                 right: -10px;
-                 top: 50%;
-                 transform: translateY(-50%);
-              }
-           </style>
-
+          
 
            <div class="onlyMobile">
               <div id="Sidenav" class="sidenav">
@@ -180,11 +160,19 @@
                        <a href="why-choose.html">WHY WE CHOOSE US </a>
 
                        <a href="our-works.html">OUR WORKS</a>
-                       <a href="">SERVICES</a>
-                       <!-- <a href="javascript:void(0)">Cost Estimator </a> -->
+                       <li class="drop-down"><a href="#">SERVICES</a>
+                        <ul class="drop-down-items">
+                           <li> <a href="puja-room.html">Puja Unit</a> </li>
+                           <li> <a href="kitchen-room.html">Kitchens</a> </li>
+                           <li> <a href="living-room.html">Livingroom</a> </li>
+                           <li> <a href="bed-room.html">Bedroom</a> </li>
+                        </ul>
+   
+                           </li>
+                     
                        <a href="blog.html">BLOGS</a>
                       
-                       <!-- <a href="javascript:void(0)">News</a> -->
+                    
                       
                        <a href="blog.html">Blog</a>
                        <a href="contact.html">Contact Us</a>
@@ -194,7 +182,7 @@
                        </div>
 
                        <div class="socialBoxIng">
-                          <ul>
+                          <ul> 
                              <li><a href="" target="_blank"><span class="icon-facebook"></span></a></li>
                              <li><a href="" target="_blank"><span class="icon-youtube"></span></a></li>
                              <li><a href="" target="_blank"><span class="icon-linkedin"></span></a></li>
@@ -213,7 +201,74 @@
 
 
         </div>
-     </header>    
+     </header>   
+     
+     <style>
+        .drop-down{
+            position: relative !important;
+        }
+        .drop-down  ul li:not(:last-child)::after{
+content: none !important;
+        }
+        .drop-down .drop-down-items{
+            position: fixed !important;
+            top: 14%;
+            background-color: #DAA520;
+            padding: 0;
+            z-index: 999;
+            padding: 2rem;
+            flex-direction: column;
+            display: none;
+
+        }
+        .drop-down:hover .drop-down-items{
+            display: block;
+        }
+          .navbarMain ul {
+             list-style: none;
+             padding: 0;
+             margin: 0;
+             display: flex;
+             align-items: center;
+          }
+
+          .navbarMain ul li {
+             position: relative;
+             padding-right: 20px;
+             /* Space between items */
+          }
+
+          .navbarMain ul li:not(:last-child)::after {
+             content: "\2022";
+             /* Unicode for dot */
+             font-size: 30px;
+             color: rgba(231, 199, 14, 0.893);
+             position: absolute;
+             right: -10px;
+             top: 50%;
+             transform: translateY(-50%);
+          }
+          @media(max-width:992px){
+            .drop-down{
+            position: relative !important;
+        }
+        .drop-down  ul li:not(:last-child)::after{
+
+        }
+        .drop-down .drop-down-items{
+            position: unset !important;
+        
+            display: none;
+
+        }
+        .drop-down:hover .drop-down-items{
+            display: none;
+        }
+        .drop-down.active .drop-down-items{
+            display: block;
+        }
+          }
+       </style>   
        
        <main class="main-content">
         <div class="position-relative">
