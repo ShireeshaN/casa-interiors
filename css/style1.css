@@ -6611,7 +6611,7 @@ padding: 8px 16px;
     }
     
     .service-description {
-        font-size: 1.5rem;
+        font-size: 14px;
         color: #666;
         margin-bottom: 40px;
     }
@@ -6635,8 +6635,8 @@ padding: 8px 16px;
     }
     
     .gallery-item img {
-        width: 300px; /* Fixed width */
-            height: 300px; /* Fixed height */
+        width: 350px; /* Fixed width */
+            height: 350px; /* Fixed height */
             object-fit: cover; /* Ensures the image covers the area without stretching */
             border-radius: 10px; /* Rounded corners for a stylish look */
             transition: transform 0.3s ease;
