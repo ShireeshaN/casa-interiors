@@ -237,7 +237,7 @@ var i,
  
   $(document).ready(function () {
     // Select the dropdown menu
-    const $dropdown = $(".drop-down");
+    const $dropdown = $(".dropdown");
 
     // Add click event listener to the dropdown
     $dropdown.on("click", function (e) {
