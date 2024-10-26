@@ -237,15 +237,29 @@ var i,
  
   $(document).ready(function () {
     // Select the dropdown menu
-    const $dropdown = $(".dropdown");
+    const $dropdown1 = $(".dropdown");
 
     // Add click event listener to the dropdown
-    $dropdown.on("click", function (e) {
+    $dropdown1.on("click", function (e) {
         // Toggle the 'active' class on click
         $(this).toggleClass("active");
 
         // Prevent default behavior to avoid page scrolling or any default actions
         // e.preventDefault();
     });
+});
+   
+$(document).ready(function () {
+  // Select the dropdown menu
+  const $dropdown2 = $(".drop-down");
+
+  // Add click event listener to the dropdown
+  $dropdown2.on("click", function (e) {
+      // Toggle the 'active' class on click
+      $(this).toggleClass("active");
+
+      // Prevent default behavior to avoid page scrolling or any default actions
+      // e.preventDefault();
+  });
 });
 
