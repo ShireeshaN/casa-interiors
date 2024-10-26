@@ -245,7 +245,7 @@ var i,
         $(this).toggleClass("active");
 
         // Prevent default behavior to avoid page scrolling or any default actions
-        e.preventDefault();
+        // e.preventDefault();
     });
 });
 
