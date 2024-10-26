@@ -1017,5 +1017,20 @@ content: none !important;
     });
 });
   </script>
+  <script>
+     $(document).ready(function () {
+    // Select the dropdown menu
+    const $dropdown = $(".drop-down");
+
+    // Add click event listener to the dropdown
+    $dropdown.on("click", function (e) {
+        // Toggle the 'active' class on click
+        $(this).toggleClass("active");
+
+        // Prevent default behavior to avoid page scrolling or any default actions
+        // e.preventDefault();
+    });
+});
+  </script>
  
  </body></html>
