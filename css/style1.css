@@ -1816,7 +1816,7 @@ input[type=radio]:checked+label {
 }
 
 .popUpMultiStep .step.finish {
-    background-color: #04aa6d
+    background-color: #FEC748;
 }
 
 .fieldWrap {
@@ -2239,7 +2239,7 @@ div#myTabContent {
 }
 
 .blogWrapSlider .swiper-pagination-bullet {
-    background-color: #a18248
+    background-color: #a18248;
 }
 
 .blogWrapSlider .swiper-wrapper {
@@ -3635,7 +3635,7 @@ nav.all-searchinfo {
 }
 
 .selectoropSize .container input:checked~.checkmark {
-    background-color: #2196f3
+    background-color: #FEC748;
 }
 
 .selectoropSize .checkmark:after {
@@ -5783,7 +5783,7 @@ aside.otherBloglist {
     }
 
     .projectsName {
-        border-bottom: 0 solid #b57700;
+        border-bottom: 0 solid #FEC748;
         margin-bottom: .3125rem
     }
 
@@ -6534,7 +6534,7 @@ font-weight: bold;
 
 /* Animated button styling */
 .animated-button {
-background-color: #ff6347;
+background-color: #FEC748;
 color: white;
 border: none;
 padding: 10px 20px;
@@ -6545,7 +6545,7 @@ transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .animated-button:hover {
-background-color: #ff4500;
+background-color: #FEC748;
 transform: scale(1.1);
 }
 
