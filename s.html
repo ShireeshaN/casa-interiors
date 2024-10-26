@@ -1,212 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #333;
+      margin-bottom: 0.5em;
+    }
+    .content-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .form-section, .info-section {
+      flex: 1;
+      padding: 2em;
+      min-width: 300px;
+    }
+    .form-section {
+      background-color: #fafafa;
+      border-right: 1px solid #ddd;
+    }
+    .form-section form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .form-section input, .form-section textarea {
+      width: 100%;
+      margin-bottom: 1em;
+      padding: 0.9em;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+    .form-section button {
+      padding: 0.9em;
+      font-size: 1.1em;
+      color: #fff;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+      width: 100%;
+    }
+    .form-section button:hover {
+      background-color: #0056b3;
+    }
+    .info-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      color: #333;
+    }
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.5em;
+    }
+    .info-item i {
+      font-size: 1.8em;
+      color: #007BFF;
+      margin-right: 1em;
+    }
+    .info-item h4 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+    .info-item p {
+      margin: 0;
+      color: #555;
+    }
+    .map {
+      width: 100%;
+      height: 300px;
+      background-color: #eee;
+      border-radius: 6px;
+      margin-top: 1em;
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .content-wrapper {
+        flex-direction: column;
+      }
+      .form-section {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="main-container">
-        <div class="contact-container">
-            <div class="info-column">
-                <div class="contact-item">
-                    <i class="icon fas fa-map-marker-alt"></i>
-                    <div class="text-content">
-                        <h4>Address</h4>
-                        <p>Hyderabad, Telangana, India</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <i class="icon fas fa-phone-alt"></i>
-                    <div class="text-content">
-                        <h4>Phone</h4>
-                        <p>+123 456 7890</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <i class="icon fas fa-envelope"></i>
-                    <div class="text-content">
-                        <h4>Email</h4>
-                        <p>info@example.com</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="form-column">
-                <h3>Get in Touch</h3>
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                    
-                    <button type="submit">Send</button>
-                </form>
-            </div>
+
+  <div class="container">
+    <!-- Main Heading -->
+    <h1>Contact Us</h1>
+    
+    <div class="content-wrapper">
+      <!-- Form Section -->
+      <div class="form-section">
+        <form>
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="tel" name="phone" placeholder="Your Phone Number" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      
+      <!-- Information Section -->
+      <div class="info-section">
+        <!-- Address -->
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h4>Address</h4>
+            <p>Hyderabad</p>
+          </div>
         </div>
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95592831531585!3d-37.81720997975198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f4bdbbdb%3A0xc5b7c9e21f8b69d!2sMelbourne%20Central!5e0!3m2!1sen!2sau!4v1612345678901!5m2!1sen!2sau" 
-                width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-            </iframe>
+        <!-- Phone -->
+        <div class="info-item">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <h4>Phone</h4>
+            <p>+123 456 7890</p>
+          </div>
         </div>
+        <!-- Email -->
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <p>info@example.com</p>
+          </div>
+        </div>
+        <!-- Map Placeholder -->
+        <div class="map">
+          <p style="text-align:center; padding-top: 130px;">Map goes here</p>
+        </div>
+      </div>
     </div>
-    <style>
-        /* General Styling */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-}
+  </div>
 
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #f3f3f3;
-}
-
-.main-container {
-    max-width: 1000px; /* Increased container width */
-    width: 100%;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Contact Container */
-.contact-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-.info-column, .form-column {
-    flex: 1;
-    padding: 20px;
-    border-radius: 8px;
-    background: linear-gradient(135deg, #e0eafc, #cfdef3);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Center alignment in info column */
-.info-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers all items in the column */
-}
-
-/* Info Column Styling */
-.contact-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease;
-}
-
-.contact-item:hover {
-    transform: translateY(-5px);
-}
-
-.icon {
-    font-size: 28px; /* Slightly larger icon for style */
-    color: #4CAF50;
-    margin-right: 10px;
-    transition: color 0.3s ease;
-}
-
-.contact-item:hover .icon {
-    color: #388E3C;
-}
-
-.text-content h4 {
-    font-size: 18px; /* Slightly larger heading */
-    color: #333;
-    margin-bottom: 4px;
-    text-align: center; /* Center text alignment */
-}
-
-.text-content p {
-    font-size: 14px;
-    color: #777;
-    text-align: center;
-}
-
-/* Form Styling */
-.form-column h3 {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.form-column form label {
-    display: block;
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-.form-column form input, .form-column form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    transition: box-shadow 0.3s ease;
-}
-
-.form-column form input:focus, .form-column form textarea:focus {
-    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
-    outline: none;
-}
-
-.form-column form button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.form-column form button:hover {
-    background-color: #388E3C;
-}
-
-/* Map Container */
-.map-container {
-    margin-top: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.map-container iframe {
-    width: 100%;
-    height: 250px;
-    border: 0;
-}
-
-/* Animations */
-.contact-item, .form-column h3 {
-    animation: fadeIn 0.5s ease forwards;
-    opacity: 0;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-    </style>
 </body>
 </html>
