@@ -19,7 +19,8 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
    
     
-    
+     <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     
    
  
@@ -551,68 +552,12 @@ content: none !important;
             <div class="swiper-pagination"></div>
         </div>
  
-          <div class="iconGridBox">
-             <div class="container">
-                <div class="row">
-                   <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                      <div class="iconInnerWrap">
-                         <div class="icnBx">
-                            <span class="icon-Icon_Mordern-interior-design"></span>
-                            <h3>Modern <br> Interior Design</h3>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                      <div class="iconInnerWrap">
-                         <div class="icnBx">
-                            <span class="icon-Icon_Customisez-to-your-test"></span>
-                            <h3>Customised <br> To Your Taste</h3>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                      <div class="iconInnerWrap">
-                         <div class="icnBx">
-                            <span class="icon-Icon_Free-Consultation"></span>
-                            <h3>Free Consultation <br>&amp; Budgeting</h3>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                      <div class="iconInnerWrap">
-                         <div class="icnBx">
-                            <span class="icon-Icon_Affordable-meterial-pricing"></span>
-                            <h3>Transparent  <br>Material Pricing</h3>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                      <div class="iconInnerWrap">
-                         <div class="icnBx">
-                            <span class="icon-Icon_Professional-led-execution"></span>
-                            <h3>Professionally-led <br> Execution</h3>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="col-lg-2 col-md-4 col-sm-4 col-6">
-                      <div class="iconInnerWrap">
-                         <div class="icnBx">
-                            <span class="icon-Icon_Time-bond-delivery"></span>
-                            <h3>On-time <br> Delivery</h3>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-
+        
 
 
           <div class="service-container">
-            <h1 class="service-title">Bed Room Interiors</h1>
-            <p class="service-description">
-                Discover our stunning living room designs that blend style and comfort. 
-            </p>
+            <h1 class=""> Discover our stunning living room designs that blend style and comfort. </h1>
+           
     
             <div class="gallery">
                 <!-- Gallery Item 1 -->
@@ -1103,7 +1048,20 @@ content: none !important;
     <!-- Lightbox2 JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
     
-    
+    <!-- AOS JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init(); // Initialize AOS animations
+  </script>
+  <script>
+   AOS.init({
+     offset: 200, // Trigger animations after scrolling 200px
+     duration: 1000, // Animation duration in milliseconds
+     easing: 'ease-in-out', // Animation easing function
+     once: true, // Animation happens only once when scrolling down
+   });
+ </script>
+ 
 
  
  </body></html>
