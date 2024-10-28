@@ -18,7 +18,8 @@
    <link rel="preconnect" href="" crossorigin="">
    <link rel="stylesheet" href="css/universe.css" type="text/css" crossorigin="">
     
-    
+    <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     
    
  
@@ -364,12 +365,12 @@ content: none !important;
         <div class="position-relative">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="bannerSlides slideOne">
-                            <img class="desktopBanner" loading="lazy" src="images/allbanners/10.png" alt="">
+                    <div class="swiper-slide" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300">
+                        <div class="bannerSlides slideOne" >
+                            <img  class="desktopBanner" loading="lazy" src="images/allbanners/10.png" alt="">
                             <img class="mobileBanner" loading="lazy" src="images/our-works/IMG_2993.jpg" alt="">
                             <div class="bannerContent">
-                                <h1 class="pb-5" style="color:#000000">Why We Choose Us</h1>
+                                <h1 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300" class="pb-5" style="color:#000000">Why We Choose Us</h1>
                             </div>
                         </div>
                     </div>
@@ -388,14 +389,14 @@ content: none !important;
                     <!-- Left side: Image -->
                     <div class="col-md-6 mb-4 mb-md-0 d-flex justify-content-center">
                         <div class="image-container">
-                            <img src="images/servicesimgss/abous.png" class="img-fluid rounded-circle" alt="Left Image">
+                            <img data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" src="images/servicesimgss/abous.png" class="img-fluid rounded-circle" alt="Left Image">
                         </div>
                     </div>
                 </div>
         
                 <div class="row justify-content-center">
                     <!-- Right side: Heading and Paragraph -->
-                    <div class="col-md-6 d-flex justify-content-center">
+                    <div class="col-md-6 d-flex justify-content-center" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
                         <p class="texts text-center">
                             CASA Interiors, established on 08-08-2020, is a dynamic team of designers dedicated to crafting extraordinary spaces that blend aesthetics and functionality. With over 120 completed projects across residential and commercial sectors, we have established ourselves as one of India’s leading interior design firms.
                             <br><br>
@@ -832,7 +833,20 @@ content: none !important;
     <script src="js/backup-dynamic-form.js" async="" defer=""></script>
     <script src="js/api.js" async="" defer=""></script>
     
-    
+    <!-- AOS JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init(); // Initialize AOS animations
+  </script>
+  <script>
+    AOS.init({
+      offset: 200, // Trigger animations after scrolling 200px
+      duration: 1000, // Animation duration in milliseconds
+      easing: 'ease-in-out', // Animation easing function
+      once: true, // Animation happens only once when scrolling down
+    });
+  </script>
+  
   
  
  </body></html>
