@@ -30,7 +30,8 @@
 
    <script src="https://unpkg.com/feather-icons"></script>
 
-
+ <!-- AOS CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
 
 
@@ -383,7 +384,7 @@ content: none !important;
                         <img class="desktopBanner" loading="lazy"
                            src="images/allbanners/10.png" alt="">
                         <div class="bannerContent">
-                           <h1 class="pb-5">"Design Your Dream Kitchen's"</h1>
+                           <h1 data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100" class="pb-5">"Design Your Dream Kitchen's"</h1>
                            
                         </div>
                      </div>
@@ -498,7 +499,7 @@ content: none !important;
                      <div class="col-lg-12">
                         <div class="headingBxx">
                           
-                           <p>Stay updated with the <b>Latest Trends</b> in <b>Home Interior Decor</b> and more.</p>
+                           <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">Stay updated with the <b>Latest Trends</b> in <b>Home Interior Decor</b> and more.</p>
                         </div>
                      </div>
 
@@ -511,19 +512,19 @@ content: none !important;
                                     <a href="">
                                        <div class="text-center">
                                           <img class="imgss"  loading="lazy"
-                                             src="images/our-works/Whistling woods E 001 - 2bhk/Copy of IMG_9124.jpg" alt="">
+                                             src="images/our-works/Whistling woods E 001 - 2bhk/Copy of IMG_9124.jpg" alt="#" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100">
                                        </div>
                                     </a>
                                     <div class="blogpara"><a href="">
                                           <div class="blogDate">
                                              <span class="icon-calendar-plus-o"></span>
-                                             <h5>Oct 01, 2024</h5>
+                                             <h5 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">Oct 01, 2024</h5>
                                           </div>
                                           <div class="blogParagraphsSec">
-                                             <p>"Modern Kitchen Design Ideas for Every Home: Expert Tips from CASA Interiors and Decors"</p>
+                                             <p data-aos="fade-left" data-aos-duration="1200" data-aos-delay="100">"Modern Kitchen Design Ideas for Every Home: Expert Tips from CASA Interiors and Decors"</p>
                                              <br/>
                                           </div>
-                                          <p style="text-align: justify; color: #636362; font-size: 14px; font-weight: lighter;">The kitchen is the heart of every home, where functionality meets style. At CASA Interiors and Decors, we specialize in designing kitchens that are both beautiful and practical, tailored to meet your needs. Whether you're renovating or building from scratch, here are some of the latest trends and expert tips to create a kitchen that you'll love.<br/><br/>
+                                          <p data-aos="fade-left" data-aos-duration="1200" data-aos-delay="100" style="text-align: justify; color: #636362; font-size: 14px; font-weight: lighter;">The kitchen is the heart of every home, where functionality meets style. At CASA Interiors and Decors, we specialize in designing kitchens that are both beautiful and practical, tailored to meet your needs. Whether you're renovating or building from scratch, here are some of the latest trends and expert tips to create a kitchen that you'll love.<br/><br/>
 
                                            <strong>1. Embrace Open-Concept Designs:</strong> 
                                            Open-concept kitchens continue to be a popular trend. They create a seamless flow between the kitchen, dining, and living spaces, making your home feel larger and more connected. An open layout allows for easier entertaining, where you can interact with guests while cooking.
@@ -620,13 +621,13 @@ content: none !important;
             <div class="row">
                <div class="col-lg-12">
                   <div class="headingBxx text-center" style="margin-bottom: 1.625rem;">
-                     <h3 class="col-bage">Get in <span> Touch</span></h3>
+                     <h3 data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100" class="col-bage">Get in <span> Touch</span></h3>
                      <p class="col-bage">For the Best <b> Interior Design</b> experience in <b>Hyderabad.</b>
                      </p>
 
                   </div>
                </div>
-               <div class="col-lg-6 col-md-12 mx-auto">
+               <div class="col-lg-6 col-md-12 mx-auto" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="100">
                   <div class="insideTabsWrap connect">
                      <form class="bg-w" method="post" action="" onsubmit="return formValidation();">
                         <div class="rightSideImg ">
@@ -688,7 +689,7 @@ content: none !important;
                                  <div class="col-lg-12">
                                     <div class="knwMre submi-t custBtn text-right">
 
-                                       <button type="submit" class="cust-Btn hvr-sweep-to-right">Submit</button>
+                                       <button data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100" type="submit" class="cust-Btn hvr-sweep-to-right">Submit</button>
                                     </div>
                                  </div>
                               </div>
@@ -1682,7 +1683,20 @@ content: none !important;
    </script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
  
-
+ <!-- AOS JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+ <script>
+   AOS.init(); // Initialize AOS animations
+ </script>
+ <script>
+   AOS.init({
+     offset: 200, // Trigger animations after scrolling 200px
+     duration: 1000, // Animation duration in milliseconds
+     easing: 'ease-in-out', // Animation easing function
+     once: true, // Animation happens only once when scrolling down
+   });
+ </script>
+ 
 </body>
 
 </html>
