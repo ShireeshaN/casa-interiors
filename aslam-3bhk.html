@@ -31,13 +31,16 @@
    <div class="top-bar container">
       <div class="contact-info">
         <a href="mailto:yourmail@example.com">
-          <i class="fas fa-envelope text-dark"></i> casa@interiors.com
+          <i class="fas fa-envelope text-white"></i> casa@interiors.com
         </a> |
-        <a href="tel:+9963043888">
-          <i class="fas fa-phone text-dark"></i>+91-85999 47444
+        <a href="tel:+9963043888" class="phone-animation">
+          <i class="fas fa-phone text-white"></i> +91-85999 47444
         </a>
       </div>
       <div class="social-icons">
+         <a href="career.html">
+            <i class="fas fa-briefcase text-white"></i> careers
+          </a>
         <a href="https://www.facebook.com/casa.interiors.decor?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="https://www.instagram.com/casa_interiors_decor/profilecard/?igsh=MWkyamo3emoxZnB0NA%3D%3D" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://www.youtube.com/@casainteriorsanddecors" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -48,66 +51,93 @@
     
     <style>
       .top-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #f8f8f8;
-      padding: 10px 0;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-    }
-    
-    .contact-info a {
-      margin-right: 10px;
-      text-decoration: none;
-      color: #D19A23;
-      padding-inline: 1rem;
-    }
-    
-    
-    
-    .contact-info i {
-      margin-right: 5px; /* Adds space between the icon and text */
-    }
-    
-    .social-icons a {
-      margin-left: 10px;
-      text-decoration: none;
-      color: #D19A23;
-      padding-inline: 0.5rem;
-    
-    }
-    
-    .social-icons a:hover {
-      color: black;
-    }
-    
-    /* Style for Font Awesome icons */
-    .social-icons i {
-      font-size: 13px;
-    }
-    
-    .contact-info i {
-      font-size: 16px;
-    }
-    
-    /* Mobile lo hide cheyyadam (max-width: 768px) */
-    @media (max-width: 768px) {
-      .top-bar {
-        display: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #080808;
+        padding: 10px 0;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        border-bottom: 0.5px solid  rgb(50, 50, 50);
       }
-    }
     
+      .contact-info a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: #D19A23;
+        padding-inline: 1rem;
+      }
+    
+      .contact-info i {
+        margin-right: 5px;
+      }
+    
+      .social-icons a {
+        margin-left: 10px;
+        text-decoration: none;
+        color: #D19A23;
+        padding-inline: 3px;
+        margin-right: 20px;
+      }
+    
+      .social-icons a:hover {
+        color: white;
+      }
+    
+      .social-icons i {
+        font-size: 13px;
+      }
+    
+      .contact-info i {
+        font-size: 16px;
+      }
+    
+      /* Heartbeat 3D animation for phone number */
+      .phone-animation {
+        display: inline-block;
+        font-weight: bold;
+        animation: heartbeat 1.5s infinite;
+      }
+    
+      @keyframes heartbeat {
+        0%, 100% {
+          transform: scale(1) rotateY(0deg);
+          color: black;
+        }
+        25% {
+          transform: scale(1.1) rotateY(20deg);
+          color: white;
+        }
+        50% {
+          transform: scale(1.15) rotateY(0deg);
+          color: white;
+        }
+        75% {
+          transform: scale(1.1) rotateY(-20deg);
+          color: white;
+        }
+      }
+    
+      /* Mobile view: Hide top-bar */
+      @media (max-width: 768px) {
+        .top-bar {
+          display: none;
+        }
+      }
     </style>
+    
     
     
     
     <nav class="navbar navbar-expand-lg navigation navbar-lg" id="Nav">
       <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand" href="index.html">
-          <img class="logos" src="images/logotransp.png" alt="Logo"/>
-        </a>
+       <!-- Logo -->
+<a class="navbar-brand" href="index.html">
+   <img class="logos" src="images/casalogo2.png" alt="Logo"/>
+ </a>
+ 
+
+ 
     
     
         <div class="navbar-toggler"  type="button"
@@ -143,8 +173,8 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="residential.html">Residential</a>
                 <a class="dropdown-item" href="commercial.html">Commercial</a>
-                <a class="dropdown-item" href="Renovation.html">Renovation</a>
-                
+                <a class="dropdown-item" href="renovation.html">Renovation</a>
+               
               </div>
             </li>
     
@@ -169,14 +199,14 @@
          padding: 0 20px 0 0 !important;
          margin-right: 2.25rem;
          font-size: 13px;
-         color: black;
+         color: rgba(231, 199, 14, 0.893);
          text-transform: uppercase;
       }
 
       .navbar-nav li a::after{
          content: "\2022";
     font-size: 30px;
-    color: rgba(231, 199, 14, 0.893);
+    color: white;
     position: absolute;
     right: -10px;
     top: 50%;
@@ -197,20 +227,19 @@
       }
       .dropdown-menu{
 padding: 0.5rem;
-background-color: #D19A23;
+background-color: rgb(7, 7, 7);
       }
       @media(max-width:992px){
         .navbar-toggler{
         background-color: #D19A23;
       }
+      .navbar-nav{
+         display: none;
+      }
       .navbar-nav .contact-btn{
          padding: 0 20px 0 0 !important;
          margin-right: 2.25rem !important;
 }
-.navbar-nav{
-         display: none;
-      }
-
 .navbar-nav .dropdown-menu{
    position: unset;
 }
@@ -235,291 +264,40 @@ background-color: #D19A23;
     }
     
     .cta-button:hover {
-      background-color: #D19A23; /* Darker shade on hover */
+      background-color: white; /* Darker shade on hover */
     }
     
     </style>
 
 
-    <!-- <header class="site-header" id="myHeader">
-        <div class="container">
-           <div class="topNaviGationUpper">
-              <ul>
-                 <li>
-                    <a class="" href=""></a>
-                 </li>
-                 <li>
-                  
-                 </li>
-                 <li>
-                    <a class="" href=""></a>
-                 </li>
-                 <li class="social-icons">
-                    
-                    <a href="#" target="_blank">
-                       <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" target="_blank">
-                       <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" target="_blank">
-                       <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" target="_blank">
-                       <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="#" target="_blank">
-                       <i class="fab fa-youtube"></i>
-                    </a>
-                 </li>
-
-
-
-               
-              </ul>
-           </div>
-
-           <style>
-              .topNaviGationUpper ul {
-                 list-style: none;
-                 padding: 0;
-                 margin: 0;
-                 display: flex;
-                 align-items: center;
-              }
-
-              .topNaviGationUpper ul li {
-                 margin-right: 20px;
-                 
-              }
-
-              .social-icons a {
-                 margin-right: 10px;
-                
-                 text-decoration: none;
-                 font-size: 18px;
-                 color: #000;
-                
-              }
-
-              .social-icons a:hover {
-                 color: #FFD700;
-                
-              }
-
-              .get-quote {
-                 font-weight: bold;
-                 padding: 8px 15px;
-                 background-color: #FFD700;
-                 color: #fff;
-                 text-decoration: none;
-                 border-radius: 5px;
-              }
-
-              .get-quote:hover {
-                 background-color: #DAA520;
-                 
-              }
-           </style>
-
-
-           <div class="navigationWrap desktopver">
-              <div class="menuWrap">
-                 <div class="logobox">
-                    <a href="index.html">
-                       <img class="whiteLogo" width="120" height="100" loading="lazy" src="images/logotransp.png"
-                          alt="#">
-                    </a>
-                 </div>
-                 <div class="navbarMain onlyDesktop">
-                    <ul>
-                       <li><a href="index.html">HOME</a></li>
-                       <li><a href="why-choose.html">WHY WE CHOOSE US</a></li>
-                       <li><a href="our-works.html">OUR WORKS</a></li>
-                       <li class="drop-down"><a href="#">SERVICES</a>
-                     <ul class="drop-down-items">
-                       <li> <a href="puja-room.html">Puja Unit</a> </li>
-                           <li> <a href="kitchen-room.html">Kitchens</a> </li>
-                           <li> <a href="living-room.html">Livingroom</a> </li>
-                           <li> <a href="bed-room.html">Bedroom</a> </li>
-                     </ul>
-
-                        </li>
-                       <li><a href="blog.html">BLOGS</a></li>
-                       <li><a href="contact.html">CONTACT US</a></li>
-                    </ul>
-                 </div>
-              </div>
-           </div>
-
-          
-
-           <div class="onlyMobile">
-              <div id="Sidenav" class="sidenav">
-                 <div class="mobileBoxLogo InsideSideBar">
-                    <a href="">
-                       <img width="118" height="29" alt="" loading="lazy" src="images/logotransp.png">
-                    </a>
-                    <a href="javascript:void(0)" class="closebtn" style="font-size: 45px;" onclick="closeNav()">×</a>
-                   
-                    <div class="menuUlisting">
-
-                   
-
-                    <div class="dropdown-container">
-                       <a href="index.html">Home</a>
-                       <a href="why-choose.html">WHY WE CHOOSE US </a>
-
-                       <a href="our-works.html">OUR WORKS</a>
-                       <li class="drop-down"><a href="#">SERVICES</a>
-                        <ul class="drop-down-items">
-                           <li> <a href="puja-room.html">Puja Unit</a> </li>
-                           <li> <a href="kitchen-room.html">Kitchens</a> </li>
-                           <li> <a href="living-room.html">Livingroom</a> </li>
-                           <li> <a href="bed-room.html">Bedroom</a> </li>
-                        </ul>
-   
-                           </li>
-                     
-                       <a href="blog.html">BLOGS</a>
-                      
-                    
-                      
-                       <a href="blog.html">Blog</a>
-                       <a href="contact.html">Contact Us</a>
-                    </div>
-                       <div class="bookAppointmentBttn">
-                          <a href="#consulation-form">GET QUOTE</a>
-                       </div>
-
-                       <div class="socialBoxIng">
-                          <ul> 
-                             <li><a href="" target="_blank"><span class="icon-facebook"></span></a></li>
-                             <li><a href="" target="_blank"><span class="icon-youtube"></span></a></li>
-                             <li><a href="" target="_blank"><span class="icon-linkedin"></span></a></li>
-                             <li><a href="" target="_blank"><span class="icon-instagram"></span></a></li>
-                          </ul>
-                       </div>
-
-
-                    </div>
-                 </div>
-              </div>
-              <div class="sideNaviMob">
-                 <span class="hamburgers" style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
-              </div>
-           </div>
-
-
-        </div>
-     </header>    -->
-     
-     <style>
-        .drop-down{
-            position: relative !important;
-        }
-        .drop-down  ul li:not(:last-child)::after{
-content: none !important;
-        }
-        .drop-down .drop-down-items{
-            position: fixed !important;
-            top: 14%;
-            background-color: #DAA520;
-            padding: 0;
-            z-index: 999;
-            padding: 2rem;
-            flex-direction: column;
-            display: none;
-
-        }
-        .drop-down:hover .drop-down-items{
-            display: block;
-        }
-          .navbarMain ul {
-             list-style: none;
-             padding: 0;
-             margin: 0;
-             display: flex;
-             align-items: center;
-          }
-
-          .navbarMain ul li {
-             position: relative;
-             padding-right: 20px;
-            
-          }
-
-          .navbarMain ul li:not(:last-child)::after {
-             content: "\2022";
-            
-             font-size: 30px;
-             color: rgba(231, 199, 14, 0.893);
-             position: absolute;
-             right: -10px;
-             top: 50%;
-             transform: translateY(-50%);
-          }
-          @media(max-width:992px){
-            .drop-down{
-            position: relative !important;
-
-        }
-        .navbar-nav{
-         display: none;
-      }
-        .drop-down  ul li:not(:last-child)::after{
-
-        }
-        .drop-down .drop-down-items{
-            position: unset !important;
-        
-            display: none;
-
-        }
-        .drop-down:hover .drop-down-items{
-            display: none;
-        }
-        .drop-down.active .drop-down-items{
-            display: block;
-        }
-          }
-       </style>
-
 <div class="onlyMobile">
    <div id="Sidenav" class="sidenav">
       <div class="mobileBoxLogo InsideSideBar">
          <a href="">
-            <img width="118" height="29" alt="" loading="lazy" src="images/logotransp.png">
+            <img width="118" height="29" alt="" loading="lazy" src="images/casalogo2.png">
+            <!-- <img class="logos" src="images/casalogo2.png" alt="Logo"/> -->
          </a>
          <a href="javascript:void(0)" class="closebtn" style="font-size: 45px;" onclick="closeNav()">×</a>
 
          <div class="menuUlisting">
-
-
-         <div class="dropdown-container">
-            <a href="index.html">Home</a>
-            <a href="why-choose.html">WHY WE CHOOSE US </a>
-
-            <a href="our-works.html">OUR WORKS</a>
-            <li class="drop-down"><a href="#">SERVICES</a>
-             <ul class="drop-down-items">
-                <li> <a href="residential.html">Residential</a> </li>
-                <li> <a href="commercial.html">Commercial</a> </li>
-                <li> <a href="Renovation.html">Renovation</a> </li>
-               
-             </ul>
-
-                </li>
-          
-            <a href="blog.html">BLOGS</a>
-           
-         
-           
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact Us</a>
-         </div>
+            <div class="dropdown-container">
+               <a href="index.html">Home</a>
+               <a href="why-choose.html">WHY WE CHOOSE US</a>
+               <a href="our-works.html">OUR WORKS</a>
+               <li class="drop-down"><a href="#">SERVICES</a>
+                  <ul class="drop-down-items">
+                     <li><a href="residential.html">Residential</a></li>
+                     <li><a href="commercial.html">Commercial</a></li>
+                     <li><a href="renovation.html">Renovation</a></li>
+                    
+                  </ul>
+               </li>
+               <a href="blog.html">BLOGS</a>
+               <a href="contact.html">Contact Us</a>
+            </div>
+            
             <div class="bookAppointmentBttn">
-               <a href="#consulation-form">GET QUOTE</a>
+               <a href="#consulation-form" class="heartbeat-button">GET QUOTE</a>
             </div>
 
             <div class="socialBoxIng">
@@ -530,13 +308,81 @@ content: none !important;
                   <li><a href="https://www.instagram.com/casa_interiors_decor/profilecard/?igsh=MWkyamo3emoxZnB0NA%3D%3D" target="_blank"><span class="icon-instagram"></span></a></li>
                </ul>
             </div>
-
-
          </div>
       </div>
    </div>
-  
 </div>
+
+<style>
+   .bookAppointmentBttn {
+      text-align: center;
+      margin-top: 20px;
+   }
+
+   .heartbeat-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #D19A23;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 5px;
+      animation: heartbeat 1.5s infinite;
+   }
+
+   @keyframes heartbeat {
+      0%, 100% {
+         transform: scale(1);
+      }
+      25% {
+         transform: scale(1.1);
+      }
+      50% {
+         transform: scale(1.2);
+      }
+      75% {
+         transform: scale(1.1);
+      }
+   }
+
+   .heartbeat-button:hover {
+      background-color: #b2831c;
+   }
+
+   /* Dropdown styles */
+   .drop-down {
+      position: relative !important;
+   }
+   .drop-down ul li:not(:last-child)::after {
+      content: none !important;
+   }
+   .drop-down .drop-down-items {
+      position: fixed !important;
+      top: 14%;
+      background-color: black;
+      padding: 2rem;
+      flex-direction: column;
+      display: none;
+   }
+   .drop-down:hover .drop-down-items {
+      display: block;
+   }
+
+   /* Mobile styles */
+   @media (max-width: 992px) {
+      .drop-down {
+         position: relative !important;
+      }
+      .drop-down .drop-down-items {
+         position: unset !important;
+         display: none;
+      }
+      .drop-down.active .drop-down-items {
+         display: block;
+      }
+   }
+</style> 
 
 
 <div class="whatsapp">
@@ -737,13 +583,171 @@ content: none !important;
       
  
  
- <a href="contact.html">
-         <div class="bar-en pointer" style="">
-             <div class="moble-con moble-con-f d-block d-sm-none">
-                 Get In  Touch
+    <!-- Modal -->
+    <div class="modal fade testivdo-cont" id="Modal-1" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+          <div class="modal-body">
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+             <object class="youtube-video" data="">
+             </object>
+          </div>
+       </div>
+    </div>
+ </div>
+ <div class="modal fade testivdo-cont" id="Modal-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+          <div class="modal-body">
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             <object class="youtube-video" data="">
+             </object>
+          </div>
+       </div>
+    </div>
+ </div>
+ <div class="modal fade testivdo-cont" id="Modal-3" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+          <div class="modal-body">
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             <object class="youtube-video" data="">
+             </object>
+          </div>
+       </div>
+    </div>
+ </div>
+
+
+
+ <div class="project-cont place-enq p-90" id="consulation-form" style="background: #f7e9ce;" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="100">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-12">
+             <div class="headingBxx text-center" style="margin-bottom: 1.625rem;">
+                <h3 class="col-bage">Get in <span> Touch</span></h3>
+                <p class="col-bage">For the Best <b> Interior Design</b> experience in <b>Hyderabad.</b>
+                </p>
              </div>
-         </div>
-     </a>
+          </div>
+          <div class="col-lg-6 col-md-12 mx-auto">
+             <div class="insideTabsWrap connect">
+                <form class="bg-w" method="post" action="" onsubmit="return formValidation();">
+                   <div class="rightSideImg ">
+                      <div class="signUpForm">
+                         <div class="row">
+                            <div class="col-lg-12">
+                               <div style="margin-left: 46px;color: red;" id="err-name"></div>
+                               <div class="form-group">
+                                  <span><img src="images/bk-5.png" loading="lazy" width="30" height="30"
+                                        alt="Enquiry Form Icon"></span>
+                                  <input type="text" placeholder="Full Name" name="FullName" id="FullName">
+                                  <input type="hidden" name="PageName" id="Page" value="">
+                               </div>
+                            </div>
+
+                            <div class="col-lg-11">
+                               <div style="margin-left: 46px;color: red;" id="err-phno"></div>
+                               <div class="form-group">
+                                  <span><img src="images/bk-4.png" loading="lazy" width="30" height="30"
+                                        alt="Enquiry Form Icon"></span>
+                                  <input type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="10"
+                                     name="PhoneNo" id="PhoneNo" placeholder="Mobile Number" class="form-control"
+                                     onkeyup="telephoneCheck(this.value)" autocomplete="off"
+                                     onblur="otpSend(this.value)">
+                                  <input type="hidden" name="phoOri" id="phoOri">
+                               </div>
+                            </div>
+                            <div class="col-lg-1">
+                               <span id="edit-icon" style="display:none" onclick="phoneEdit()"><img
+                                     src="images/final-pen.png" loading="lazy" width="30" height="30"
+                                     alt="Enquiry Form Icon"></span>
+                            </div>
+                            
+                            <div class="col-lg-12">
+                               <div style="margin-left: 46px;color: red;" id="err-email"></div>
+                               <div class="form-group">
+                                  <span><img src="images/bk-3.png" loading="lazy" width="30" height="30"
+                                        alt="Enquiry Form Icon"></span>
+                                  <input type="text" placeholder="Email Address" name="Email" id="Email">
+
+                               </div>
+                            </div>
+                            <div class="col-lg-12">
+                               <div style="margin-left: 46px;color: red;" id="err-pType"></div>
+                               <div class="form-group subjuctName nw-clor">
+                                  <span><img src="images/bk-1.png" loading="lazy" width="30" height="30"
+                                        alt="Enquiry Form Icon"></span>
+                                  <select class="form-select form-control" aria-label="Default select example"
+                                     name="PropertyType" id="PropertyType">
+                                     <option value="0" selected="">Choose Property Type</option>
+                                     <option value="2 BHK">2 BHK</option>
+                                     <option value="2.5 BHK"> 2.5 BHK</option>
+                                     <option value="3 BHK">3 BHK</option>
+                                     <option value="4 BHK and Above">4 BHK and Above</option>
+
+                                     <option value="Villas">Villas</option>
+                                     <option value="Other">Other</option>
+                                  </select>
+                               </div>
+                            </div>
+                           
+                           
+                           
+                            <div class="col-lg-12">
+                               <div class="knwMre submi-t custBtn text-right">
+
+                                  <button type="submit" class="cust-Btn hvr-sweep-to-right">Submit</button>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </form>
+
+
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+
+
+ <a href="contact.html">
+    <div class="bar-en pointer">
+       <div class="moble-con moble-con-f d-block d-sm-none heartbeat-animation">
+          Get In Touch
+       </div>
+    </div>
+ </a>
+ 
+ <style>
+    /* Heartbeat animation */
+    .heartbeat-animation {
+       display: inline-block;
+       font-weight: bold;
+       animation: heartbeat 1.5s infinite;
+    }
+ 
+    @keyframes heartbeat {
+       0%, 100% {
+          transform: scale(1);
+       }
+       25% {
+          transform: scale(1.1);
+       }
+       50% {
+          transform: scale(1.2);
+       }
+       75% {
+          transform: scale(1.1);
+       }
+    }
+ </style>
    
      <footer>
         <div class="copyRight d-none d-md-block">

@@ -1,0 +1,798 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" sizes="16x16" crossorigin="">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" crossorigin="">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" type="text/css" crossorigin="">
+       <link rel="stylesheet" href="css/fancybox.css" crossorigin="">
+    <link rel="stylesheet" href="css/font-awesome.min.css" crossorigin="">
+    <link rel="stylesheet" href="css/timeline.css" type="text/css" crossorigin="">
+    <link rel="stylesheet" href="css/contact.css" type="text/css" crossorigin="">
+    <link rel="stylesheet" href="css/how-we.css" type="text/css" crossorigin="">
+    <link rel="stylesheet" href="css/dynamic-form.css" type="text/css" crossorigin="">
+    <link rel="stylesheet" href="css/style1.css" type="text/css" crossorigin="">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/universe.css" type="text/css" crossorigin="">
+   <link rel="preconnect" href="" crossorigin="">
+   <!-- Lightbox2 CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+   
+    <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    
+   
+ 
+ </head>
+ <body>
+
+    <div class="top-bar container">
+        <div class="contact-info">
+          <a href="mailto:yourmail@example.com">
+            <i class="fas fa-envelope text-white"></i> casa@interiors.com
+          </a> |
+          <a href="tel:+9963043888" class="phone-animation">
+            <i class="fas fa-phone text-white"></i> +91-85999 47444
+          </a>
+        </div>
+        <div class="social-icons">
+           <a href="career.html">
+              <i class="fas fa-briefcase text-white"></i> careers
+            </a>
+          <a href="https://www.facebook.com/casa.interiors.decor?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/casa_interiors_decor/profilecard/?igsh=MWkyamo3emoxZnB0NA%3D%3D" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@casainteriorsanddecors" target="_blank"><i class="fab fa-youtube"></i></a>
+          <!-- <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a> -->
+        </div>
+      </div>
+      
+      <style>
+        .top-bar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #080808;
+          padding: 10px 0;
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+          border-bottom: 0.5px solid  rgb(50, 50, 50);
+        }
+      
+        .contact-info a {
+          margin-right: 10px;
+          text-decoration: none;
+          color: #D19A23;
+          padding-inline: 1rem;
+        }
+      
+        .contact-info i {
+          margin-right: 5px;
+        }
+      
+        .social-icons a {
+          margin-left: 10px;
+          text-decoration: none;
+          color: #D19A23;
+          padding-inline: 3px;
+          margin-right: 20px;
+        }
+      
+        .social-icons a:hover {
+          color: white;
+        }
+      
+        .social-icons i {
+          font-size: 13px;
+        }
+      
+        .contact-info i {
+          font-size: 16px;
+        }
+      
+        /* Heartbeat 3D animation for phone number */
+        .phone-animation {
+          display: inline-block;
+          font-weight: bold;
+          animation: heartbeat 1.5s infinite;
+        }
+      
+        @keyframes heartbeat {
+          0%, 100% {
+            transform: scale(1) rotateY(0deg);
+            color: black;
+          }
+          25% {
+            transform: scale(1.1) rotateY(20deg);
+            color: white;
+          }
+          50% {
+            transform: scale(1.15) rotateY(0deg);
+            color: white;
+          }
+          75% {
+            transform: scale(1.1) rotateY(-20deg);
+            color: white;
+          }
+        }
+      
+        /* Mobile view: Hide top-bar */
+        @media (max-width: 768px) {
+          .top-bar {
+            display: none;
+          }
+        }
+      </style>
+      
+      
+      
+      
+      <nav class="navbar navbar-expand-lg navigation navbar-lg" id="Nav">
+        <div class="container">
+         <!-- Logo -->
+  <a class="navbar-brand" href="index.html">
+     <img class="logos" src="images/casalogo2.png" alt="Logo"/>
+   </a>
+   
+  
+   
+      
+      
+          <div class="navbar-toggler"  type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#leadUIMainNav"
+          aria-controls="leadUIMainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+           <span class="hamburgers" style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+        </div>
+      
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse justify-content-end" id="leadUIMainNav">
+            <ul class="navbar-nav ml-auto mt-lg-0 ">
+              <!-- Home Link -->
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+      
+              <!-- About Link -->
+              <li class="nav-item">
+                <a class="nav-link" href="why-choose.html">WHY WE CHOOSE US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="our-works.html">OUR WORKS</a>
+              </li>
+      
+              <!-- Services Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="residential.html">Residential</a>
+                  <a class="dropdown-item" href="commercial.html">Commercial</a>
+                  <a class="dropdown-item" href="renovation.html">Renovation</a>
+                 
+                </div>
+              </li>
+      
+              <!-- Projects Link -->
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">BLOGS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link contact-btn" href="contact.html">CONTACT US</a>
+              </li>
+      
+              <!-- Contact Link -->
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <style>
+        .navbar-nav li a{
+           position: relative;
+           padding: 0 20px 0 0 !important;
+           margin-right: 2.25rem;
+           font-size: 13px;
+           color: rgba(231, 199, 14, 0.893);
+           text-transform: uppercase;
+        }
+  
+        .navbar-nav li a::after{
+           content: "\2022";
+      font-size: 30px;
+      color: white;
+      position: absolute;
+      right: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+        }
+        .navbar-nav .dropdown .dropdown-menu  a::after{
+     content: none !important;
+  }
+  .navbar-nav .dropdown-toggle::after{
+     content: "";
+  }
+  .navbar-nav .contact-btn{
+     padding: 0 !important;
+     margin: 0 !important;
+  }
+        .navbar-brand img{
+           width: 80px;
+        }
+        .dropdown-menu{
+  padding: 0.5rem;
+  background-color: rgb(7, 7, 7);
+        }
+        @media(max-width:992px){
+          .navbar-toggler{
+          background-color: #D19A23;
+        }
+        .navbar-nav{
+           display: none;
+        }
+        .navbar-nav .contact-btn{
+           padding: 0 20px 0 0 !important;
+           margin-right: 2.25rem !important;
+  }
+  .navbar-nav .dropdown-menu{
+     position: unset;
+  }
+  .navbar-nav .dropdown:hover .dropdown-menu{
+     display: none;
+  }
+  .navbar-nav .dropdown.active .dropdown-menu{
+     display: block;
+  }
+        }
+       
+        .cta-button {
+        background-color: #D19A23; /* Bright, attention-grabbing color */
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+       
+        transition: background-color 0.3s ease;
+      }
+      
+      .cta-button:hover {
+        background-color: white; /* Darker shade on hover */
+      }
+      
+      </style>
+  
+  
+  <div class="onlyMobile">
+     <div id="Sidenav" class="sidenav">
+        <div class="mobileBoxLogo InsideSideBar">
+           <a href="">
+              <img width="118" height="29" alt="" loading="lazy" src="images/casalogo2.png">
+              <!-- <img class="logos" src="images/casalogo2.png" alt="Logo"/> -->
+           </a>
+           <a href="javascript:void(0)" class="closebtn" style="font-size: 45px;" onclick="closeNav()">×</a>
+  
+           <div class="menuUlisting">
+              <div class="dropdown-container">
+                 <a href="index.html">Home</a>
+                 <a href="why-choose.html">WHY WE CHOOSE US</a>
+                 <a href="our-works.html">OUR WORKS</a>
+                 <li class="drop-down"><a href="#">SERVICES</a>
+                    <ul class="drop-down-items">
+                       <li><a href="residential.html">Residential</a></li>
+                       <li><a href="commercial.html">Commercial</a></li>
+                       <li><a href="renovation.html">Renovation</a></li>
+                      
+                    </ul>
+                 </li>
+                 <a href="blog.html">BLOGS</a>
+                 <a href="contact.html">Contact Us</a>
+              </div>
+              
+              <div class="bookAppointmentBttn">
+                 <a href="#consulation-form" class="heartbeat-button">GET QUOTE</a>
+              </div>
+  
+              <div class="socialBoxIng">
+                 <ul> 
+                    <li><a href="https://www.facebook.com/casa.interiors.decor?mibextid=ZbWKwL" target="_blank"><span class="icon-facebook"></span></a></li>
+                    <li><a href="https://www.youtube.com/@casainteriorsanddecors" target="_blank"><span class="icon-youtube"></span></a></li>
+                    <!-- <li><a href="" target="_blank"><span class="icon-linkedin"></span></a></li> -->
+                    <li><a href="https://www.instagram.com/casa_interiors_decor/profilecard/?igsh=MWkyamo3emoxZnB0NA%3D%3D" target="_blank"><span class="icon-instagram"></span></a></li>
+                 </ul>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+  
+  <style>
+     .bookAppointmentBttn {
+        text-align: center;
+        margin-top: 20px;
+     }
+  
+     .heartbeat-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #D19A23;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+        border-radius: 5px;
+        animation: heartbeat 1.5s infinite;
+     }
+  
+     @keyframes heartbeat {
+        0%, 100% {
+           transform: scale(1);
+        }
+        25% {
+           transform: scale(1.1);
+        }
+        50% {
+           transform: scale(1.2);
+        }
+        75% {
+           transform: scale(1.1);
+        }
+     }
+  
+     .heartbeat-button:hover {
+        background-color: #b2831c;
+     }
+  
+     /* Dropdown styles */
+     .drop-down {
+        position: relative !important;
+     }
+     .drop-down ul li:not(:last-child)::after {
+        content: none !important;
+     }
+     .drop-down .drop-down-items {
+        position: fixed !important;
+        top: 14%;
+        background-color: black;
+        padding: 2rem;
+        flex-direction: column;
+        display: none;
+     }
+     .drop-down:hover .drop-down-items {
+        display: block;
+     }
+  
+     /* Mobile styles */
+     @media (max-width: 992px) {
+        .drop-down {
+           position: relative !important;
+        }
+        .drop-down .drop-down-items {
+           position: unset !important;
+           display: none;
+        }
+        .drop-down.active .drop-down-items {
+           display: block;
+        }
+     }
+  </style> 
+
+<div class="whatsapp">
+   <div class="tooltip-container">
+       <span class="text">
+           <svg viewBox="0 0 16 16" class="bi bi-send-fill" height="22" width="22"
+               xmlns="http://www.w3.org/2000/svg">
+               <path
+                   d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z">
+               </path>
+           </svg>
+       </span>
+       <span class="tooltip2">
+           <a href="https://wa.me/+918599947444" target="_blank">
+           <svg viewBox="0 0 16 16" class="bi bi-whatsapp" height="22" width="22"
+               xmlns="http://www.w3.org/2000/svg">
+               <path
+                   d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232">
+               </path>
+           </svg>
+       </a>
+       </span>
+ 
+       <span class="tooltip4">
+           <a href="https://www.instagram.com/casa_interiors_decor/profilecard/?igsh=MWkyamo3emoxZnB0NA%3D%3D" target="_blank">
+           <svg class="instagram-logo" fill="#f9ce34, #ee2a7b, #6228d7" id="Layer_1"
+               xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 551.034 551.034"
+               style="enable-background:new 0 0 000.000 000.000;" xml:space="preserve">
+               <path class="logo" fill:"#f9ce34, #ee2a7b, #6228d7" id="XMLID_17_"
+                   d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722 c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156 C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156 c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722 c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z" />
+ 
+               <path id="XMLID_81_" fill="#f9ce34, #ee2a7b, #6228d7"
+                   d="M275.517,133C196.933,133,133,196.933,133,275.516 s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6 c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083 C362.6,323.611,323.611,362.6,275.517,362.6z" />
+ 
+               <circle id="XMLID_83_" fill="#f9ce34, #ee2a7b, #6228d7" cx="418.306" cy="134.072" r="34.149" />
+ 
+           </svg>
+       </a>
+       </span>
+ 
+   </div>
+ 
+ </div>
+ 
+ 
+      
+       
+       <main class="main-content">
+        <div class="position-relative">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="bannerSlides slideOne" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                            <img class="desktopBanner" loading="lazy" src="images/our-works/hand-holding-megaphone-with-we-are-hiring-vector-30920305.jpg" alt="">
+                            <img class="mobileBanner" loading="lazy" src="images/our-works/hand-holding-megaphone-with-we-are-hiring-vector-30920305.jpg" alt="">
+                            <div class="bannerContent">
+                                <!-- <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100" class="pb-5" style="color:#000000">Contact Us</h1> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+           
+            <div class="swiper-pagination"></div>
+        </div>
+ 
+         
+        <div class="cont">
+            <div class="main-container">
+       
+
+            <div class="application-form ">
+                <h2>Application Form</h2>
+                <form action="submit_application.php" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="name">Full Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span class="required">*</span></label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="position">Position Applied For <span class="required">*</span></label>
+                        <input type="text" id="position" name="position" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="resume">Upload Resume <span class="required">*</span></label>
+                        <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cover_letter">Cover Letter</label>
+                        <textarea id="cover_letter" name="cover_letter" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Submit Application">
+                    </div>
+                </form>
+            </div>
+            </div>
+             
+           
+       
+     </div>
+     
+     <style>
+     /* Container Styling */
+     .cont {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         min-height: 100vh;
+         background-color: #fff;
+     }
+     
+     .main-container {
+         max-width: 1200px;
+         width: 100%;
+         padding: 20px;
+         background-color: #fff;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+
+     .application-form {
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin: 10px;
+            
+        }
+        .application-form h2 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="file"],
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #555;
+        }
+        .form-group .required {
+            color: red;
+        }
+     
+     
+     </style>
+     
+        
+        <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            const phone = document.getElementById("phone").value;
+            const phonePattern = /^\d{10}$/;
+            if (!phonePattern.test(phone)) {
+                alert("Please enter a valid 10-digit phone number.");
+                event.preventDefault();
+            }
+        });
+        </script>
+        
+          
+
+
+
+
+         
+          
+          
+ 
+          
+                   
+             
+       
+       
+      
+ 
+ 
+   <!-- Modal -->
+   <div class="modal fade testivdo-cont" id="Modal-1" tabindex="-1" aria-labelledby="exampleModalLabel"
+   aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+         <div class="modal-body">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            <object class="youtube-video" data="">
+            </object>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="modal fade testivdo-cont" id="Modal-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+   aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+         <div class="modal-body">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <object class="youtube-video" data="">
+            </object>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="modal fade testivdo-cont" id="Modal-3" tabindex="-1" aria-labelledby="exampleModalLabel"
+   aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+         <div class="modal-body">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <object class="youtube-video" data="">
+            </object>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+
+
+     <footer>
+        <div class="copyRight d-none d-md-block">
+           <div class="container">
+              <div class="row align-items-center">
+                 <div class="col-lg-12 col-md-12 col-sm-12">
+                    <ul class="quickLinks">
+                       <li>
+                          <div class="yutb-box">
+                             <a href="" target="_blank">
+                                <div class="ft-youtube">
+                                   <!-- <div class="ft-youtubeimg">
+                                      <img src="images/logotransp.png" loading="lazy" width="104" height="104"
+                                         alt="Youtube Icon">
+                                   </div> -->
+                                   <div class="ytb-info">
+                                      <h5> 1st Floor , Plot No.660, High Tension Line Road,9th phase, KPHB,Near Forum
+                                         Mall, Hyderabad, Telangana 500085</h5>
+
+
+                                   </div>
+                                </div>
+                             </a>
+                          </div>
+                       </li>
+                       <li>
+                          <a href=""><img class="whiteLogo" width="166" height="172" loading="lazy"
+                                src="images/logo with titile-1.jpg" alt="Casa Interio Logo"></a>
+                          <p class="call-us-ft">
+                             <a href="tel:+919553278124">Call us: +91-85999 47444</a>
+                          </p>
+                       </li>
+                       <li>
+                          <div class="followus-sec">
+                             <h3>Follow Us</h3>
+                             <ul class="socialMediaicon">
+                              <li><a target="_blank" href="https://www.facebook.com/casa.interiors.decor?mibextid=ZbWKwL"><span class="icon-facebook"></span></a></li>
+                              <li><a target="_blank" href="https://www.youtube.com/@casainteriorsanddecors"><span class="icon-youtube"></span></a></li>
+                              <!-- <li><a href="https://x.com/SR_Interiors3" target="_blank"><span class="icon-twitter"></span></a></li>
+                              <li><a target="_blank" href="https://www.linkedin.com/in/sr-interiors-ba3a61332/"><span class="icon-linkedin"></span></a></li> -->
+                              <li><a target="_blank" href="https://www.instagram.com/casa_interiors_decor/profilecard/?igsh=MWkyamo3emoxZnB0NA%3D%3D"><span class="icon-instagram"></span></a></li>
+                           </ul>
+                          </div>
+
+                       </li>
+                    </ul>
+
+                 </div>
+              </div>
+           </div>
+        </div>
+
+
+        <div class="copyRight d-block d-md-none">
+           <div class="container">
+              <div class="row align-items-center">
+                 <div class="col-lg-12 col-md-12 col-sm-12">
+                    <ul class="quickLinks">
+
+                       <li>
+                          <a href="
+                           "><img class="whiteLogo" width="166" height="172" loading="lazy"
+                                src="images/logo with titile-1.jpg" alt="Casa Interio Logo"></a>
+                       </li>
+                       <li>
+                          <div class="yutb-box">
+                             <a href="
+                            " target="_blank">
+                                <div class="ft-youtube">
+                                   
+                                   <div class="ytb-info">
+                                      <h5>1st Floor , Plot No.660, High Tension Line Road,9th phase, KPHB,Near Forum
+                                        Mall, Hyderabad, Telangana 500085</h5>
+
+                                   </div>
+                                </div>
+                             </a>
+                          </div>
+                       </li>
+                       <li>
+                          <p class="call-us-ft">
+                             <a href="tel:+918599947444">Call us: +91-85999 47444</a>
+                          </p>
+                       </li>
+                       <li>
+                          <div class="followus-sec">
+                           <ul class="socialMediaicon">
+                              <li><a target="_blank" href="https://www.facebook.com/casa.interiors.decor?mibextid=ZbWKwL"><span class="icon-facebook"></span></a></li>
+                              <li><a target="_blank" href="https://www.youtube.com/@casainteriorsanddecors"><span class="icon-youtube"></span></a></li>
+                              <!-- <li><a href="https://x.com/SR_Interiors3" target="_blank"><span class="icon-twitter"></span></a></li>
+                              <li><a target="_blank" href="https://www.linkedin.com/in/sr-interiors-ba3a61332/"><span class="icon-linkedin"></span></a></li> -->
+                              <li><a target="_blank" href="https://www.instagram.com/casa_interiors_decor/profilecard/?igsh=MWkyamo3emoxZnB0NA%3D%3D"><span class="icon-instagram"></span></a></li>
+                           </ul>
+                          </div>
+
+                       </li>
+                    </ul>
+
+                 </div>
+              </div>
+           </div>
+        </div>
+
+
+        <div class="copyInner d-none d-sm-block">
+           <p>© 2024 Casa Interiors | All Rights Reserved | <a href="">
+                 Privacy Policy </a> | Design by <a href="https://www.thepatternscompany.com" target="_blank">
+                 The Patterns Company </a></p>
+        </div>
+        <div class="copyInner d-block d-sm-none">
+           <p>© 2024 Casa Interiors | All Rights Reserved | <a href="">
+                 Privacy Policy </a> <br> Design by <a href="https://www.thepatternscompany.com" target="_blank">
+                 The Patterns Company </a></p>
+        </div>
+
+        <!-- <div class="whatsapp-web">
+           <a href="tel:8599947444" target="_blank"><img src="images/whatsapp.png" loading="lazy" width="50" height="50"
+                 alt="Whatsapp - Casa"></a>
+        </div> -->
+
+
+     </footer>
+   
+   
+  
+ 
+ 
+     
+     
+     
+       
+  
+      </div>
+        <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.bundle.min.js" async="" defer=""></script>
+     <script src="js/swiper-bundle.min.js"></script> 
+     <script src="js/fancybox.umd.js"></script>
+     
+    <script src="js/custom.js" async="" defer=""></script>
+    <script src="js/backup-dynamic-form.js" async="" defer=""></script>
+    <script src="js/api.js" async="" defer=""></script>
+    <!-- Lightbox2 JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+
+   <!-- AOS JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init(); // Initialize AOS animations
+  </script>
+  <script>
+   AOS.init({
+     offset: 200, // Trigger animations after scrolling 200px
+     duration: 1000, // Animation duration in milliseconds
+     easing: 'ease-in-out', // Animation easing function
+     once: true, // Animation happens only once when scrolling down
+   });
+ </script>
+  
+    
+  
+ 
+ </body></html>
