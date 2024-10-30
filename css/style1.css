@@ -6448,12 +6448,14 @@ aside.otherBloglist {
     font-size: 14px !important;
     font-family: "Open Sans",Arial, Helvetica, sans-serif !important;
     text-align: center;
-    color: rgb(135, 135, 130);
+    color: rgb(152, 152, 151);
 }
 
 
 .heads{
-    color: #0b0b0a;
+    color: #f3a304;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 

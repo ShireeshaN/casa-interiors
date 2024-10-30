@@ -651,76 +651,222 @@ background-color: rgb(7, 7, 7);
             feather.replace();
          </script>
 
+<div class="ovs-background-section" id="consultation-form">
+   <div class="ovs-light-overlay"></div> <!-- Overlay for the light mask -->
+   <div class="ovs-content-container">
+       <div class="ovs-content-text">
+           <h2>Welcome to CASA Interiors and Decors</h2>
+           <p>
+               Where we specialize in transforming spaces into stunning environments that reflect your unique style and functional needs. With a decade of experience in the industry, our dedicated team delivers exceptional design solutions tailored to both residential and commercial projects.
+           </p>
+
+           <h3>Our Services</h3>
+           <ul class="text-center">
+               <li><i class="fas fa-home"></i> Residential Interior Design</li>
+               <li><i class="fas fa-building"></i> Commercial Space Design</li>
+               <li><i class="fas fa-tools"></i> Comprehensive Renovation Solutions</li>
+           </ul>
+
+           <p>
+               We focus on maximizing both space efficiency and style, ensuring a seamless blend of old and new. CASA Interiors and Decors prides itself on delivering quality workmanship while emphasizing project value.
+           </p>
+
+           <h3>Warranty and Assurance</h3>
+           <p>
+               We offer a 10-year warranty on all our services, giving you peace of mind that your investment is well protected.
+           </p>
+
+           <p>
+               Join us in bringing your vision to life with CASA Interiors and Decors.
+           </p>
+       </div>
+   </div>
+</div>
+
+
+<style>
+ .text-center {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center items in the list */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.text-center li {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center vertically */
+    margin: 10px 20px; /* Space between list items */
+    font-size: 16px; /* Font size for list items */
+    color: white; /* Text color */
+}
+
+.text-center i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #ffcc00; /* Icon color, change as needed */
+}
+
+.ovs-background-section {
+    position: relative; /* Needed for the overlay positioning */
+    padding: 40px 20px; /* Adjust top/bottom and left/right padding */
+    height: auto; /* Allow height to be determined by content */
+    overflow: hidden; /* Hides any overflow for a clean look */
+    background-image: url('images/allbanners/15.png'); /* Background image */
+    background-size: cover; /* Cover the entire area */
+    background-attachment: fixed; /* Fixed background attachment */
+    background-position: center; /* Center the background image */
+}
+
+.ovs-light-overlay {
+    position: absolute; /* Position overlay over the background */
+    top: 0; /* Start from the top */
+    left: 0; /* Start from the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: rgba(0, 0, 0, 0.7); /* Dark mask with 70% opacity */
+    z-index: 1; /* Ensure overlay is on top of the background */
+}
+
+.ovs-content-container {
+    position: relative; /* Position relative for z-index stacking */
+    z-index: 2; /* Ensure text content is above the overlay */
+    display: flex; /* Flexbox for centering content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    padding: 20px; /* Padding for spacing */
+    text-align: center; /* Center text alignment */
+}
+
+.ovs-content-text {
+    max-width: 800px; /* Maximum width for the text */
+    width: 100%; /* Full width for centering */
+    line-height: 1.6; /* Increased line height for better readability */
+    color: white; /* Text color for better contrast */
+}
+
+.ovs-content-text h2 {
+    font-size: 28px; /* Heading size */
+    margin-bottom: 15px; /* Spacing below heading */
+    color: #f3a304; /* Underline for emphasis */
+}
+
+.ovs-content-text p {
+    font-size: 13px; /* Heading size */
+    margin-bottom: 15px; /* Spacing below heading */
+    color: #fcfbf9; /* Underline for emphasis */
+}
+
+.ovs-content-text h3 {
+    font-size: 20px; /* Subheading size */
+    margin: 15px 0; /* Spacing above and below subheading */
+    font-weight: bold; /* Bold for emphasis */
+    color: #f3a304;
+}
+.smallheads{
+   color: #ffffff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .text-center {
+        flex-direction: column; /* Change to column layout for smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .text-center li {
+        margin: 10px 0; /* Space between list items */
+    }
+
+    .ovs-background-section {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .ovs-content-text h2 {
+        font-size: 24px; /* Adjust heading size for mobile */
+    }
+
+    .ovs-content-text h3 {
+        font-size: 20px; /* Adjust subheading size for mobile */
+    }
+
+    .ovs-content-text {
+        padding: 10px; /* Less padding on mobile */
+    }
+}
+
+</style>
 
 
    
-            <div class="project-cont place-enq p-90" id="consultation-form" style="background: #f7e9ce;">
-               <div class="container">
-                   <div class="row align-items-center">
-                       <!-- Left side: Image -->
-                      
-                       
-                       <!-- Right side: Heading and Paragraph -->
-                       <div class="col-md-6">
-                           <p class="texts" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
-                               CASA Interiors, established on 08-08-2020, is a dynamic team of designers dedicated to crafting extraordinary spaces that blend aesthetics and functionality. With over 120 completed projects across residential and commercial sectors, we have established ourselves as one of India’s leading interior design firms.
-            
-                               Founded by Sreekanth Ummareddy and Maneesha Pydala, we focus on creating bespoke designs tailored to our clients' unique visions. We believe every space tells a story, and our innovative approach combines contemporary styles with timeless elegance. Our commitment to quality and attention to detail has earned us recognition in prestigious forums.
-            
-                               Whether it’s a serene home retreat or an inspiring commercial environment, our goal is to deliver exceptional results that exceed client expectations. As we grow, we continue to push boundaries and set new benchmarks in interior design, reflecting our core values of creativity, professionalism, and customer satisfaction.
-                           </p>
-                       </div>
-                   </div>
+<div class="project-cont place-enq p-90" id="consultation-form" style="background: black;">
+   <div class="container">
+       <div class="row justify-content-center">
+           <!-- Left side: Image -->
+           <div class="col-md-6 mb-4 mb-md-0 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+               <div class="image-container">
+                   <img data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" src="images/servicesimgss/abous.png" class="img-fluid rounded-circle" alt="Left Image">
                </div>
-            </div>
-            
-            <style>
-            .image-container {
-                position: relative; /* Allows absolute positioning of the border */
-                display: inline-block; /* Allows sizing and centering */
-            }
-            
-            .rounded-circle {
-                border-radius: 50%; /* Makes the image round */
-                object-fit: cover; /* Ensures the image fills the circle */
-                width: 100%; /* Set this if you want the image to be responsive */
-                height: auto; /* Maintain aspect ratio */
-                transition: transform 0.3s ease; /* Smooth transition for the 3D effect */
-                z-index: 1; /* Ensures image stays above the border */
-            }
-            
-            .image-container:before {
-                content: ""; /* Creates a pseudo-element for the border */
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                border-radius: 50%; /* Makes the border round */
-                border: 5px solid #ffcc00; /* Border color and width */
-                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow for 3D effect */
-                z-index: 0; /* Places the border behind the image */
-                transition: transform 0.3s ease; /* Smooth transition for the border */
-            }
-            
-            .image-container:hover .rounded-circle {
-                transform: scale(1.05); /* Slightly enlarges the image on hover */
-            }
-            
-            .image-container:hover:before {
-                transform: scale(1.1); /* Slightly enlarges the border on hover */
-            }
-            </style>
-            
+           </div>
+       </div>
+
+       <div class="row justify-content-center">
+           <!-- Right side: Heading and Paragraph -->
+           <div class="col-md-6 d-flex justify-content-center" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+               <p class="texts text-center text-white">
+                   CASA Interiors, established on 08-08-2020, is a dynamic team of designers dedicated to crafting extraordinary spaces that blend aesthetics and functionality. With over 120 completed projects across residential and commercial sectors, we have established ourselves as one of India’s leading interior design firms.
+                   <br><br>
+                   Founded by Sreekanth Ummareddy and Maneesha Pydala, we focus on creating bespoke designs tailored to our clients' unique visions. We believe every space tells a story, and our innovative approach combines contemporary styles with timeless elegance. Our commitment to quality and attention to detail has earned us recognition in prestigious forums.
+                   <br><br>
+                   Whether it’s a serene home retreat or an inspiring commercial environment, our goal is to deliver exceptional results that exceed client expectations. As we grow, we continue to push boundaries and set new benchmarks in interior design, reflecting our core values of creativity, professionalism, and customer satisfaction.
+               </p>
+           </div>
+       </div>
+   </div>
+</div>
+
+<style>
+.image-container {
+   position: relative; /* Allows absolute positioning of the border */
+   display: inline-block; /* Allows sizing and centering */
+   text-align: center;
+}
+
+.rounded-circle {
+   border-radius: 50%; /* Makes the image round */
+   object-fit: cover; /* Ensures the image fills the circle */
+   width: 80%; /* Set this for responsiveness, adjust as needed */
+   height: auto; /* Maintain aspect ratio */
+   transition: transform 0.3s ease; /* Smooth transition for the 3D effect */
+   z-index: 1; /* Ensures image stays above the border */
+}
+
+
+
+.image-container:hover .rounded-circle {
+   transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+.image-container:hover:before {
+   transform: scale(1.1); /* Slightly enlarges the border on hover */
+}
+
+/* Flexbox centering */
+.texts {
+   text-align: center; /* Centers the text */
+}
+</style>
+
+
           
 
 
             <!--how we work-->
 
-            <section class="container " style="background-color:  #f9f9f9 ; padding: 50px;">
+            <section class="container " style="background-color:  #070707 ; padding: 50px;">
                <!-- Main Heading -->
                <div class="gallerygon-first-section" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
-                  <h2 class="gallerygon-heading pb-3 text-center">How We Work !</h2>
+                  <h2 class="gallerygon-heading pb-3 text-center smallheads">How We Work !</h2>
                </div>
 
                <!-- Content Row 1-->
