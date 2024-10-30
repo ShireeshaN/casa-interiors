@@ -38,7 +38,72 @@
 </head>
 
 <body>
-
+   <div class="preloader">
+      <div class="vertical-centered-box">
+          <div class="content">
+              <div class="loader-circle"></div>
+              <div class="loader-line-mask">
+                  <div class="loader-line"></div>
+              </div>
+              <img src="images/casalogo2.png" alt="">
+          </div>
+      </div>
+      <div class="overlay"></div>
+   </div>
+   
+   <style>
+      .preloader {
+          background-color: #000000;
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          z-index: 999999;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+   
+      .preloader.hidden {
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity 0.5s ease, visibility 0.5s;
+      }
+   
+      .preloader img {
+          width: 150px;
+      }
+   
+      /* Overlay layer */
+      .overlay {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #ffffff;
+          animation: slideUp 2s ease forwards;
+      }
+   
+      /* Slide-up animation */
+      @keyframes slideUp {
+          from {
+              height: 100%;
+          }
+          to {
+              height: 0%;
+          }
+      }
+   </style>
+   
+   <script>
+      // Hide preloader once page is fully loaded
+      window.addEventListener("load", function() {
+          document.querySelector(".preloader").classList.add("hidden");
+      });
+   </script>
+   
+   
 
    <div class="top-bar container">
       <div class="contact-info">
@@ -822,7 +887,7 @@ background-color: rgb(7, 7, 7);
 
 
 
-<section class="p-90" style="background-color: #fbfafa;">
+<section class="p-90" style="background-color: #D19A23;">
    <div class="warranty-section">
        <!-- Left Side: Badge Icon -->
        <div class="warranty-badge">
@@ -1008,7 +1073,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             <!--how we work-->
 
-            <section class="container" style="background-color:  #070707 ; padding: 50px; border-radius: 10px; " >
+            <section class="container" style="background-color:  #070707 ; padding: 50px;  " >
                <!-- Main Heading -->
                <div class="gallerygon-first-section" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                   <h2 class="gallerygon-heading pb-3 text-center smallheads">How We Work !</h2>
