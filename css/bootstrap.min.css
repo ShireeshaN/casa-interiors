@@ -678,8 +678,8 @@ progress {
     .container-lg,
     .container-md,
     .container-sm,
-    .container-xl {
-        max-width: 1140px
+    .container-xl{
+        max-width: 1320px;
     }
 }
 
