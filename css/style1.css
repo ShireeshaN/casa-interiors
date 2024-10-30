@@ -1478,7 +1478,7 @@ button#v-pills-settingss-tab {
 .blogWrapSlider .swiper-pagination-bullet,
 .commercialProject .swiper-pagination-bullet,
 .designIdes.onlyMobile .accordion-button {
-    background-color: var(--themeColor)
+    background-color: #f7e9ce;
 }
 
 .on-mob .accordion-item:first-of-type .accordion-button {
@@ -5344,8 +5344,9 @@ aside.otherBloglist {
     }
 
     .knowUrBudget {
-        background-color:  #d1f0b3;
-        padding: 2.875rem 1.5rem
+        background-color:  #D19A23;
+        padding: 2.875rem 1.5rem;
+        border-radius: 10px;
     }
 
     .commercialProject .swiper-wrapper,
@@ -6450,6 +6451,12 @@ aside.otherBloglist {
     text-align: center;
     color: rgb(152, 152, 151);
 }
+.texts2{
+    font-size: 15px !important;
+    font-family: "Open Sans",Arial, Helvetica, sans-serif !important;
+    text-align: center;
+    color: rgb(225, 225, 221);
+}
 
 
 .heads{
@@ -6520,12 +6527,12 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 color: white;
-transform: translateY(100%);
+/* transform: translateY(100%); */
 transition: transform 0.3s ease;
 }
 
 .gallery-item:hover .overlay {
-transform: translateY(0);
+/* transform: translateY(0); */
 }
 
 /* Text styling */
@@ -6658,7 +6665,7 @@ padding: 8px 16px;
         display: flex;
         justify-content: center;
         align-items: center;
-        opacity: 0;
+        opacity: 1;
         transition: opacity 0.3s ease;
     }
     
