@@ -72,6 +72,7 @@
    
       .preloader img {
           width: 150px;
+          box-shadow: 20px 20px 2px white;
       }
    
       /* Overlay layer */
@@ -83,6 +84,7 @@
           height: 100%;
           background-color: #ffffff;
           animation: slideUp 2s ease forwards;
+          transition: animation 2s;
       }
    
       /* Slide-up animation */
@@ -96,12 +98,12 @@
       }
    </style>
    
-   <script>
+   <!-- <script>
       // Hide preloader once page is fully loaded
       window.addEventListener("load", function() {
           document.querySelector(".preloader").classList.add("hidden");
       });
-   </script>
+   </script> -->
    
    
 
