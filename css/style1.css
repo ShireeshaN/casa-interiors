@@ -1651,7 +1651,8 @@ ul.socialMediaicon li a {
 .copyInner {
     text-align: center;
     padding: .625rem 0;
-    background-color: #343434
+    border-top: 1px solid #e6bc6b;
+    /* background-color: #343434; */
 }
 
 .copyInner a,
@@ -2106,7 +2107,7 @@ p.thumbNailsNames {
 }
 
 footer {
-    border-top: .3125rem solid #e6bc6b
+    border-top: 1px solid #e6bc6b;
 }
 
 .logobox a {
