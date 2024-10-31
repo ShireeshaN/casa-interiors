@@ -6219,7 +6219,7 @@ aside.otherBloglist {
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--themeColor);
-    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent)
+    background-image: -webkit-linear-gradient(45deg, #f7e9ce 25%, transparent 25%, transparent 50%, #f7e9ce 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent)
 }
 
 @-webkit-keyframes gradient {
