@@ -392,7 +392,14 @@ header.site-header {
     transition: .3s ease-in-out;
     background: white
 }
-
+.testi-info{
+height: 500px;
+}
+@media(max-width:992px){
+    .testi-info{
+        height: auto;
+        }
+}
 .aboutUs,
 .addressBx p,
 .bannerSlides,
@@ -4457,7 +4464,7 @@ aside.otherBloglist {
     }
 
     .testi-info p {
-        height: 230px !important
+        height: 100% !important
     }
 }
 
@@ -5211,9 +5218,7 @@ aside.otherBloglist {
         top: 55%
     }
 
-    .testi-info p {
-        height: 260px !important
-    }
+   
 
     .jourNav {
         margin-top: 30px
