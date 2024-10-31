@@ -248,7 +248,8 @@ html {
 body {
     font-family: "Libre Franklin";
     font-size: 1.125rem;
-    line-height: 1.875rem
+    line-height: 1.875rem;
+    background-color: #000;
 }
 
 body,
@@ -516,7 +517,9 @@ header.site-header {
     font-weight: 300;
     letter-spacing: .1rem
 }
-
+.knowUrBudgt h3{
+    color: #fff !important;
+}
 .navbarMain ul li {
     margin-right: 2.25rem
 }
@@ -689,7 +692,7 @@ h3 {
 
 .headingBxx h2 {
     font-weight: 300;
-    color: #010101
+    color: #fff !important;
 }
 
 .headingBxx h2 span,
@@ -908,8 +911,8 @@ a.custBtn {
 }
 
 button.cust-Btn {
-    color: #231f20;
-    border: .0625rem solid #231f20;
+    color: #fff;
+    border: .0625rem solid #fff;
     border-left-width: .375rem;
     background: 0 0
 }
@@ -1209,7 +1212,8 @@ p.thumbNailsNames:focus {
 .ourBlogs .knwMre,
 .projectList .knwMre {
     text-align: center;
-    margin: 0 auto
+    margin: 0 auto;
+    background-color: white;
 }
 
 .aboutUs,
@@ -1379,17 +1383,22 @@ span.plusSign {
 }
 
 .knowUrBudget {
-    background-color: #e6bc6b;
-    padding: 2.875rem 0
+    /* background-color: #e6bc6b; */
+    padding: 2.875rem 0;
+    border: 1px solid #fff;
 }
-
+.gallerygon-first-section h2{
+color: #fff;
+}
 .knowUrBudget a.custBtn {
-    border-color: #000
+    border-color: #fff;
+    color: #fff !important;
 }
 
 .designIdes .headingBxx p {
     width: 60%;
-    margin: 2.5rem auto
+    margin: 2.5rem auto;
+    color: white;
 }
 
 .designIdes.onlyMobile .accordion-button,
@@ -1397,7 +1406,8 @@ span.plusSign {
     background-color: #f7e9ce;
     padding: 1.5rem 1.875rem;
     border: 0;
-    font-weight: 400
+    font-weight: 400;
+    border-bottom: 1px solid #b7852c;
 }
 
 .tabBtn a {
@@ -1406,8 +1416,8 @@ span.plusSign {
     font-size: 1.25rem;
     font-weight: 400;
     text-align: center;
-    color: #fff !important;
-    background: #070707
+    color: #a18248 !important;
+    background: #fff;
 }
 
 button#v-pills-settingss-tab {
@@ -1860,7 +1870,7 @@ input[type=radio]:checked+label {
 .place-enq p,
 p.logIn,
 p.logIn a {
-    color: #231f20
+    color: #fff;
 }
 
 .qutantityBox input {
@@ -1887,7 +1897,7 @@ p.logIn a {
 .signUpForm input[type=tel],
 .signUpForm input[type=text] {
     border: 0;
-    border-bottom: .0625rem solid #231f20;
+    border-bottom: .0625rem solid #fff;
     width: 100%;
     background: 0 0;
     border-radius: 0;
@@ -1896,7 +1906,7 @@ p.logIn a {
 
 .signUpForm textarea {
     border: 0;
-    border-bottom: .0625rem solid #231f20;
+    border-bottom: .0625rem solid #fff;
     width: 100%;
     background: 0 0
 }
@@ -2556,7 +2566,7 @@ select#bhk {
 
 .nw-clor.form-group.subjuctName select.form-select {
     border: 0;
-    border-bottom: .0625rem solid #231f20;
+    border-bottom: .0625rem solid #fff;
     border-radius: 0;
     padding-left: 5px;
     color: #747474;

@@ -1,5 +1,5 @@
 .rightSideImg {
-    background-color: #f7e9ce
+    /* background-color: #f7e9ce; */
 }
 
 .slide-container .slide h4 {
@@ -15,7 +15,7 @@
     border-bottom-color: currentcolor;
     border-bottom-style: none;
     border-bottom-width: 0;
-    border-bottom: .0625rem solid #231f20;
+    border-bottom: .0625rem solid #fff;
     width: 100%;
     background: #f7e9ce;
     border-radius: 0
@@ -26,13 +26,13 @@
     border-bottom-color: currentcolor;
     border-bottom-style: none;
     border-bottom-width: 0;
-    border-bottom: .0625rem solid #231f20;
+    border-bottom: .0625rem solid #fff;
     width: 100%;
     background: #f7e9ce
 }
 
 .form-container {
-    background: #fff0;
+    background: #fff;
     width: 100%;
     padding: 0 100px;
     border-radius: 3px
@@ -52,7 +52,7 @@
 }
 
 .form-container button.cust-Btn.btn-previous {
-    background: #fff0;
+    background: #fff;
     border: 0;
     text-decoration: underline;
     padding-bottom: 0;
@@ -63,7 +63,7 @@
 }
 
 .form-container button.cust-Btn.btn-previous:hover {
-    background: #fff0;
+    background: #fff;
     border: 0;
     text-decoration: underline
 }
