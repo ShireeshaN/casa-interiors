@@ -4,90 +4,69 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Our Brands</title>
-<style>
-    /* Basic Reset */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
 
-    /* Container styling */
-    .brands-container {
-        text-align: center;
-        padding: 20px;
-    }
-
-    .brands-heading {
-        font-size: 2rem;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-
-    /* Horizontal scrolling area */
-    .brands-carousel {
-        display: flex;
-        overflow-x: hidden; /* Hide overflow for a clean look */
-        white-space: nowrap;
-        gap: 20px; /* Space between images */
-        padding: 10px;
-    }
-
-    .brand-item {
-        flex: 0 0 auto;
-        width: 150px;
-        height: 150px;
-        background-color: #f0f0f0;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .brand-item img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-    }
-</style>
-</head>
-<body>
-
-<div class="brands-container">
-    <h2 class="brands-heading">Our Brands</h2>
-    <div class="brands-carousel" id="brandsCarousel">
-        <!-- Replace with your brand images -->
-        <div class="brand-item"><img src="brand1.jpg" alt="Brand 1"></div>
-        <div class="brand-item"><img src="brand2.jpg" alt="Brand 2"></div>
-        <div class="brand-item"><img src="brand3.jpg" alt="Brand 3"></div>
-        <div class="brand-item"><img src="brand4.jpg" alt="Brand 4"></div>
-        <div class="brand-item"><img src="brand5.jpg" alt="Brand 5"></div>
-        <div class="brand-item"><img src="brand1.jpg" alt="Brand 1"></div>
-        <div class="brand-item"><img src="brand2.jpg" alt="Brand 2"></div>
-        <div class="brand-item"><img src="brand3.jpg" alt="Brand 3"></div>
-        <div class="brand-item"><img src="brand4.jpg" alt="Brand 4"></div>
-        <div class="brand-item"><img src="brand5.jpg" alt="Brand 5"></div>
-        <!-- Add more brand items as needed -->
+<div class="gallery gallery-container">
+    <!-- Gallery Item 1 -->
+    <div class="gallery-item" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100">
+        <img src="images/our-works/Aslam - 3bhk/IMG_7985.jpg" alt="Image 1">
+        <div class="static-text">
+            <div class="text">Aslam - 3bhk</div>
+            <a href="aslam-3bhk.html"><button class="animated-button">View More</button></a>
+        </div>
     </div>
+
+    <!-- Gallery Item 2 -->
+    <div class="gallery-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+        <img src="images/our-works/Chaitanya A 1208 - 2bhk/IMG_0068.jpg" alt="Image 2">
+        <div class="static-text">
+            <div class="text">Chaitanya A 1208 - 2bhk</div>
+            <a href="Chaitanya-A-1208-2bhk.html"><button class="animated-button">View More</button></a>
+        </div>
+    </div>
+
+    <!-- Add more gallery items as needed -->
 </div>
 
-<script>
-// Faster Auto-scroll functionality
-const carousel = document.getElementById('brandsCarousel');
 
-function autoScroll() {
-    carousel.scrollLeft += 2; // Adjust the scroll speed here (higher value = faster speed)
-
-    // Reset scroll position for infinite loop effect
-    if (carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth) {
-        carousel.scrollLeft = 0;
-    }
+<style>
+    .gallery-item {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
 }
 
-// Scroll every 20 milliseconds for faster auto-scrolling
-setInterval(autoScroll, 20);
-</script>
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.static-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 16px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.animated-button {
+    margin-top: 5px;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.text {
+    font-weight: bold;
+}
+
+</style>
+
 
 </body>
 </html>
