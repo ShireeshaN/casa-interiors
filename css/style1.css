@@ -7177,11 +7177,18 @@ padding: 8px 16px;
           }
           
           .address-icon {
-            color: #fbfbfb; /* Change the color as needed */
+            color: #fbfbfb !important; /* Change the color as needed */
             font-size: 24px; /* Adjust the icon size */
-            margin-right: 60px; /* Space between the icon and text */
+            margin-right: 70px !important; /* Space between the icon and text */
             animation: bounce 1s infinite; /* Animation effect */
           }
+          /* Mobile Styles */
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+    .address-icon {
+      font-size: 18px; /* Smaller icon size for mobile */
+      margin-right: 10px !important; /* Reduced space for mobile */
+    }
+  }
           
           
           @keyframes bounce {
