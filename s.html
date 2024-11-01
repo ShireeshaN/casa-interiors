@@ -1,100 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career Application Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f7f7f7;
-        }
-        .application-form {
-            width: 100%;
-            max-width: 500px;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        .application-form h2 {
-            text-align: center;
-            color: #333;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        .form-group input[type="text"],
-        .form-group input[type="email"],
-        .form-group input[type="file"],
-        .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            font-size: 14px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .form-group input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            color: #fff;
-            background-color: #333;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .form-group input[type="submit"]:hover {
-            background-color: #555;
-        }
-        .form-group .required {
-            color: red;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Brands</title>
+<style>
+    /* Basic Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Container styling */
+    .brands-container {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .brands-heading {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    /* Horizontal scrolling area */
+    .brands-carousel {
+        display: flex;
+        overflow-x: hidden; /* Hide overflow for a clean look */
+        white-space: nowrap;
+        gap: 20px; /* Space between images */
+        padding: 10px;
+    }
+
+    .brand-item {
+        flex: 0 0 auto;
+        width: 150px;
+        height: 150px;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .brand-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+</style>
 </head>
 <body>
-    <div class="application-form">
-        <h2>Career Application Form</h2>
-        <form action="submit_application.php" method="post" enctype="multipart/form-data">
-            <div class="form-group">
-                <label for="name">Full Name <span class="required">*</span></label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email <span class="required">*</span></label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number <span class="required">*</span></label>
-                <input type="text" id="phone" name="phone" required>
-            </div>
-            <div class="form-group">
-                <label for="position">Position Applied For <span class="required">*</span></label>
-                <input type="text" id="position" name="position" required>
-            </div>
-            <div class="form-group">
-                <label for="resume">Upload Resume <span class="required">*</span></label>
-                <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
-            </div>
-            <div class="form-group">
-                <label for="cover_letter">Cover Letter</label>
-                <textarea id="cover_letter" name="cover_letter" rows="4"></textarea>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Submit Application">
-            </div>
-        </form>
+
+<div class="brands-container">
+    <h2 class="brands-heading">Our Brands</h2>
+    <div class="brands-carousel" id="brandsCarousel">
+        <!-- Replace with your brand images -->
+        <div class="brand-item"><img src="brand1.jpg" alt="Brand 1"></div>
+        <div class="brand-item"><img src="brand2.jpg" alt="Brand 2"></div>
+        <div class="brand-item"><img src="brand3.jpg" alt="Brand 3"></div>
+        <div class="brand-item"><img src="brand4.jpg" alt="Brand 4"></div>
+        <div class="brand-item"><img src="brand5.jpg" alt="Brand 5"></div>
+        <div class="brand-item"><img src="brand1.jpg" alt="Brand 1"></div>
+        <div class="brand-item"><img src="brand2.jpg" alt="Brand 2"></div>
+        <div class="brand-item"><img src="brand3.jpg" alt="Brand 3"></div>
+        <div class="brand-item"><img src="brand4.jpg" alt="Brand 4"></div>
+        <div class="brand-item"><img src="brand5.jpg" alt="Brand 5"></div>
+        <!-- Add more brand items as needed -->
     </div>
+</div>
+
+<script>
+// Faster Auto-scroll functionality
+const carousel = document.getElementById('brandsCarousel');
+
+function autoScroll() {
+    carousel.scrollLeft += 2; // Adjust the scroll speed here (higher value = faster speed)
+
+    // Reset scroll position for infinite loop effect
+    if (carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth) {
+        carousel.scrollLeft = 0;
+    }
+}
+
+// Scroll every 20 milliseconds for faster auto-scrolling
+setInterval(autoScroll, 20);
+</script>
+
 </body>
 </html>
