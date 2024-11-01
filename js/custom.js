@@ -263,3 +263,20 @@ $(document).ready(function () {
   });
 });
 
+
+
+   // Faster Auto-scroll functionality
+   const carousel = document.getElementById('brandsCarousel');
+   
+   function autoScroll() {
+       carousel.scrollLeft += 2; // Adjust the scroll speed here (higher value = faster speed)
+   
+       // Reset scroll position for infinite loop effect
+       if (carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth) {
+           carousel.scrollLeft = 0;
+       }
+   }
+   
+   // Scroll every 20 milliseconds for faster auto-scrolling
+   setInterval(autoScroll, 20);
+  
