@@ -517,8 +517,81 @@ background-color: rgb(7, 7, 7);
             text-align: center; /* Centers the text */
         }
         </style>
+
+
+
+<div class="cont container">
+   <!-- Scrolling Gallery -->
+   <div class="gallery">
+       <img src="images/our-works/Dinesh - Vinjamur - 2bhk/IMG_7003.jpg" alt="Image 1" class="active">
+       <img src="images/our-works/Dinesh - Vinjamur - 2bhk/IMG_7003.jpg" alt="Image 2">
+       <img src="images/our-works/Dinesh - Vinjamur - 2bhk/IMG_7021.jpg" alt="Image 3">
+       <!-- Add more images as needed -->
+   </div>
+
+   <!-- Awards Section -->
+   <div class="awards">
+       <h2>Awards & Rewards</h2>
+       <p>Our recognition in the industry</p>
+      
+   </div>
+</div>
         
-        
+  <style>
+       .cont {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        width: 80%;
+        max-width: 1200px;
+        gap: 20px;
+    }
+
+    /* Gallery styling */
+    .gallery {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gallery img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        border-radius: 5px;
+        border: 5px solid #ffcc00;
+    }
+
+    /* Show only the active image */
+    .gallery img.active {
+        opacity: 1;
+    }
+
+    /* Awards section styling */
+    .awards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+    }
+
+    .awards h2 {
+        font-size: 2em;
+        color: #b96f00;
+        margin-bottom: 20px;
+    }
+
+  
+  </style>      
 
 
           
@@ -1616,6 +1689,21 @@ background-color: rgb(7, 7, 7);
      }
      // **************
   }
+</script>
+
+<script>
+   // JavaScript for automatic image scrolling
+   const images = document.querySelectorAll('.gallery img');
+   let currentIndex = 0;
+
+   function showNextImage() {
+       images[currentIndex].classList.remove('active');
+       currentIndex = (currentIndex + 1) % images.length;
+       images[currentIndex].classList.add('active');
+   }
+
+   // Change image every 3 seconds
+   setInterval(showNextImage, 3000);
 </script>
   
   

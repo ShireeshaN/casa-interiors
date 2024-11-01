@@ -3,70 +3,116 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Brands</title>
+<title>Scrolling Gallery with Awards Heading</title>
+<style>
+    /* General styling */
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+    }
 
-<div class="gallery gallery-container">
-    <!-- Gallery Item 1 -->
-    <div class="gallery-item" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100">
-        <img src="images/our-works/Aslam - 3bhk/IMG_7985.jpg" alt="Image 1">
-        <div class="static-text">
-            <div class="text">Aslam - 3bhk</div>
-            <a href="aslam-3bhk.html"><button class="animated-button">View More</button></a>
-        </div>
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        width: 80%;
+        max-width: 1200px;
+        gap: 20px;
+    }
+
+    /* Gallery styling */
+    .gallery {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gallery img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    /* Show only the active image */
+    .gallery img.active {
+        opacity: 1;
+    }
+
+    /* Awards section styling */
+    .awards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .awards h2 {
+        font-size: 2em;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    /* Button styling */
+    .view-more-button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .view-more-button:hover {
+        background-color: #666;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Scrolling Gallery -->
+    <div class="gallery">
+        <img src="images/our-works/Dinesh - Vinjamur - 2bhk/IMG_7003.jpg" alt="Image 1" class="active">
+        <img src="images/our-works/Dinesh - Vinjamur - 2bhk/IMG_7003.jpg" alt="Image 2">
+        <img src="images/our-works/Dinesh - Vinjamur - 2bhk/IMG_7021.jpg" alt="Image 3">
+        <!-- Add more images as needed -->
     </div>
 
-    <!-- Gallery Item 2 -->
-    <div class="gallery-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
-        <img src="images/our-works/Chaitanya A 1208 - 2bhk/IMG_0068.jpg" alt="Image 2">
-        <div class="static-text">
-            <div class="text">Chaitanya A 1208 - 2bhk</div>
-            <a href="Chaitanya-A-1208-2bhk.html"><button class="animated-button">View More</button></a>
-        </div>
+    <!-- Awards Section -->
+    <div class="awards">
+        <h2>Awards & Rewards</h2>
+        <p>Our recognition in the industry</p>
+       
     </div>
-
-    <!-- Add more gallery items as needed -->
 </div>
 
+<script>
+    // JavaScript for automatic image scrolling
+    const images = document.querySelectorAll('.gallery img');
+    let currentIndex = 0;
 
-<style>
-    .gallery-item {
-    position: relative;
-    display: inline-block;
-    margin: 10px;
-}
+    function showNextImage() {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add('active');
+    }
 
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.static-text {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: #fff;
-    font-size: 16px;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-}
-
-.animated-button {
-    margin-top: 5px;
-    padding: 8px 16px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.text {
-    font-weight: bold;
-}
-
-</style>
-
+    // Change image every 3 seconds
+    setInterval(showNextImage, 3000);
+</script>
 
 </body>
 </html>
