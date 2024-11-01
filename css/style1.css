@@ -1633,8 +1633,30 @@ ul.socialMediaicon li {
 }
 
 .call-us-ft {
-    margin-top: 25px
+    margin-top: 25px;
+   
+    font-size: 15px;
 }
+
+.animated-icon {
+    margin-right: 8px; /* Space between the icon and text */
+    animation: bounce 1s infinite;
+    color: #D19A23; /* Icon color */
+    font-size: 18px; /* Adjust icon size */
+ }
+ 
+ @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+       transform: translateY(0);
+    }
+    40% {
+       transform: translateY(-10px);
+    }
+    60% {
+       transform: translateY(-5px);
+    }
+ }
+ 
 
 ul.socialMediaicon li a span {
     border: 1px solid #f7e9ce;
