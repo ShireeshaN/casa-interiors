@@ -2610,7 +2610,9 @@ select#bhk {
     background: #f7e9ce;
     padding: 50px 80px
 }
-
+.navbar-nav li a.contact-btn::after{
+    content: unset;
+ }
 .form-group.subjuctName select.form-select {
     border: 0;
     border-bottom: .0625rem solid #231f20;
@@ -7250,4 +7252,6 @@ padding: 8px 16px;
   }
   
 
-  
+  .coloo{
+    color: #b96f00;
+  }
