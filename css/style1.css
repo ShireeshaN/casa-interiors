@@ -1633,8 +1633,32 @@ ul.socialMediaicon li {
 }
 
 .call-us-ft {
-    margin-top: 25px
+    margin-top: 25px;
+   
+    font-size: 15px;
 }
+
+
+
+.animated-icon {
+    margin-right: 8px; /* Space between the icon and text */
+    animation: bounce 1s infinite;
+    color: #D19A23; /* Icon color */
+    font-size: 18px; /* Adjust icon size */
+ }
+ 
+ @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+       transform: translateY(0);
+    }
+    40% {
+       transform: translateY(-10px);
+    }
+    60% {
+       transform: translateY(-5px);
+    }
+ }
+ 
 
 ul.socialMediaicon li a span {
     border: 1px solid #f7e9ce;
@@ -2107,7 +2131,7 @@ p.thumbNailsNames {
 }
 
 footer {
-    border-top: 1px solid #e6bc6b;
+    border-top: 2px solid #858380;
 }
 
 .logobox a {
@@ -4131,8 +4155,8 @@ aside.otherBloglist {
 }
 
 .yutb-box {
-    border: 1px solid #616165;
-    padding: 23px
+    padding-top: 10px;
+
 }
 
 .commerProjectList {
@@ -7146,6 +7170,77 @@ padding: 8px 16px;
             height: auto;
             border-radius: 8px;
         }
+
+        .ytb-info {
+            display: flex;
+            align-items: center;
+          }
+          
+          .address-icon {
+            color: #fbfbfb; /* Change the color as needed */
+            font-size: 24px; /* Adjust the icon size */
+            margin-right: 60px; /* Space between the icon and text */
+            animation: bounce 1s infinite; /* Animation effect */
+          }
+          
+          
+          @keyframes bounce {
+            0%, 100% {
+              transform: translateY(0);
+            }
+            50% {
+              transform: translateY(-5px); /* Adjust bounce height */
+            }
+          }
+
+          .address-icon2 {
+            color: #fbfbfb; /* Change the color as needed */
+            font-size: 24px; /* Adjust the icon size */
+            margin-right: 10px; /* Space between the icon and text */
+            animation: bounce 1s infinite; /* Animation effect */
+          }
+          
+          
+          @keyframes bounce {
+            0%, 100% {
+              transform: translateY(0);
+            }
+            50% {
+              transform: translateY(-5px); /* Adjust bounce height */
+            }
+          }
+          
     
     
-    
+    /* General styling for the follow us section */
+.followus-sec {
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  .socialMediaicon {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between the icons */
+  }
+  
+  .socialMediaicon li {
+    display: inline-block;
+  }
+  
+  .socialMediaicon a {
+    text-decoration: none;
+    color: #555; /* Default icon color */
+    font-size: 24px; /* Adjust the size as needed */
+    transition: transform 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  .socialMediaicon a:hover {
+    color: #007bff; /* Change color on hover */
+    transform: translateY(-5px); /* Move up on hover */
+  }
+  
+
+  

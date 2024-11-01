@@ -589,6 +589,99 @@
              </div>
          </div>
      </a>
+
+     <div class="project-cont place-enq p-90" id="consulation-form" style="background: #0a0a0a;" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="100">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12">
+               <div class="headingBxx text-center" style="margin-bottom: 1.625rem;">
+                  <h3 class="col-bage">Get in <span> Touch</span></h3>
+                  <p class="col-bage">For the Best <b> Interior Design</b> experience in <b>Hyderabad.</b>
+                  </p>
+               </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mx-auto">
+               <div class="insideTabsWrap connect">
+                  <form class="bg-w" method="post" action="" onsubmit="return formValidation();">
+                     <div class="rightSideImg ">
+                        <div class="signUpForm">
+                           <div class="row">
+                              <div class="col-lg-12">
+                                 <div style="margin-left: 46px;color: red;" id="err-name"></div>
+                                 <div class="form-group">
+                                    <span><img style="background-color: aliceblue; border-radius: 50px; padding: 2px;" src="images/bk-5.png" loading="lazy" width="30" height="30"
+                                          alt="Enquiry Form Icon"></span>
+                                    <input type="text" placeholder="Full Name" name="FullName" id="FullName">
+                                    <input type="hidden" name="PageName" id="Page" value="">
+                                 </div>
+                              </div>
+   
+                              <div class="col-lg-11">
+                                 <div style="margin-left: 46px;color: red;" id="err-phno"></div>
+                                 <div class="form-group">
+                                    <span><img style="background-color: aliceblue; border-radius: 50px; padding: 2px;" src="images/bk-4.png" loading="lazy" width="30" height="30"
+                                          alt="Enquiry Form Icon"></span>
+                                    <input type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="10"
+                                       name="PhoneNo" id="PhoneNo" placeholder="Mobile Number" class="form-control"
+                                       onkeyup="telephoneCheck(this.value)" autocomplete="off"
+                                       onblur="otpSend(this.value)">
+                                    <input type="hidden" name="phoOri" id="phoOri">
+                                 </div>
+                              </div>
+                              <div class="col-lg-1">
+                                 <span id="edit-icon" style="display:none" onclick="phoneEdit()"><img style="background-color: aliceblue; border-radius: 50px; padding: 2px;"
+                                       src="images/final-pen.png" loading="lazy" width="30" height="30"
+                                       alt="Enquiry Form Icon"></span>
+                              </div>
+                              
+                              <div class="col-lg-12">
+                                 <div style="margin-left: 46px;color: red;" id="err-email"></div>
+                                 <div class="form-group">
+                                    <span><img style="background-color: aliceblue; border-radius: 50px; padding: 2px;" src="images/bk-3.png" loading="lazy" width="30" height="30"
+                                          alt="Enquiry Form Icon"></span>
+                                    <input type="text" placeholder="Email Address" name="Email" id="Email">
+   
+                                 </div>
+                              </div>
+                              <div class="col-lg-12">
+                                 <div style="margin-left: 46px;color: red;" id="err-pType"></div>
+                                 <div class="form-group subjuctName nw-clor">
+                                    <span><img style="background-color: aliceblue; border-radius: 50px; padding: 2px;" src="images/bk-1.png" loading="lazy" width="30" height="30"
+                                          alt="Enquiry Form Icon"></span>
+                                    <select class="form-select form-control" aria-label="Default select example"
+                                       name="PropertyType" id="PropertyType">
+                                       <option value="0" selected="">Choose Property Type</option>
+                                       <option value="2 BHK">2 BHK</option>
+                                       <option value="2.5 BHK"> 2.5 BHK</option>
+                                       <option value="3 BHK">3 BHK</option>
+                                       <option value="4 BHK and Above">4 BHK and Above</option>
+   
+                                       <option value="Villas">Villas</option>
+                                       <option value="Other">Other</option>
+                                    </select>
+                                 </div>
+                              </div>
+                             
+                             
+                             
+                              <div class="col-lg-12">
+                                 <div class="knwMre submi-t custBtn text-right">
+   
+                                    <button type="submit" class="cust-Btn hvr-sweep-to-right">Submit</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+   
+   
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
        <footer>
       <div class="copyRight d-none d-md-block">
          <div class="container">
@@ -713,7 +806,7 @@
      
      
      
-       
+<!--        
   <div class="modal fade multiSlide popGetEstimate" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-xl">
              <div class="modal-content">
@@ -728,20 +821,20 @@
                                    <img width="" height="" loading="lazy" src="images/ce-1.png" alt="Enquiry Form Icon">
                                 </div>
                                 <div class="rightSideImg">
-                                   <!-- ********************* -->
+                                  
                                     <div class="form-container cf-form estimater-form" style="margin-top: 100px;">
                                      <form id="questionnaire-form" style="color:white" method="POST">
                                          <div>
                                          <input type="hidden" name="custttt-name" id="custttt-name" value="">
                                          <input type="hidden" name="OnlyNameCust" id="OnlyNameCust" value="">
                                        <div class="slide-container">
-                                         <div class="slide" id="slideStart"><!-- 0 -->
+                                         <div class="slide" id="slideStart">
                                              <h4>Welcome to Casa Interio! Please share your name?</h4>
                                              <p></p>
                                              <input type="text" name="FulName" placeholder="Type your answer here..." id="FulName">
                                              <div class="error-message"> Please fill in your name </div>
                                          </div>
-                                         <div class="slide" id="slideA"><!-- 1 -->
+                                         <div class="slide" id="slideA">
                                              <h4>Select Your Property Type</h4>
                                              <p></p>
                                              
@@ -777,13 +870,13 @@
                                              </div> 
                                              <div class="error-message"> Please Choose a Property type </div>
                                          </div>
-                                         <div class="slide" id="slideB"><!-- 2 -->
+                                         <div class="slide" id="slideB">
                                              <h4>What is the total Square Feet Area ?</h4>
                                              <p></p>
                                                <input type="number" name="totalArea" placeholder="Type your answer here..." id="totalArea" style="display:none">
                                              <div class="error-message"> Please fill your total square feet </div>
                                          </div>
-                                         <div class="slide" id="slideC"><!-- 3 -->
+                                         <div class="slide" id="slideC">
                                              <h4>How many Kitchen units do you have ?</h4>
                                              <p></p>
                                              
@@ -799,7 +892,7 @@
                                              </div>
                                              <div class="error-message"> Please choose your kitchen units </div>
                                          </div>
-                                         <div class="slide" id="slideD"><!-- 4 -->
+                                         <div class="slide" id="slideD">
                                              <h4>How many Wardrobe units do you need ?</h4>
                                              <p></p>
                                              
@@ -827,7 +920,7 @@
                                              </div>
                                              <div class="error-message"> Please choose your wardrobe units </div>
                                          </div>
-                                         <div class="slide" id="slideE"><!-- 5 -->
+                                         <div class="slide" id="slideE">
                                              <h4>How many TV / Entertainment units do you need ?</h4>
                                              <p></p>
                                              
@@ -851,7 +944,7 @@
                                              </div>
                                              <div class="error-message"> Please choose your TV / Entertainment units </div>
                                          </div>
-                                         <div class="slide" id="slideF"><!-- 6 -->
+                                         <div class="slide" id="slideF">
                                              <h4>How many Study units do you need ?</h4>
                                              <p></p>
                                              
@@ -880,7 +973,7 @@
                                              </div>
                                              <div class="error-message"> Please choose study units </div>
                                          </div>
-                                         <div class="slide" id="slideG"><!-- 7 -->
+                                         <div class="slide" id="slideG">
                                              <h4>Do you need False Ceilings ? </h4>
                                              <p></p>
                                              
@@ -896,20 +989,20 @@
                                              </div>
                                              <div class="error-message"> Please Choose false ceilings units </div>
                                          </div>
-                                         <div class="slide" id="slideH"><!-- 8 -->
+                                         <div class="slide" id="slideH">
                                              <h4> Mention your Location or Area in Hyderabad ?</h4>
                                              <p></p>
                                                <input type="text" name="location" placeholder="Type your answer here..." id="location" style="display:none">
                                              <div class="error-message"> Please fill your location / area </div>
                                          </div>
                                         
-                                         <div class="slide" id="slideI"><!-- 9 -->
+                                         <div class="slide" id="slideI">
                                              <h4>Hi, <span id="finalNameDiv"></span>. Please share your email id? </h4>
                                              <p></p>
                                              <input type="email" name="EmailId" placeholder="Type your answer here..." id="EmailId" style="display:none">
                                              <div class="error-message"> Please fill in your email id </div>
                                          </div>
-                                         <div class="slide" id="slideJ"><!-- 10 -->
+                                         <div class="slide" id="slideJ">
                                              <h4>Can we know your Phone number please, in case we need to reach you ?</h4>
                                              <p></p>
                                              <input type="number" name="PhoneNumber" placeholder="Type your answer here..." id="PhoneNumber" style="display:none">
@@ -926,7 +1019,7 @@
                                        <button onclick="formSubmit()" class="cust-Btn hvr-sweep-to-right btn-white theme-btn two float-right  btn-submit" style="display: none;">Submit</button>
                                      </div>
                                  </div>
-                                   <!-- ********************* -->
+                                   
                                 </div>
                              </div>   
                        </div>
@@ -934,7 +1027,10 @@
                 </div>
              </div>
           </div>
-       </div>   </div>
+       </div>   -->
+
+
+       </div>
         <script src="js/jquery.min.js"></script>
      <script src="js/bootstrap.bundle.min.js" async="" defer=""></script>
      <script src="js/swiper-bundle.min.js"></script> 
