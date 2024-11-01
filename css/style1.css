@@ -3850,6 +3850,12 @@ ul.quickLinks li:first-child {
     font-size: 25px;
     width: 81%
 }
+/* Mobile Styles */
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+    .followus-sec h3 {
+      width: auto; /* Remove the fixed width for mobile view */
+    }
+  }
 
 .followus-sec ul.socialMediaicon li {
     flex: 0 0 8%;
@@ -7223,9 +7229,10 @@ padding: 8px 16px;
     
     /* General styling for the follow us section */
 .followus-sec {
-    text-align: center;
+    text-align: center !important;
     margin-top: 5px;
   }
+
   
   .socialMediaicon {
     list-style: none;
