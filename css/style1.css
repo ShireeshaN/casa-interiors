@@ -2131,7 +2131,7 @@ p.thumbNailsNames {
 }
 
 footer {
-    border-top: 1px solid #858380;
+    border-top: 2px solid #858380;
 }
 
 .logobox a {
@@ -4155,8 +4155,8 @@ aside.otherBloglist {
 }
 
 .yutb-box {
-    border: 1px solid #616165;
-    padding: 23px
+    padding-top: 10px;
+
 }
 
 .commerProjectList {
@@ -7177,11 +7177,29 @@ padding: 8px 16px;
           }
           
           .address-icon {
-            color: #ff0000; /* Change the color as needed */
+            color: #fbfbfb; /* Change the color as needed */
+            font-size: 24px; /* Adjust the icon size */
+            margin-right: 60px; /* Space between the icon and text */
+            animation: bounce 1s infinite; /* Animation effect */
+          }
+          
+          
+          @keyframes bounce {
+            0%, 100% {
+              transform: translateY(0);
+            }
+            50% {
+              transform: translateY(-5px); /* Adjust bounce height */
+            }
+          }
+
+          .address-icon2 {
+            color: #fbfbfb; /* Change the color as needed */
             font-size: 24px; /* Adjust the icon size */
             margin-right: 10px; /* Space between the icon and text */
             animation: bounce 1s infinite; /* Animation effect */
           }
+          
           
           @keyframes bounce {
             0%, 100% {
@@ -7197,7 +7215,7 @@ padding: 8px 16px;
     /* General styling for the follow us section */
 .followus-sec {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5px;
   }
   
   .socialMediaicon {
@@ -7223,4 +7241,6 @@ padding: 8px 16px;
     color: #007bff; /* Change color on hover */
     transform: translateY(-5px); /* Move up on hover */
   }
+  
+
   
