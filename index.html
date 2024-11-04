@@ -553,6 +553,7 @@
                   <div class="bannerSlides slideOne">
                      <img class="desktopBanner" width="1920" height="1205" loading="lazy" src="images/allbanners/1.png"
                         alt="">
+                        <div class="layer"></div>
                      <div class="bannerContent">
 
                         <h1 class="pb-5">Unique Design Tailored to You</h1>
@@ -564,6 +565,7 @@
                   <div class="bannerSlides slideOne">
                      <img class="desktopBanner" width="1920" height="1205" loading="lazy" src="images/allbanners/13.png"
                         alt="">
+                        <div class="layer"></div>
                      <div class="bannerContent">
 
                         <h1 class="pb-5">Experience Elegant Interiors</h1>
@@ -575,6 +577,7 @@
                   <div class="bannerSlides slideOne">
                      <img class="desktopBanner" width="1920" height="1205" loading="lazy" src="images/allbanners/3.png"
                         alt="">
+                        <div class="layer"></div>
                      <div class="bannerContent">
 
                         <h1 class="pb-5">Crafted for Modern Living</h1>
@@ -586,6 +589,7 @@
                   <div class="bannerSlides slideOne">
                      <img class="desktopBanner" width="1920" height="1205" loading="lazy" src="images/allbanners/5.png"
                         alt="">
+                        <div class="layer"></div>
                      <div class="bannerContent">
 
                         <h1 class="pb-5">Luxury that Fits Your Style</h1>
@@ -597,6 +601,7 @@
                   <div class="bannerSlides slideOne">
                      <img class="desktopBanner" width="1920" height="1205" loading="lazy" src="images/allbanners/11.png"
                         alt="">
+                        <div class="layer"></div>
                      <div class="bannerContent">
 
                         <h1 class="pb-5">Designed with Perfection in Mind</h1>
@@ -608,6 +613,19 @@
          </div>
 
          <style>
+            .bannerSlides{
+               position: relative;
+            }
+            .bannerSlides .layer{
+               content: "";
+               position: absolute;
+               top:0;
+               width: 100%;
+               height: 100%;
+               left: 0;
+               background-color: rgba(0, 0, 0, 0.3);
+              z-index: 1;
+            }
             .bannerSlides {
                position: relative;
                width: 100%;
@@ -620,6 +638,7 @@
                left: 50%;
                transform: translate(-50%, -50%);
                text-align: center;
+               z-index:99;
             }
 
             .bannerContent a.btn {
@@ -643,7 +662,7 @@
             }
 
             .bannerContent h1 {
-               color: black;
+               color: white;
                font-size: 50px;
                font-weight: 700;
                margin: 0;
