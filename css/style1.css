@@ -12,7 +12,11 @@ ul {
     padding: 0;
     margin: 0
 }
-
+.mobileBoxLogo a img{
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 50%;
+}
 .designIdes .headingBxx,
 .headingBxx h2,
 .icnBx,
