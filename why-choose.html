@@ -543,7 +543,7 @@ background-color: rgb(7, 7, 7);
                     <!-- Left side: Image -->
                     <div class="col-md-6 mb-4 mb-md-0 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
                         <div class="image-container">
-                            <img data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" src="images/servicesimgss/abous.png" class="img-fluid rounded-circle" alt="Left Image">
+                            <img data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" src="images/servicesimgss/IMG_93901.jpg" class="img-fluid rounded-circle" alt="Left Image">
                         </div>
                     </div>
                 </div>
@@ -579,19 +579,8 @@ background-color: rgb(7, 7, 7);
             z-index: 1; /* Ensures image stays above the border */
         }
         
-        .image-container:before {
-            content: ""; /* Creates a pseudo-element for the border */
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            border-radius: 50%; /* Makes the border round */
-            border: 5px solid #ffcc00; /* Border color and width */
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow for 3D effect */
-            z-index: 0; /* Places the border behind the image */
-            transition: transform 0.3s ease; /* Smooth transition for the border */
-            
+        .image-container img{
+border: 2px solid #ffcc00;
         }
         
         .image-container:hover .rounded-circle {
@@ -613,9 +602,11 @@ background-color: rgb(7, 7, 7);
 <div class="cont container">
    <!-- Scrolling Gallery -->
    <div class="gallery">
-       <img src="images/our-works/Dinesh - Vinjamur - 2bhk/IMG_7003.jpg" alt="Image 1" class="active">
-       <img src="images/our-works/Dinesh - Vinjamur - 2bhk/IMG_7003.jpg" alt="Image 2">
-       <img src="images/our-works/Dinesh - Vinjamur - 2bhk/IMG_7021.jpg" alt="Image 3">
+      <img src="images/awards/certification1.jpeg" alt="Image 3" class="active">
+      <img src="images/awards/certification.jpeg" alt="">
+  
+       <img src="images/awards/award2.jpeg" alt="Image 2">
+       <img src="images/awards/award1.jpeg" alt="Image 1" >
        <!-- Add more images as needed -->
    </div>
 
