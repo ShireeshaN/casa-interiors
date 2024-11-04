@@ -162,7 +162,8 @@
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   padding-block: 0.2rem;
   padding-inline: 1rem;
-  background-color: #f3a304;
+  /* background-color: #f3a304; */
+  background-color: #000000;
   border-radius: 9999px;
   /* display: flex; */
   align-items: center;
@@ -175,8 +176,30 @@
   outline: none;
   overflow: hidden;
   font-size: 10px;
+  animation: quote 1.5s infinite;
 }
+@keyframes quote {
+   0%,
+         100% {
+            transform: scale(1) rotateY(0deg);
+            
+         }
 
+         25% {
+            transform: scale(1.1) rotateY(20deg);
+           
+         }
+
+         50% {
+            transform: scale(1.15) rotateY(0deg);
+          
+         }
+
+         75% {
+            transform: scale(1.1) rotateY(-20deg);
+      
+         }
+}
 .icon {
   width: 24px;
   height: 24px;
