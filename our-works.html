@@ -599,13 +599,13 @@ background-color: rgb(7, 7, 7);
          }
 
          /* Overlay for text and button */
-         .overlay {
+         .gallery-item .overlay {
             position: absolute;
             bottom: 0;
             /* Positioned at the very bottom */
             left: 0;
             right: 0;
-            background: rgba(0, 0, 0, 0.6);
+          
             /* Dark overlay */
             padding: 10px;
             /* Spacing around the content */
@@ -618,12 +618,15 @@ background-color: rgb(7, 7, 7);
             /* Align items in the center vertically */
             opacity: 1;
             transition: opacity 0.3s ease;
+            background-color: rgba(0, 0, 0, 0.6);
+        top: 80%;
          }
 
-         .overlay .text {
+         .gallery-item .overlay .text {
             color: white;
             font-size: 14px;
             margin-right: 10px;
+           
 
          }
 

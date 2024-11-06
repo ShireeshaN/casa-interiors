@@ -1561,52 +1561,6 @@
 
 
       <!--projects-->
-      <section class="container " style=" padding: 20px;">
-         <div class="gallerygon-first-section text-center">
-            <h2 class="gallerygon-heading pb-3 " data-aos="fade-up" data-aos-duration="1200"
-               data-aos-delay="200">Our <spam class="coloo">Projects !</spam> </h2>
-         </div>
-
-         <div class="gallery  gallery-container" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="100">
-            <!-- Gallery Item 1 -->
-            <div class="gallery-item">
-               <img src="images/our-works/Aslam - 3bhk/IMG_7988.jpg" alt="Image 1">
-               <div class="overlay">
-                  <div class="text">Aslam - 3BHK</div>
-
-
-               </div>
-            </div>
-
-            <!-- Gallery Item 2 -->
-            <div class="gallery-item">
-               <img src="images/our-works/Chaitanya A 1208 - 2bhk/IMG_0076.jpg" alt="Image 2">
-               <div class="overlay">
-                  <div class="text">Chaitanya A 1208 - 2BHK</div>
-
-               </div>
-            </div>
-
-
-            <!-- Gallery Item 1 -->
-            <div class="gallery-item">
-               <img src="images/our-works/Dinesh - Vinjamur - 2bhk/IMG_7002.jpg" alt="Image 1">
-               <div class="overlay">
-                  <div class="text">Dinesh - Vinjamur - 2BHK</div>
-
-               </div>
-            </div>
-
-
-
-            <!-- Add more images as needed -->
-         </div>
-         <div class="text-center">
-            <a href="our-works.html"><button class="animated-button">View More</button></a>
-         </div>
-
-      </section>
-      <!--projects-->
       <style>
          /* Service Container */
          .service-container {
@@ -1670,13 +1624,13 @@
          }
 
          /* Overlay for text and button */
-         .overlay {
+         .gallery-item .overlay {
             position: absolute;
             bottom: 0;
             /* Positioned at the very bottom */
             left: 0;
             right: 0;
-            background: rgba(0, 0, 0, 0.6);
+          
             /* Dark overlay */
             padding: 10px;
             /* Spacing around the content */
@@ -1689,12 +1643,15 @@
             /* Align items in the center vertically */
             opacity: 1;
             transition: opacity 0.3s ease;
+            background-color: rgba(0, 0, 0, 0.6);
+        top: 80%;
          }
 
-         .overlay .text {
+         .gallery-item .overlay .text {
             color: white;
             font-size: 14px;
             margin-right: 10px;
+           
 
          }
 
@@ -1737,6 +1694,41 @@
             }
          }
       </style>
+
+    
+    <!-- Center Heading -->
+    <h1 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100" class="text-white text-center m-3">Our Works</h1>
+    
+    <!-- Image Gallery -->
+    <div class="gallery gallery-container">
+        <!-- Gallery Item 1 -->
+        <div class="gallery-item" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100">
+            <img src="images/our-works/Aslam - 3bhk/IMG_7985.jpg" alt="Image 1">
+            
+            <div class="overlay">
+                <div class="text">Aslam - 3bhk</div>
+                <a href="aslam-3bhk.html"><button class="animated-button">View More</button></a>
+            </div>
+        </div>
+    
+        <!-- Gallery Item 2 -->
+        <div class="gallery-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+            <img src="images/our-works/Chaitanya A 1208 - 2bhk/IMG_0068.jpg" alt="Image 2">
+            <div class="overlay">
+                <div class="text">Chaitanya A 1208 - 2bhk</div>
+                <a href="Chaitanya-A-1208 - 2bhk.html"><button class="animated-button">View More</button></a>
+            </div>
+        </div>
+    
+        <!-- Gallery Item 3 -->
+        <div class="gallery-item" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="100">
+            <img src="images/our-works/Dinesh - Vinjamur - 2bhk/IMG_7002.jpg" alt="Image 3">
+            <div class="overlay">
+                <div class="text">Dinesh Vinjamur - 2bhk</div>
+                <a href="Dinesh-Vinjamur-2bhk.html"><button class="animated-button">View More</button></a>
+            </div>
+        </div>
+    </div>
 
 
 
