@@ -537,116 +537,136 @@ background-color: rgb(7, 7, 7);
       </div>
  
       <style>
-        /* Service Container */
-        .service-container {
+         /* Service Container */
+         .service-container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 50px 20px;
             text-align: center;
-        }
-    
-        /* Title and Description */
-        .service-title {
+         }
+
+         /* Title and Description */
+         .service-title {
             font-size: 3rem;
             color: #333;
             margin-bottom: 20px;
-        }
-    
-        .service-description {
+         }
+
+         .service-description {
             font-size: 1.5rem;
             color: #666;
             margin-bottom: 40px;
-        }
-    
-        /* Gallery Layout */
-        .gallery {
+         }
+
+         /* Gallery Layout */
+         .gallery {
             display: flex;
-            flex-wrap: wrap; /* Allows wrapping of items to the next line */
-            justify-content: space-between; /* Space between items */
-            gap: 20px; /* Space between images */
-        }
-    
-        /* Gallery Item Styling */
-        .gallery-item {
+            flex-wrap: wrap;
+            /* Allows wrapping of items to the next line */
+            justify-content: space-between;
+            /* Space between items */
+            gap: 20px;
+            /* Space between images */
+         }
+
+         /* Gallery Item Styling */
+         .gallery-item {
             position: relative;
-            width: calc(33.33% - 20px); /* Each image takes 1/3 of the row with space between */
-            height: 400px; /* Increased height for larger images */
+            width: calc(33.33% - 20px);
+            /* Each image takes 1/3 of the row with space between */
+            height: 400px;
+            /* Increased height for larger images */
             overflow: hidden;
             border-radius: 10px;
             transition: transform 0.3s ease;
-        }
-    
-        .gallery-item img {
-            width: 100%; /* Full width of the container */
-            height: 100%; /* Full height of the container */
-            object-fit: cover; /* Ensures the image covers the area without stretching */
-            border-radius: 10px; /* Rounded corners */
+         }
+
+         .gallery-item img {
+            width: 100%;
+            /* Full width of the container */
+            height: 100%;
+            /* Full height of the container */
+            object-fit: cover;
+            /* Ensures the image covers the area without stretching */
+            border-radius: 10px;
+            /* Rounded corners */
             transition: transform 0.3s ease;
-        }
-    
-        .gallery-item:hover img {
-            transform: scale(1.1); /* Zoom effect on hover */
-        }
-    
-        /* Overlay for text and button */
-        .overlay {
-    position: absolute;
-    bottom: 0; /* Positioned at the very bottom */
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
-    padding: 10px; /* Spacing around the content */
-    display: flex;
-    flex-direction: row; /* Keep the items in a row */
-    justify-content: space-between; /* Add space between text and button */
-    align-items: end; /* Align items in the center vertically */
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
+         }
 
-.overlay .text {
-    color: white;
-    font-size: 1.2rem;
-    margin-right: 10px; /* Optional: Add more space between text and button */
-}
+         .gallery-item:hover img {
+            transform: scale(1.1);
+            /* Zoom effect on hover */
+         }
 
-.animated-button {
-    background-color: #b7852c;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
+         /* Overlay for text and button */
+         .overlay {
+            position: absolute;
+            bottom: 0;
+            /* Positioned at the very bottom */
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            /* Dark overlay */
+            padding: 10px;
+            /* Spacing around the content */
+            display: flex;
+            flex-direction: row;
+            /* Keep the items in a row */
+            justify-content: space-between;
+            /* Add space between text and button */
+            align-items: end;
+            /* Align items in the center vertically */
+            opacity: 1;
+            transition: opacity 0.3s ease;
+         }
 
-.animated-button:hover {
-    background-color: #b7852c;
-    transform: scale(1.05);
-}
-        /* Mobile View Adjustments */
-        @media (max-width: 768px) {
+         .overlay .text {
+            color: white;
+            font-size: 14px;
+            margin-right: 10px;
+
+         }
+
+         .animated-button {
+            background-color: #FEC748;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+         }
+
+         .animated-button:hover {
+            background-color: #FEC748;
+            transform: scale(1.05);
+         }
+
+         /* Mobile View Adjustments */
+         @media (max-width: 768px) {
             .gallery {
-                flex-direction: column;
-                gap: 10px;
+               flex-direction: column;
+               gap: 10px;
             }
-    
+
             .gallery-item {
-                width: 100%; /* Make images take full width in mobile view */
-                height: auto; /* Adjust height based on image aspect ratio */
+               width: 100%;
+               /* Make images take full width in mobile view */
+               height: auto;
+               /* Adjust height based on image aspect ratio */
             }
-    
+
             .overlay .text {
-                font-size: 1rem;
+               font-size: 1rem;
             }
-    
+
             .animated-button {
-                font-size: 0.9rem;
+               font-size: 0.9rem;
             }
-        }
-    
-    </style>
+         }
+      </style>
+
     
     <!-- Center Heading -->
     <h1 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100" class="text-white text-center m-3">Our Works</h1>
