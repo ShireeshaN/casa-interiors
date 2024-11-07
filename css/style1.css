@@ -6825,7 +6825,7 @@ padding: 8px 16px;
     /*whatsapp*/
     /* From Uiverse.io by gamerx151 */
     .tooltip-container {
-    background: #FC3441;
+    background: #b96f00;
     /* background: linear-gradient(138deg, #b96f00); */
     position: relative;
     cursor: pointer;
@@ -6846,7 +6846,7 @@ padding: 8px 16px;
     transition: all 0.2s;
     }
     .tooltip-container:hover .text {
-    fill: #FC3441;
+    fill: #b96f00;
     transition: all 0.9s;
     }
     
