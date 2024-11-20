@@ -923,78 +923,114 @@ background-color: rgb(7, 7, 7);
          </div>
          <div class="col-lg-6 col-md-12 mx-auto">
             <div class="insideTabsWrap connect">
-               <form class="bg-w" method="post" action="" onsubmit="return formValidation();">
-                  <div class="rightSideImg ">
-                     <div class="signUpForm">
-                        <div class="row">
-                           <div class="col-lg-12">
-                              <div style="margin-left: 46px;color: red;" id="err-name"></div>
-                              <div class="form-group">
-                                 <span><img style="background-color: aliceblue; border-radius: 50px; padding: 2px;" src="images/bk-5.png" loading="lazy" width="30" height="30"
-                                       alt="Enquiry Form Icon"></span>
-                                 <input type="text" placeholder="Full Name" name="FullName" id="FullName">
-                                 <input type="hidden" name="PageName" id="Page" value="">
-                              </div>
-                           </div>
-
-                           <div class="col-lg-11">
-                              <div style="margin-left: 46px;color: red;" id="err-phno"></div>
-                              <div class="form-group">
-                                 <span><img style="background-color: aliceblue; border-radius: 50px; padding: 2px;" src="images/bk-4.png" loading="lazy" width="30" height="30"
-                                       alt="Enquiry Form Icon"></span>
-                                 <input type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="10"
-                                    name="PhoneNo" id="PhoneNo" placeholder="Mobile Number" class="form-control"
-                                    onkeyup="telephoneCheck(this.value)" autocomplete="off"
-                                    onblur="otpSend(this.value)">
-                                 <input type="hidden" name="phoOri" id="phoOri">
-                              </div>
-                           </div>
-                           <div class="col-lg-1">
-                              <span id="edit-icon" style="display:none" onclick="phoneEdit()"><img style="background-color: aliceblue; border-radius: 50px; padding: 2px;"
-                                    src="images/final-pen.png" loading="lazy" width="30" height="30"
-                                    alt="Enquiry Form Icon"></span>
-                           </div>
-                           
-                           <div class="col-lg-12">
-                              <div style="margin-left: 46px;color: red;" id="err-email"></div>
-                              <div class="form-group">
-                                 <span><img style="background-color: aliceblue; border-radius: 50px; padding: 2px;" src="images/bk-3.png" loading="lazy" width="30" height="30"
-                                       alt="Enquiry Form Icon"></span>
-                                 <input type="text" placeholder="Email Address" name="Email" id="Email">
-
-                              </div>
-                           </div>
-                           <div class="col-lg-12">
-                              <div style="margin-left: 46px;color: red;" id="err-pType"></div>
-                              <div class="form-group subjuctName nw-clor">
-                                 <span><img style="background-color: aliceblue; border-radius: 50px; padding: 2px;" src="images/bk-1.png" loading="lazy" width="30" height="30"
-                                       alt="Enquiry Form Icon"></span>
-                                 <select class="form-select form-control" aria-label="Default select example"
-                                    name="PropertyType" id="PropertyType">
-                                    <option value="0" selected="">Choose Property Type</option>
-                                    <option value="2 BHK">2 BHK</option>
-                                    <option value="2.5 BHK"> 2.5 BHK</option>
-                                    <option value="3 BHK">3 BHK</option>
-                                    <option value="4 BHK and Above">4 BHK and Above</option>
-
-                                    <option value="Villas">Villas</option>
-                                    <option value="Other">Other</option>
-                                 </select>
-                              </div>
-                           </div>
+              <form method="post" action="//submit.form" onSubmit="return validateForm();">
+                     <div class="rightSideImg ">
+                        <div class="signUpForm">
+                           <div class="row">
+                              <div class="col-lg-12">
+                                 <div style="margin-left: 46px;color: red;" id="err-name"></div>
+                                 <div class="form-group">
+                                   <label for="">Name<span style="color: red;"> *</span></label>
+                                          
                           
-                          
-                          
-                           <div class="col-lg-12">
-                              <div class="knwMre submi-t custBtn text-right">
-
-                                 <button type="submit" class="cust-Btn hvr-sweep-to-right">Submit</button>
+                                    <input placeholder="Enter Your name here" type="text" id="data_1" name="data_1"  class="form-control"/>
+                                 </div>
                               </div>
+      
+                              <div class="col-lg-12">
+                                 <div style="color: red;" id="err-phno"></div>
+                                 <div class="form-group">
+                                 <label for="">Number<span style="color: red;"> *</span></label>
+                                   
+                                    <input placeholder="Enter Your Number here" type="number"  id="data_3" name="data_3"  class="form-control"/>
+      
+                                 </div>
+                              </div>
+                             
+      
+                              <div class="col-lg-12">
+                                 <div style="margin-left: 46px;color: red;" id="err-email"></div>
+                                 <div class="form-group">
+                                    <label for="">Email<span style="color: red;"> *</span></label>
+                                          
+                                   
+                                    <input placeholder="Enter Your Email here" type="text" id="data_2" name="data_2"  class="form-control"/>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12">
+                                 <div style="margin-left: 46px;color: red;" id="err-pType"></div>
+                                 <div class="form-group subjuctName nw-clor">
+                                   <label for="">Property Type</label>
+                                        
+                                          <select id="data_5" name="data_5"  class="form-control"><option>2 BHK</option>
+                                             <option>2.5 BHK</option>
+                                             <option>3 BHK</option>
+                                             <option>4 BHK and Above</option>
+                                             <option>Villas</option>
+                                             <option>Others</option>
+                                             </select>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12">
+                                 <div style="margin-left: 46px;color: red;" id="err-pType"></div>
+                                 <div class="form-group subjuctName nw-clor">
+                                 <label for="">Message</label>
+                                          
+                                          <textarea placeholder="Message here" id="data_4" false name="data_4"  rows="3" class="form-control"></textarea>
+                                 </div>
+                              </div>
+      
+      
+      
+                              <div class="col-lg-12">
+                                 <div class="knwMre submi-t custBtn text-right">
+      
+                                    <!-- <button type="submit" class="cust-Btn hvr-sweep-to-right">Submit</button> -->
+                                    <input name="skip_Submit" value="Submit" class="cust-Btn hvr-sweep-to-right" type="submit"/>
+                                 </div>
+                              </div>
+                              <div style="float:right"><a href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
+                              <script src="https://www.100forms.com/js/FORMKEY:XUAFJK79SQG3" type="text/javascript"></script>
                            </div>
                         </div>
                      </div>
-                  </div>
-               </form>
+                  </form>
+                  <script type="text/javascript">
+                     function validateForm() {
+                     if (isEmpty(document.getElementById('data_1').value.trim())) {
+                     alert('Name is required!');
+                     return false;
+                     }
+                     if (isEmpty(document.getElementById('data_2').value.trim())) {
+                     alert('Email is required!');
+                     return false;
+                     }
+                     if (!validateEmail(document.getElementById('data_2').value.trim())) {
+                     alert('Email must be a valid email address!');
+                     return false;
+                     }
+                     // if (isEmpty(document.getElementById('data_3').value.trim())) {
+                     // alert('Phone Number is required!');
+                     // return false;
+                     // }
+                     
+                     let phoneNumber = document.getElementById('data_3').value.trim();
+                                            if (isEmpty(phoneNumber)) {
+                                                alert('Phone Number is required!');
+                                                return false;
+                                            } else if (!/^\d{10}$/.test(phoneNumber)) {
+                                                alert('Phone Number must be exactly 10 digits!');
+                                                return false;
+                                            }
+                  
+                     return true;
+                     }
+                     function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+                     function validateEmail(email) {
+                     var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+                     return isEmpty(email) || re.test(email);
+                     }
+                     </script>
 
 
             </div>
