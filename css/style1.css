@@ -905,7 +905,7 @@ span.mob-angle {
 .custBtn-blk,
 .leftTextPara a,
 a.custBtn,
-button.cust-Btn {
+.cust-Btn {
     font-size: 1.25rem;
     font-weight: 500;
     padding: .625rem 1.875rem;
@@ -913,6 +913,55 @@ button.cust-Btn {
     margin-top: 1.875rem;
     position: relative
 }
+.cust-Btn:hover{
+    color: white !important;
+       }
+
+
+       .form-group{
+        display: flex !important;
+        flex-direction: column;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+  
+     }
+     input[type="number"]{
+        background-color: transparent;
+        border: 0;
+        color: white;
+        outline: 0;
+        border-bottom: 1px solid white;
+     }
+     input[type="number"]:focus{
+        background-color: transparent;
+        color: white;
+        outline: 0;
+        border-bottom: 1px solid white;
+     }
+     #lnk100{
+        color: black;
+        display:none;
+     }
+     .button1{
+        background-color: #e6bc6b;
+     }
+     select.form-control{
+        background-color: transparent;
+        border: 0;
+        color: white;
+        outline: 0;
+        border-bottom: 1px solid white;
+     }
+     textarea:focus{
+        background-color: transparent;
+        color: white;
+        outline: 0;
+        border-bottom: 1px solid white;
+     }
+     form label{
+        color: white  !important;
+     }
+
 
 .leftTextPara a,
 a.custBtn {
@@ -921,7 +970,7 @@ a.custBtn {
     border-left-width: .375rem
 }
 
-button.cust-Btn {
+.cust-Btn {
     color: #fff;
     border: .0625rem solid #fff;
     border-left-width: .375rem;
