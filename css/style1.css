@@ -953,8 +953,14 @@ a.custBtn,
         border-bottom: 1px solid white;
      }
      textarea:focus{
-        background-color: transparent;
+        background-color: transparent !important;
+        background: transparent !important;
         color: white;
+        outline: 0;
+        border-bottom: 1px solid white !important;
+     }
+     textarea{
+        color:white !important;
         outline: 0;
         border-bottom: 1px solid white;
      }
